@@ -1,0 +1,20 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
+	<div>
+		<a name="scope"></a>
+		<h3>Scope and Usage</h3>
+		<p>
+			The Clinical Research adverse event profile of AdverseEvent, is for the clinical research setting.  Adverse events are tracked and evaluated as part of the clinical research process in a research study, as the occurrence of an adverse event may surface a potential confounder or a potential side-effect of the study treatment. In the research setting an adverse event is the result of an intervention that caused unintentional harm to a specific subject or group of subjects, potential adverse events are not reported (this is surfaced in the profile as a constraint of ‘actual’ for the value of ‘actuality’). Examples of adverse events include the administration of an incorrect drug or an incorrect dose of a drug causing an adverse reaction, the use of an implanted device that causes an infection, or a biologic used during a research study that causes unanticipated renal failure. These events are characterized by the need to capture cause and effect (although they might not be known at the time of the event), severity, and outcome. 
+    </p>
+		<!--div style="border: 1px solid maroon; padding: 10px; background-color: #fffbf7; min-height: 160px;">
+			<img src="assets/images/dragon.png" width="150" style="float:left; mix-blend-mode: multiply; margin-right: 10px;" title="Here Be Dragons!" height="150"/>
+			<p>
+				For examples and further guidance, it is strongly suggested that an implementer consult the <a href="https://confluence.hl7.org/display/VA/Adverse+Events">Clinical Care AdverseEvent Implementation Guide</a> and the <a href="https://confluence.hl7.org/display/VA/Adverse+Events">Clinical Research AdverseEvent Implementation Guide</a>
+				They contain valuable extensions, value sets and, importantly, examples.
+				
+			</p>
+		</div-->
+		<p></p>
+	</div>
+	
+  <!--p>See <a href="sequencing.html">Variant Reporting</a> for details on use.</p-->
+</div>
