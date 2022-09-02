@@ -19,16 +19,16 @@ A single Adverse Event may need to be reported in multiple ways. Choosing the ap
     This guide, the Clinical Research adverse event implementation guide, is for the clinical research setting.  The event is tracked and evaluated as part of the clinical research process  for the research study, since the occurrence of an adverse event may surface a potential confounder or a potential side-effect of the study treatment. 
   </p>
   <p>
-    In the research setting an adverse event is the result of an intervention that caused unintentional harm to a specific subject or group of subjects, potential adverse events are not reported (this is surfaced in the profile as a constraint of ‘actual’ for the value of ‘actuality’). Examples of adverse events include the administration of an incorrect drug or an incorrect dose of a drug causing an adverse reaction, the use of an implanted device that causes an infection, or a biologic used during a research study that causes unanticipated renal failure. These events are characterized by the need to capture cause and effect (although they might not be known at the time of the event), severity, and outcome. 
+    In the research setting an adverse event is the result of an intervention that caused unintentional harm to a specific subject or group of subjects, potential adverse events are not reported (this is surfaced in the profile as a constraint of ‘actual’ for the value of ‘actuality’). Examples of adverse events include the administration of an incorrect drug or an incorrect dose of a drug causing an adverse reaction, the use of an implanted device that causes an infection, or a biologic used during a research study that causes unanticipated renal failure. These events are characterized by the need to capture cause-and-effect (although they might not be known at the time of the event), severity, and outcome. 
   </p>
   <p>
-  The context of an adverse event is also important. A subject may have condition(s) or current treatments (medications, diet, devices) that impact their response to a newly introduced medication, device or procedure. Knowledge of these variables is essential in establishing a cause and effect relationship for an adverse event. Additionally, steps to mitigate the harm or resolve the event are recorded.
+  The context of an adverse event is also important. A subject may have condition(s) or current treatments (medications, diet, devices) that impact their response to a newly introduced medication, device or procedure. Knowledge of these variables is essential in establishing a cause-and-effect relationship for an adverse event. Additionally, steps to mitigate the harm or resolve the event are recorded.
   </p>
   <p>
   A potential adverse event may also be called a near miss or an error. These are also events, but since they were detected, did not cause harm to a subject. Examples of potential adverse events include a product problem such as a faulty pacemaker that is detected prior implantation, a doctor working simultaneously on two electronic health records realizing the order for a drug was entered on the incorrect patient and then canceling the order, or a patient with a peanut allergy notices that his hospital dinner tray includes peanuts, and he does not eat the peanuts. Near miss events like this are not reported with the AdverseEvent Clinical Research profile.
   </p>
   <p>
-  Within this guide are several examples, every effort is made to capture the most important details of the use of the AdverseEvent profile. However some examples may provide only a stub to referenced resources (e.g. instances of Patient Resource will be referenced using logical ids but are not resolvable, implementation of Patient is left for other guidance and is not the subject of this guide). Connectathons are ideal opportunities to create, compare and consider the holistic implementation of all FHIR Resources.
+  Within this guide are several examples. Every effort has been made to capture the most important details of the use of the AdverseEvent profile. However, some examples may provide only a stub to referenced resources (e.g. instances of Patient Resource will be referenced using logical ids but are not resolvable, implementation of Patient is left for other guidance and is not the subject of this guide). Connectathons are ideal opportunities to create, compare and consider the holistic implementation of all FHIR Resources.
   </p>
   <p>
   For examples and further guidance, it is strongly suggested that an implementer consult the Clinical Care AdverseEvent Implementation Guide  and the Clinical Research AdverseEvent Implementation Guide  They contain valuable extensions, value sets and, importantly, examples. 
@@ -37,13 +37,13 @@ A single Adverse Event may need to be reported in multiple ways. Choosing the ap
   <a name="how to use this guide"> </a>
   <h3>How to Use this Guide</h3> 
   <p>
-  This implementation guide is is foucsed on the use of the AdverseEvent Resource in Clinical Research. When reviewing profiles begin with the snapshot view to understand the entire set of data elements and rules for implementation. The differential does no show elements unchanged from the parent, in the snapshot constraints inherited from the parent are visible. Those new to FHIR should review the Understanding FHIR section below.
+  This implementation guide is focused on the use of the AdverseEvent Resource in Clinical Research. When reviewing profiles begin with the snapshot view to understand the entire set of data elements and rules for implementation. The differential does no show elements unchanged from the parent, in the snapshot constraints inherited from the parent are visible. Those new to FHIR should review the Understanding FHIR section below.
   </p>
   
   <a name="previous"> </a>
   <h3>Previous Specifications</h3>
   <p>
-    FHIR STU4 contained a non-normative version of the AdverseEvent Resource. The specification here is based on changes made in R5 and superceedes the use of the R4 Resource.
+    FHIR STU4 contained a non-normative version of the AdverseEvent Resource. The specification here is based on changes made in R5 and supersedes the use of the R4 Resource.
   </p>
   <a name="fhir"> </a>
   <h3>Understanding FHIR</h3>

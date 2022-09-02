@@ -1,0 +1,14 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
+  <a name="Heading 1"> </a>
+  <h3>Heading 1</h3>
+  <p>
+    Some text
+  </p>
+  <a name="Heading 2"> </a> 
+  <h3>Heading 2</h3>
+	<div>
+		<p>
+		Conformance statements provide guidance to server implementors that normalizes the list of expected interactions between a server and application. In other words, the profiles provide a structure for how data is presented. The conformance guide indicates what a server will support in terms of data access to be considered a conformant server. This includes what kind of searches should be enabled.
+		</p>
+	</div>
+</div>

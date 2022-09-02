@@ -1,2 +1,2 @@
-# fhir-ae-research-ig
-HL7 FHIR implementation guide defining research expectations for adverse events
+# sample-ig
+A sample, template-driven implementation guide that provides a starting environment to use a base for defining new IGs

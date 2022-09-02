@@ -43,7 +43,7 @@ Id: severity-or-grade
 Title: "Severity Or Grade"
 Description: "Describes the severity of the adverse event, in relation to the subject not the resulting condition. In the context of clinical research, it is the investigator's assessment of severity. For cancer related trials, severity is represented as a grade. An AdverseEvent.resultingCondition might have mild severity clinically, but a Research Investigator may determine that for the context of the clinical trial the adverseEvent severity-or-grade is severe"
 * value[x] only CodeableConcept
-//* valueCodeableConcept from http://hl7.org/fhir/R4/valueset-adverse-event-severity.html (preferred)
+* valueCodeableConcept from http://hl7.org/fhir/R4/valueset-adverse-event-severity.html (preferred)
 //http://hl7.org/fhir/ValueSet/adverse-event-severity (extensible)
 
 Extension: Seriousness
@@ -63,7 +63,7 @@ Description: "Clinical significance of adverse event based on the patient and ev
 //* extension[seriousnessCriteria].valueCodeableConcept from adverse-event-seriousness-criteria-vs (extensible)
 * obeys aeClinRes-seriousness-1
 
-/* ValueSet: AdverseEventSerCrit
+ValueSet: AdverseEventSerCrit
 Id: adverse-event-seriousness-criteria-vs
 Title: "Adverse Event Seriousness Criteria"
 Description: "Action criteria usually associated with serious events that pose a threat to a patient's life or functioning. Adverse Events criteria to expand on the seriousness of the adverse event. Typically used in reporting for Clinical Research, post-market surveillance (e.g. Medwatch forms). This list comes from ICH E2B R3 (https://database.ich.org/sites/default/files/E2D_Guideline.pdf)."
@@ -73,19 +73,19 @@ Description: "Action criteria usually associated with serious events that pose a
 * urn:oid:2.16.840.1.113883.3.989.2.1.1.19#33	"requiresInpatientHospitalization"
 * urn:oid:2.16.840.1.113883.3.989.2.1.1.19#35	"resultsInPersistentOrSignificantDisability"
 * urn:oid:2.16.840.1.113883.3.989.2.1.1.19#12	"congenitalAnomalyBirthDefect"
-* urn:oid:2.16.840.1.113883.3.989.2.1.1.19#26	"otherMedicallyImportantCondition" */
+* urn:oid:2.16.840.1.113883.3.989.2.1.1.19#26	"otherMedicallyImportantCondition" 
 
 
-//CodeSystem: SeriousnessCriteriaCS
-//Id: seriousness-criteria-cs
-//Title: "Seriousness Criteria Code System"
-//Description: "Action criteria usually associated with serious events that pose a threat to a patient's life or functioning"
-//* #resultsInDeath "Resulted in Death" "Adverse event resulted in death"
-//* #lifeThreatening "Life Threatening" "Life Threatening"
-//* #resultsinHospitalization "Resulted in Hospitalization" "Resulted in Hospitalization"
-//* #resultsInDisabliity "Resulted in Disability" "Resulted in Disability"
-//* #isBirthDefect "Resulted in Birth defect" "Resulted in Birth Defect"
-//* #requiresPreventImpairment "Required Intervention" "Required Intervention to Prevent Permanent Impairment or Damage"
+CodeSystem: SeriousnessCriteriaCS
+Id: seriousness-criteria-cs
+Title: "Seriousness Criteria Code System"
+Description: "Action criteria usually associated with serious events that pose a threat to a patient's life or functioning"
+* #resultsInDeath "Resulted in Death" "Adverse event resulted in death"
+* #lifeThreatening "Life Threatening" "Life Threatening"
+* #resultsinHospitalization "Resulted in Hospitalization" "Resulted in Hospitalization"
+* #resultsInDisabliity "Resulted in Disability" "Resulted in Disability"
+* #isBirthDefect "Resulted in Birth defect" "Resulted in Birth Defect"
+* #requiresPreventImpairment "Required Intervention" "Required Intervention to Prevent Permanent Impairment or Damage"
 
 Invariant: aeClinRes-seriousness-1
 Description: "If serious is true then must have at least one seriousness criteria."
