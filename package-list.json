@@ -1,12 +1,12 @@
 {
- "package-id" : "hl7.fhir.uv.myig",
- "title" : "Your User Friendly Name for MyIG Here", 
- "canonical" : "http://hl7.org/fhir/uv/myig", 
- "introduction" : "The introduction that should appear in the FHIR IG registry",
+ "package-id" : "hl7.fhir.",
+ "title" : "Adverse Event use in Clinical Research", 
+ "canonical" : "https://hl7.org/fhir/us/ae-cr-ig", 
+ "introduction" : "Adverse Event's for Clinical Research Use guide. More to follow.",
  "list" : [{
   "version" : "current",
   "desc" : "Continuous Integration Build (latest in version control)",
-  "path" : "http://hl7.org/fhir/ig/HL7/myig",
+  "path" : "http://build.fhir.org/ig/HL7/fhir-ae-research-ig",
   "status" : "ci-build",
   "current" : true
  },{
