@@ -5,3 +5,9 @@ Thumbs.db
 /output
 /temp
 /template
+_gencontinuous.bat
+_gencontinuous.sh
+_genonce.bat
+_genonce.sh
+_updatePublisher.bat
+_updatePublisher.sh
