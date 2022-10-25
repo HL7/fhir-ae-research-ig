@@ -13,7 +13,7 @@
 Extension: SeverityOrGrade
 Id: severity-or-grade
 Title: "Severity Or Grade"
-Description: "Describes the severity of the adverse event, in relation to the subject not the resulting condition. In the context of clinical research, it is the investigator's assessment of severity. For cancer related trials, severity is represented as a grade. An AdverseEvent.resultingCondition might have mild severity clinically, but a Research Investigator may determine that for the context of the clinical trial the adverseEvent severity-or-grade is severe"
+Description: "Describes the severity of the adverse event, in relation to the subject not the resulting condition. In the context of clinical research, it is the investigator’s assessment of severity. For cancer related trials, severity is represented as a grade."
 * value[x] only CodeableConcept
 * valueCodeableConcept from http://hl7.org/fhir/R4/valueset-adverse-event-severity.html (preferred)
 //http://hl7.org/fhir/ValueSet/adverse-event-severity (extensible)
@@ -55,17 +55,28 @@ Description: "Action criteria usually associated with serious events that pose a
 * urn:oid:2.16.840.1.113883.3.989.2.1.1.19#12	"congenitalAnomalyBirthDefect"
 * urn:oid:2.16.840.1.113883.3.989.2.1.1.19#26	"otherMedicallyImportantCondition" 
 
+ValueSet: OutcomeAEClinRes
+Id: adverse-event-outcome-clinical-research-vs
+Title: "Adverse Event Clinical Research Outcomes"
+Description: "This value set includes codes that describe the type of outcome from the adverse event as typically used in reporting for Clinical Research, post-market surveillance (e.g. Medwatch forms). This list comes from ICH E2B R3 (https://database.ich.org/sites/default/files/E2D_Guideline.pdf), specifically CDISC CL.C66768.OUT."
+* urn:oid:2.16.840.1.113883.3.989.2.1.1.19#fatal	"Fatal" //"Was the serious adverse event life-threatening?"
+* urn:oid:2.16.840.1.113883.3.989.2.1.1.19#notrecoveredorresolved	"Not recovering/not resolved" 
+* urn:oid:2.16.840.1.113883.3.989.2.1.1.19#resolvedwithsequelae	"Recovered/Resolved with sequelae"
+* urn:oid:2.16.840.1.113883.3.989.2.1.1.19#recoveredorresolved	"Recovered/Resolved"
+* urn:oid:2.16.840.1.113883.3.989.2.1.1.19#roveringorresolving	"Recovering/Resolving"
 
-CodeSystem: SeriousnessCriteriaCS
-Id: seriousness-criteria-cs
-Title: "Seriousness Criteria Code System"
-Description: "Action criteria usually associated with serious events that pose a threat to a patient's life or functioning"
-* #resultsInDeath "Resulted in Death" "Adverse event resulted in death"
-* #lifeThreatening "Life Threatening" "Life Threatening"
-* #resultsinHospitalization "Resulted in Hospitalization" "Resulted in Hospitalization"
-* #resultsInDisabliity "Resulted in Disability" "Resulted in Disability"
-* #isBirthDefect "Resulted in Birth defect" "Resulted in Birth Defect"
-* #requiresPreventImpairment "Required Intervention" "Required Intervention to Prevent Permanent Impairment or Damage"
+
+
+//CodeSystem: SeriousnessCriteriaCS
+//Id: seriousness-criteria-cs
+//Title: "Seriousness Criteria Code System"
+//Description: "Action criteria usually associated with serious events that pose a threat to a patient's life or functioning"
+//* #resultsInDeath "Resulted in Death" "Adverse event resulted in death"
+//* #lifeThreatening "Life Threatening" "Life Threatening"
+//* #resultsinHospitalization "Resulted in Hospitalization" "Resulted in Hospitalization"
+//* #resultsInDisabliity "Resulted in Disability" "Resulted in Disability"
+//* #isBirthDefect "Resulted in Birth defect" "Resulted in Birth Defect"
+//* #requiresPreventImpairment "Required Intervention" "Required Intervention to Prevent Permanent Impairment or Damage"
 
 ValueSet: CausalityRelatedness
 Id: adverse-event-causality-related-vs
@@ -108,16 +119,21 @@ Description: "An example profile of AdverseEvent for Research reporting."
 //* extension[Note] ^short = "Comment on adverse event"
 
 * suspectEntity.causality 1..1 MS
-* suspectEntity.causality.entityRelatedness from adverse-event-causality-related-vs (extensible)
+* suspectEntity.causality.entityRelatedness from adverse-event-causality-related-vs (preferred)
 
 * actuality = http://hl7.org/fhir/adverse-event-actuality#actual
 * actuality ^short = "actual"
 
 //* expectedInResearchStudy 0..* MS contentReference http://build.fhir.org/adverseevent-definitions.html#AdverseEvent.expectedInResearchStudy "expectedInResearchStudy" "Considered likely or probable or anticipated in the research study"
+
+* occurrence[x] only Period
+* occurrencePeriod 0..1 MS
 * seriousness 1..1 MS 
 * seriousness from http://hl7.org/fhir/ValueSet/adverse-event-seriousness (required)
 * seriousness obeys aeClinRes-seriousness-1
 * seriousness ^short = "Investigator defined severity of the adverse event, in relation to the subject not the resulting condition"
+* outcome 1..1 MS
+* outcome from adverse-event-outcome-clinical-research-vs (required)
 * study 1..1 MS
 * note ^short = "Comment on adverse event"
 
