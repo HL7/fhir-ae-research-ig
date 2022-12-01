@@ -234,6 +234,15 @@ Description: "This value set includes codes that describe the ameliorating actio
 * include codes from system SNOMED_CT where concept is-a #373873005
 * include codes from system SNOMED_CT where concept is-a #106181007
 
+ValueSet: AdverseEventSeriousnessNonOnly
+Id: adverse-event-seriousness-non-only-vs
+Title: "AdverseEvent Seriousness Non-serious Codes Only"
+Description: "This value set includes codes that describe the ameliorating actions taken after the adverse event occured in order to reduce the extent of harm."
+* ^status = #draft
+* ^experimental = true
+* http://terminology.hl7.org/CodeSystem/adverse-event-seriousness#Serious "Serious"
+* http://terminology.hl7.org/CodeSystem/adverse-event-seriousness#Non-serious "Non-serious"
+
 Invariant: aeClinRes-seriousness-1
 Description: "If seriousness is serious then must have at least one seriousness criterion."
 Expression: "(seriousness=http://terminology.hl7.org/CodeSystem/adverse-event-seriousness#serious AND extension[seriousness-criteria].exists()) OR seriousness=http://terminology.hl7.org/CodeSystem/adverse-event-seriousness#non-serious"
@@ -311,7 +320,9 @@ Description: "An example profile of AdverseEvent for Research reporting."
 //* occurrence[x] only Period
 //* occurrencePeriod 0..1 MS
 * seriousness 1..1 MS 
-* seriousness from http://hl7.org/fhir/ValueSet/adverse-event-seriousness (required)
+//* seriousness from http://hl7.org/fhir/ValueSet/adverse-event-seriousness (required)
+* seriousness from adverse-event-seriousness-non-only-vs (required)
+
 * seriousness obeys aeClinRes-seriousness-1
 * seriousness ^short = "Investigator defined severity of the adverse event, in relation to the subject not the resulting condition"
 * outcome 1..1 MS
