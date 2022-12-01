@@ -12,7 +12,7 @@ Description: "Considered likely or probable or anticipated in the research study
 
 Extension: InstanceCodeableConcept
 Id: instance-codeable-concept
-Title: "Severity Or Grade"
+Title: "Instance Codeable Concept"
 Description: "Codeable concept for the specific entity that caused the adverse event."
 * value[x] only CodeableConcept
 
@@ -260,8 +260,11 @@ Description: "An example profile of AdverseEvent for Research reporting."
     expected-in-research-study named expected-in-research-study 0..1 and
     Note named note 0..* and
 	Status named status 1..1 ?! SU and
-	SupportingMedicationInfo named supporting-medication-info 0..*
-
+	SupportingMedicationInfo named supporting-medication-info 0..* and
+	ContributingFactor named contributing-factor 0..* SU and
+	PreventiveAction named preventive-action 0..* SU and
+	MitigatingAction named mitigating-action 0..* SU
+	
 * extension[SeverityOrGrade] ^short = "The degree of something undesirable"
 * extension[expected-in-research-study] ^short = "Considered likely or probable or anticipated in the research study"
 * extension[Note] ^short = "Comment on adverse event"
@@ -274,6 +277,16 @@ Description: "An example profile of AdverseEvent for Research reporting."
 * extension[Status] ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
 * extension[Status] ^binding.extension.valueString = "AdverseEventStatus"
 * extension[Status] ^binding.description = "Codes identifying the lifecycle stage of an event."
+
+* extension[SupportingMedicationInfo] ^short = "Additional information regarding medications the subject is taking"
+* extension[SupportingMedicationInfo] ^definition = "Provides references to medications the subject has been prescribed for additional context. These should be medications that are not suspected or considered as potential suspects for the adverse event. For example, a patient who became nauseous after eating a study drug that was not meant to be taken orally. This element could indicate that the patient was using topical acne medication."
+
+* extension[ContributingFactor] ^short = "Contributing factors suspected to have increased the probability or severity of the adverse event"
+* extension[ContributingFactor] ^definition = "The contributing factors suspected to have increased the probability or severity of the adverse event."
+* extension[PreventiveAction] ^short = "Preventive actions that contributed to avoiding the adverse event"
+* extension[PreventiveAction] ^definition = "Preventive actions that contributed to avoiding the adverse event."
+* extension[MitigatingAction] ^short = "Ameliorating actions taken after the adverse event occured in order to reduce the extent of harm"
+* extension[MitigatingAction] ^definition = "The ameliorating action taken after the adverse event occured in order to reduce the extent of harm."
 
 * event 0..1 SU
 * event from adverse-event-type-vs (example)
