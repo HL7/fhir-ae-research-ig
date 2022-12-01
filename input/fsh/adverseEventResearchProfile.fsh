@@ -1,14 +1,42 @@
-//Extension: Note
-//Id: note
-//Title: "Note"
-//Description: "Comments made about the adverse event by the performer, subject or other participants."
-//* value[x] only Annotation
+Extension: Note
+Id: note
+Title: "Note"
+Description: "Comments made about the adverse event by the performer, subject or other participants."
+* value[x] only Annotation
 
-//Extension: ExpectedInResearchStudy
-//Id: expected-in-research-study
-//Title: "Expected In Research Study"
-//Description: "Considered likely or probable or anticipated in the research study.  Whether the reported event matches any of the outcomes for the patient that are considered by the study as known or likely."
-//* value[x] only boolean
+Extension: ExpectedInResearchStudy
+Id: expected-in-research-study
+Title: "Expected In Research Study"
+Description: "Considered likely or probable or anticipated in the research study.  Whether the reported event matches any of the outcomes for the patient that are considered by the study as known or likely."
+* value[x] only boolean
+
+Extension: InstanceCodeableConcept
+Id: instance-codeable-concept
+Title: "Severity Or Grade"
+Description: "Codeable concept for the specific entity that caused the adverse event."
+* value[x] only CodeableConcept
+
+Extension: Status
+Id: status
+Title: "Workflow Status"
+Description: "The current workflow state of the adverse event or potential adverse event. This is not the reporting of the event to any regulatory or quality organization.  This is not the outcome of the patient's condition."
+* value[x] only code
+* valueCode from adverse-event-status-vs (required)
+
+//AdverseEvent.contributingFactor
+//AdverseEvent.preventiveAction
+//AdverseEvent.mitigatingAction
+
+
+//AdverseEvent.supportingMedicationInfo
+//MedicationAdministration | MedicationStatement
+Extension: SupportingMedicationInfo
+Id: supporting-medication-info
+Title: "Severity Or Grade"
+Description: "Describes the severity of the adverse event, in relation to the subject not the resulting condition. In the context of clinical research, it is the investigator’s assessment of severity. For cancer related trials, severity is represented as a grade."
+
+
+
 
 Extension: SeverityOrGrade
 Id: severity-or-grade
@@ -65,8 +93,6 @@ Description: "This value set includes codes that describe the type of outcome fr
 * urn:oid:2.16.840.1.113883.3.989.2.1.1.19#recoveredorresolved	"Recovered/Resolved"
 * urn:oid:2.16.840.1.113883.3.989.2.1.1.19#roveringorresolving	"Recovering/Resolving"
 
-
-
 //CodeSystem: SeriousnessCriteriaCS
 //Id: seriousness-criteria-cs
 //Title: "Seriousness Criteria Code System"
@@ -87,6 +113,23 @@ Description: "Valueset for stating if a suspected entity is Not Related, Unlikel
 * urn:oid:2.16.840.1.113883.3.989.2.1.1.19#possibly "Possibly Related"
 * urn:oid:2.16.840.1.113883.3.989.2.1.1.19#related "Related"
 
+ValueSet: AdverseEventStatus
+Id: adverse-event-status-vs
+Title: "Adverse Event Status"
+Description: "Codes identifying the lifecycle stage of an adverse event."
+* EventStatus#in-progress
+* EventStatus#completed
+* EventStatus#entered-in-error
+* EventStatus#unknown
+
+ValueSet: AdverseEventType
+Id: adverse-event-type-vs
+Title: "AdverseEvent Type"
+Description: "This value set includes codes that describe the adverse event or incident that occurred or was averted."
+* ^status = #draft
+* ^experimental = true
+* include codes from system SNOMED_CT where concept is-a #370894009
+* SNOMED_CT#1912002
 
 Invariant: aeClinRes-seriousness-1
 Description: "If seriousness is serious then must have at least one seriousness criterion."
@@ -110,24 +153,46 @@ Description: "An example profile of AdverseEvent for Research reporting."
     //study-info-associated-with-AE named study-info-associated-with-AE 0..* and
 	CausedSubjectToDiscontinueStudy named caused-subject-to-discontinue-study 0..1 and
     SeriousnessCriteria named seriousness-criteria 0..* and
-    SeverityOrGrade named severity-or-grade 0..1
-//    expected-in-research-study named expected-in-research-study 0..1 and
-//    Note named note 0..*
+    SeverityOrGrade named severity-or-grade 0..1 and
+    expected-in-research-study named expected-in-research-study 0..1 and
+    Note named note 0..* and
+	Status named status 1..1 ?! SU 
 
 * extension[SeverityOrGrade] ^short = "The degree of something undesirable"
-//* extension[expected-in-research-study] ^short = "Considered likely or probable or anticipated in the research study"
-//* extension[Note] ^short = "Comment on adverse event"
+* extension[expected-in-research-study] ^short = "Considered likely or probable or anticipated in the research study"
+* extension[Note] ^short = "Comment on adverse event"
 
+* extension[Status] ^short = "in-progress | completed | entered-in-error | unknown"
+* extension[Status] ^definition = "The current state of the adverse event or potential adverse event."
+* extension[Status] ^comment = "This is not the reporting of the event to any regulatory or quality organization.  This is not the outcome of the patient's condition."
+
+* extension[Status] ^isModifierReason = "This element is labeled as a modifier because it is a status element that contains status entered-in-error which means that the resource should not be treated as valid"
+* extension[Status] ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
+* extension[Status] ^binding.extension.valueString = "AdverseEventStatus"
+* extension[Status] ^binding.description = "Codes identifying the lifecycle stage of an event."
+
+* event 0..1 SU
+* event from adverse-event-type-vs (example)
+* event ^short = "Event or incident that occurred or was averted"
+* event ^definition = "Specific event that occurred or that was averted, such as patient fall, wrong organ removed, or wrong blood transfused."
+* event ^isModifier = false
+* event ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
+* event ^binding.extension.valueString = "AdverseEventType"
+* event ^binding.description = "Detailed type of event."
+
+* suspectEntity.extension contains InstanceCodeableConcept named instance-codeable-concept 0..1
 * suspectEntity.causality 1..1 MS
-* suspectEntity.causality.entityRelatedness from adverse-event-causality-related-vs (preferred)
+* suspectEntity.causality.productRelatedness 0..0
+//* suspectEntity.causality.entityRelatedness from adverse-event-causality-related-vs (preferred)
+* suspectEntity.causality.assessment from adverse-event-causality-related-vs (preferred)
 
 * actuality = http://hl7.org/fhir/adverse-event-actuality#actual
 * actuality ^short = "actual"
 
-//* expectedInResearchStudy 0..* MS contentReference http://build.fhir.org/adverseevent-definitions.html#AdverseEvent.expectedInResearchStudy "expectedInResearchStudy" "Considered likely or probable or anticipated in the research study"
+//* expectedInResearchStudy 0..* MS contentReference http://build.fhir.org/adverseevent-definitions.html#AdverseEvent.expectedInResearchStudy //"expectedInResearchStudy" "Considered likely or probable or anticipated in the research study"
 
-* occurrence[x] only Period
-* occurrencePeriod 0..1 MS
+//* occurrence[x] only Period
+//* occurrencePeriod 0..1 MS
 * seriousness 1..1 MS 
 * seriousness from http://hl7.org/fhir/ValueSet/adverse-event-seriousness (required)
 * seriousness obeys aeClinRes-seriousness-1
@@ -135,6 +200,8 @@ Description: "An example profile of AdverseEvent for Research reporting."
 * outcome 1..1 MS
 * outcome from adverse-event-outcome-clinical-research-vs (required)
 * study 1..1 MS
-* note ^short = "Comment on adverse event"
+
+
+
 
 
