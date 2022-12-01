@@ -23,10 +23,6 @@ Description: "The current workflow state of the adverse event or potential adver
 * value[x] only code
 * valueCode from adverse-event-status-vs (required)
 
-//AdverseEvent.contributingFactor
-//AdverseEvent.preventiveAction
-//AdverseEvent.mitigatingAction
-
 
 //AdverseEvent.supportingMedicationInfo
 //MedicationAdministration | MedicationStatement
@@ -35,6 +31,72 @@ Id: supporting-medication-info
 Title: "Additional information regarding medications the subject is taking"
 Description: "Provides references to medications the subject has been prescribed for additional context. These should be medications that are not suspected or considered as potential suspects for the adverse event. For example, a patient who became nauseous after eating a study drug that was not meant to be taken orally. This element could indicate that the patient was using topical acne medication."
 * value[x] only Reference(MedicationStatement)
+
+
+//AdverseEvent.contributingFactor
+Extension: ContributingFactor
+Id: contributing-factor
+Title: "Contributing Factor"
+Description: "The contributing factors suspected to have increased the probability or severity of the adverse event."
+* extension contains
+    id 0..1 and
+    item 1..1
+* extension[id].value[x] only string
+* extension[id] ^representation = #xmlAttr
+* extension[id] ^short = "Unique id for inter-element referencing. Any string value without spaces"
+//* extension[id] ^definition = "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."
+
+* extension[item].value[x] only CodeableConcept or Reference(Condition or Observation or AllergyIntolerance or FamilyMemberHistory or Immunization or Procedure or Device or DocumentReference or MedicationAdministration)
+* extension[item].valueCodeableConcept from adverse-event-contributing-factor-vs (example)
+* extension[item] ^short = "Item suspected to have increased the probability or severity of the adverse event"
+//* contributingFactor.item[x] ^definition = "The item that is suspected to have increased the probability or severity of the adverse event."
+
+* extension[item] ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
+* extension[item] ^binding.extension.valueString = "AdverseEventContributingFactor"
+* extension[item] ^binding.description = "Codes describing the contributing factors suspected to have increased the probability or severity of the adverse event."
+
+
+//AdverseEvent.preventiveAction
+Extension: PreventiveAction
+Id: preventive-action
+Title: "Preventive Action"
+Description: "Preventive actions that contributed to avoiding the adverse event."
+* extension contains
+    id 0..1 and
+    item 1..1
+* extension[id].value[x] only string
+* extension[id] ^representation = #xmlAttr
+* extension[id] ^short = "Unique id for inter-element referencing. Any string value without spaces"
+//* extension[id] ^definition = "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."
+
+* extension[item].value[x] only CodeableConcept or Reference(Immunization or Procedure or DocumentReference or MedicationAdministration or MedicationRequest)
+* extension[item].valueCodeableConcept from adverse-event-preventive-action-vs (example)
+* extension[item] ^short = "Action that contributed to avoiding the adverse event"
+
+* extension[item] ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
+* extension[item] ^binding.extension.valueString = "AdverseEventPreventiveAction"
+* extension[item] ^binding.description = "Codes describing the preventive actions that contributed to avoiding the adverse event."
+
+//AdverseEvent.mitigatingAction
+Extension: MitigatingAction
+Id: mitigating-action
+Title: "Mitigating Action"
+Description: "Ameliorating actions taken after the adverse event occured in order to reduce the extent of harm"
+* extension contains
+    id 0..1 and
+    item 1..1
+* extension[id].value[x] only string
+* extension[id] ^representation = #xmlAttr
+* extension[id] ^short = "Unique id for inter-element referencing. Any string value without spaces"
+//* extension[id] ^definition = "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."
+
+* extension[item].value[x] only CodeableConcept or Reference(Procedure or DocumentReference or MedicationAdministration or MedicationRequest)
+* extension[item].valueCodeableConcept from adverse-event-mitigating-action-vs (example)
+* extension[item] ^short = "Ameliorating action taken after the adverse event occured in order to reduce the extent of harm"
+
+* extension[item] ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
+* extension[item] ^binding.extension.valueString = "AdverseEventMitigatingAction"
+* extension[item] ^binding.description = "Codes describing the ameliorating actions taken after the adverse event occured in order to reduce the extent of harm."
 
 
 
@@ -66,7 +128,7 @@ Description: "TBD - Element to capture the presence or absence of specific facto
 * extension[criterionCode].valueCodeableConcept 1..1
 
 * extension[criterionPresent] ^short = "Presence or absence of the specified criteria"
-//* extension[criterionPresent] ^descripton = "Boolean to indicate if the specified criteria is present or absence"
+//* extension[criterionPresent] ^description = "Boolean to indicate if the specified criteria is present or absence"
 * extension[criterionPresent].value[x] only boolean
 * extension[criterionPresent].value[x] 1..1
 
@@ -130,6 +192,47 @@ Description: "This value set includes codes that describe the adverse event or i
 * ^experimental = true
 * include codes from system SNOMED_CT where concept is-a #370894009
 * SNOMED_CT#1912002
+
+ValueSet: AdverseEventContributingFactor
+Id: adverse-event-contributing-factor-vs
+Title: "AdverseEvent Contributing Factor"
+Description: "This value set includes codes that describe the contributing factors suspected to have increased the probability or severity of the adverse event."
+* ^status = #draft
+* ^experimental = true
+* ^copyright = "This resource includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomed-ct or info@snomed.org"
+* include codes from system SNOMED_CT where concept is-a #609328004
+* include codes from system SNOMED_CT where concept is-a #416471007
+* include codes from system SNOMED_CT where concept is-a #425457005
+* include codes from system SNOMED_CT where concept is-a #365861007
+* include codes from system SNOMED_CT where concept is-a #71388002
+* include codes from system SNOMED_CT where concept is-a #404684003
+* include codes from system SNOMED_CT where concept is-a #410942007
+* include codes from system SNOMED_CT where concept is-a #373873005
+* include codes from system SNOMED_CT where concept is-a #106181007
+
+ValueSet: AdverseEventPreventiveAction
+Id: adverse-event-preventive-action-vs
+Title: "AdverseEvent Preventive Action"
+Description: "This value set includes codes that describe the preventive actions that contributed to avoiding the adverse event."
+* ^status = #draft
+* ^experimental = true
+* include codes from system SNOMED_CT where concept is-a #425457005
+* include codes from system SNOMED_CT where concept is-a #365861007
+* include codes from system SNOMED_CT where concept is-a #71388002
+* include codes from system SNOMED_CT where concept is-a #410942007
+* include codes from system SNOMED_CT where concept is-a #373873005
+* include codes from system SNOMED_CT where concept is-a #106181007
+
+ValueSet: AdverseEventMitigatingAction
+Id: adverse-event-mitigating-action-vs
+Title: "AdverseEvent Mitigating Action"
+Description: "This value set includes codes that describe the ameliorating actions taken after the adverse event occured in order to reduce the extent of harm."
+* ^status = #draft
+* ^experimental = true
+* include codes from system SNOMED_CT where concept is-a #71388002
+* include codes from system SNOMED_CT where concept is-a #410942007
+* include codes from system SNOMED_CT where concept is-a #373873005
+* include codes from system SNOMED_CT where concept is-a #106181007
 
 Invariant: aeClinRes-seriousness-1
 Description: "If seriousness is serious then must have at least one seriousness criterion."
