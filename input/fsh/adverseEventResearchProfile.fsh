@@ -32,9 +32,9 @@ Description: "The current workflow state of the adverse event or potential adver
 //MedicationAdministration | MedicationStatement
 Extension: SupportingMedicationInfo
 Id: supporting-medication-info
-Title: "Severity Or Grade"
-Description: "Describes the severity of the adverse event, in relation to the subject not the resulting condition. In the context of clinical research, it is the investigator’s assessment of severity. For cancer related trials, severity is represented as a grade."
-
+Title: "Additional information regarding medications the subject is taking"
+Description: "Provides references to medications the subject has been prescribed for additional context. These should be medications that are not suspected or considered as potential suspects for the adverse event. For example, a patient who became nauseous after eating a study drug that was not meant to be taken orally. This element could indicate that the patient was using topical acne medication."
+* value[x] only Reference(MedicationStatement)
 
 
 
@@ -156,7 +156,8 @@ Description: "An example profile of AdverseEvent for Research reporting."
     SeverityOrGrade named severity-or-grade 0..1 and
     expected-in-research-study named expected-in-research-study 0..1 and
     Note named note 0..* and
-	Status named status 1..1 ?! SU 
+	Status named status 1..1 ?! SU and
+	SupportingMedicationInfo named supporting-medication-info 0..*
 
 * extension[SeverityOrGrade] ^short = "The degree of something undesirable"
 * extension[expected-in-research-study] ^short = "Considered likely or probable or anticipated in the research study"
