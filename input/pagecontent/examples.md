@@ -2,7 +2,8 @@
 The following use cases are exemplified with FHIR instances in this guide. Every effort has been made to be accurate, but these are intended as examples and may not include referenced data such as an Encounter. They are from real world examples and show how the AdveseEvent Clinical Research Profile is intended to be generally used. 
 
 ### Use Case 7 - Clinical trial: significant adverse event
-(Link to [Use Case 7] (https://confluence.hl7.org/pages/viewpage.action?pageId=49646529#AdverseEventUseCases-UseCase7-Clinicaltrial:significantadverseevent)
+(Link to [Use Case 7](https://confluence.hl7.org/pages/viewpage.action?pageId=49646529#AdverseEventUseCases-UseCase7-Clinicaltrial:significantadverseevent)
+
 (Link to [Example AdverseEvent Clinical Research Profile](AdverseEvent-ClinicalResearchAdverseEventUseCase7.html))
 
 Clinical Trial – Significant Adverse Event
