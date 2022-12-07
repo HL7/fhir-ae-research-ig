@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/yyyyMmm/myig.html" ciUrl="http://build.fhir.org/ig/HL7/fhir-ae-research-ig" defaultVersion="0.1.0" defaultWorkgroup="" url="http://hl7.org/fhir/uv/adverseeventclinicalresearch">
+<version code="current" url="http://build.fhir.org/ig/HL7/fhir-ae-research-ig"/>
+<version code="0.1.0" url="http://hl7.org/fhir/yyyyMmm/myig.html"/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact id="Bundle/h1" key="Bundle-h1" name=""/>
+<artifact id="Condition/AEHepaticFailureUseCase7" key="Condition-AEHepaticFailureUseCase7" name=""/>
+<artifact id="Condition/AEHepaticFailureUseCase7complication" key="Condition-AEHepaticFailureUseCase7complication" name=""/>
+<artifact id="Patient/ClinicalTrialSubject5" key="Patient-ClinicalTrialSubject5" name=""/>
+<artifact id="Patient/SCHJO" key="Patient-SCHJO" name=""/>
+<artifact id="StructureDefinition/AdverseEvent-clinical-research" key="StructureDefinition-AdverseEvent-clinical-research" name="Adverse Event Clinical Research"/>
+<artifact id="ValueSet/adverse-event-outcome-clinical-research-vs" key="ValueSet-adverse-event-outcome-clinical-research-vs" name="Adverse Event Clinical Research Outcomes"/>
+<artifact id="ValueSet/adverse-event-seriousness-criteria-vs" key="ValueSet-adverse-event-seriousness-criteria-vs" name="Adverse Event Seriousness Criteria"/>
+<artifact id="StructureDefinition/caused-subject-to-discontinue-study" key="StructureDefinition-caused-subject-to-discontinue-study" name="Adverse event caused subject to discontinue the study"/>
+<artifact id="ValueSet/adverse-event-causality-related-vs" key="ValueSet-adverse-event-causality-related-vs" name="Causality Relatedness values"/>
+<artifact id="StructureDefinition/seriousness-criteria" key="StructureDefinition-seriousness-criteria" name="Criteria reviewed in determining serious adverse event"/>
+<artifact id="AdverseEvent/ClinicalResearchAdverseEventUseCase7" key="AdverseEvent-ClinicalResearchAdverseEventUseCase7" name="Example AdverseEvent - ClinicalResearchAdverseEventUseCase7"/>
+<artifact id="AdverseEvent/ClinicalResearchAdverseEventexample1" key="AdverseEvent-ClinicalResearchAdverseEventexample1" name="Example AdverseEvent - ClinicalResearchAdverseEventexample1"/>
+<artifact id="AdverseEvent/PatientInitiatedonClinicalTrialMedWatch3500BuseCase6b" key="AdverseEvent-PatientInitiatedonClinicalTrialMedWatch3500BuseCase6b" name="Example AdverseEvent - PatientInitiatedonClinicalTrialMedWatch3500BuseCase6b"/>
+<artifact id="StructureDefinition/severity-or-grade" key="StructureDefinition-severity-or-grade" name="Severity Or Grade"/>
+<page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
+<page key="artifacts" name="Artifacts Summary"/>
+<page key="" name="Background and Workflow"/>
+<page key="" name="Conformance"/>
+<page key="" name="Detailed Specification"/>
+<page key="" name="Future AdverseEvents for Clinical Research Home Page"/>
+<page key="" name="IG Change History"/>
+<page key="" name="Real World examples"/>
+<page key="" name="Spec sub-page"/>
+<page key="toc" name="Table of Contents"/>
+<page key="" name="Useful Downloads"/>
+</specification>
