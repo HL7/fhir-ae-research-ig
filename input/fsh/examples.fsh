@@ -36,7 +36,7 @@ Usage: #example
 Title: "ClinicalResearchAdverseEventexample1"
 Description: "example"
 //* actuality = http://hl7.org/fhir/adverse-event-actuality#actual 
-* extension[status].valueCode = EventStatus#completed
+* status = #completed
 * subject = Reference(ClinicalTrialSubject5)
 * outcome = http://snomed.info/sct#405532008 "Adverse incident resulting in potentially permanent disabling damage"
 //* seriousness = http://terminology.hl7.org/CodeSystem/adverse-event-seriousness#serious
@@ -44,14 +44,15 @@ Description: "example"
 * resultingCondition[1] = Reference(AEHepaticFailureUseCase7complication)
 * category = http://terminology.hl7.org/CodeSystem/adverse-event-category#medication-mishap "medication-mishap"
 * study.display = "NCT1010101"
-* suspectEntity[0].extension[instance-codeable-concept].valueCodeableConcept.text = "Aspirin"
-* suspectEntity[=].instance.display = "see instance-codeable-concept"
-//* suspectEntity[=].causality.entityRelatedness = http://terminology.hl7.org/CodeSystem/adverse-event-causality-assess#certain "Certain"
-* suspectEntity[=].causality.assessment = http://terminology.hl7.org/CodeSystem/adverse-event-causality-assess#certain "Certain"
-* suspectEntity[+].extension[instance-codeable-concept].valueCodeableConcept.text = "Study Medication Use Case 7"
-* suspectEntity[=].instance.display = "see instance-codeable-concept"
-//* suspectEntity[=].causality.entityRelatedness = http://terminology.hl7.org/CodeSystem/adverse-event-causality-assess#certain "Certain"
-* suspectEntity[=].causality.assessment = http://terminology.hl7.org/CodeSystem/adverse-event-causality-assess#certain "Certain"
+
+* suspectEntity[0].instanceCodeableConcept.text = "Aspirin"
+* suspectEntity[=].causality.entityRelatedness = http://terminology.hl7.org/CodeSystem/adverse-event-causality-assess#certain "Certain"
+* suspectEntity[=].causality.entityRelatedness = http://terminology.hl7.org/CodeSystem/adverse-event-causality-assess#certain "Certain"
+
+* suspectEntity[+].instanceCodeableConcept.text = "Study Medication Use Case 7"
+* suspectEntity[=].causality.entityRelatedness = http://terminology.hl7.org/CodeSystem/adverse-event-causality-assess#certain "Certain"
+* suspectEntity[=].causality.entityRelatedness = http://terminology.hl7.org/CodeSystem/adverse-event-causality-assess#certain "Certain"
+
 //* suspectEntity[=].study-information
 //* suspectEntity[=].extension.url
 //.extension[studyAssociatedWithAE].display = "NCT1010101"
@@ -61,7 +62,7 @@ Description: "example"
 * recorder.display = "Clinical Research Associate"
 * detected = "1905-08-23"
 * recordedDate = "1905-08-24"
-* event = http://snomed.info/sct#370901008 "Serious reportable event associated with product or device"
+* code = http://snomed.info/sct#370901008 "Serious reportable event associated with product or device"
 * extension[seriousness-criteria].extension[criterionPresent].valueBoolean = true
 //* extension[seriousness].extension[seriousnessCriteria].valueCodeableConcept = seriousness-criteria-cs#requiresPreventImpairment "required intervention to prevent permanent damage"
 * extension[seriousness-criteria].extension[criterionCode].valueCodeableConcept = #requiresPreventImpairment "required intervention to prevent permanent damage"
@@ -76,7 +77,7 @@ Usage: #example
 Title: "ClinicalResearchAdverseEventUseCase7"
 Description: "example"
 //* actuality = http://hl7.org/fhir/adverse-event-actuality#actual 
-* extension[status].valueCode = EventStatus#completed
+* status = #completed
 * subject = Reference(ClinicalTrialSubject5)
 * outcome = http://snomed.info/sct#405532008 "Adverse incident resulting in potentially permanent disabling damage"
 //* seriousness = http://terminology.hl7.org/CodeSystem/adverse-event-seriousness#serious
@@ -84,14 +85,14 @@ Description: "example"
 * resultingCondition[1] = Reference(AEHepaticFailureUseCase7complication)
 * category = http://terminology.hl7.org/CodeSystem/adverse-event-category#medication-mishap "medication-mishap"
 * study.display = "NCT1010101"
-* suspectEntity[0].extension[instance-codeable-concept].valueCodeableConcept.text = "Aspirin"
-* suspectEntity[0].instance.display = "see instance-codeable-concept"
-//* suspectEntity[=].causality.entityRelatedness = http://terminology.hl7.org/CodeSystem/adverse-event-causality-assess#certain "Certain"
-* suspectEntity[=].causality.assessment = http://terminology.hl7.org/CodeSystem/adverse-event-causality-assess#certain "Certain"
-* suspectEntity[+].extension[instance-codeable-concept].valueCodeableConcept.text = "Study Medication Use Case 7"
-* suspectEntity[=].instance.display = "see instance-codeable-concept"
-//* suspectEntity[=].causality.entityRelatedness = http://terminology.hl7.org/CodeSystem/adverse-event-causality-assess#certain "Certain"
-* suspectEntity[=].causality.assessment = http://terminology.hl7.org/CodeSystem/adverse-event-causality-assess#certain "Certain"
+
+* suspectEntity[0].instanceCodeableConcept.text = "Aspirin"
+* suspectEntity[=].causality.entityRelatedness = http://terminology.hl7.org/CodeSystem/adverse-event-causality-assess#certain "Certain"
+* suspectEntity[=].causality.entityRelatedness = http://terminology.hl7.org/CodeSystem/adverse-event-causality-assess#certain "Certain"
+
+* suspectEntity[+].instanceCodeableConcept.text = "Study Medication Use Case 7"
+* suspectEntity[=].causality.entityRelatedness = http://terminology.hl7.org/CodeSystem/adverse-event-causality-assess#certain "Certain"
+* suspectEntity[=].causality.entityRelatedness = http://terminology.hl7.org/CodeSystem/adverse-event-causality-assess#certain "Certain"
 
 //* suspectEntity[=].study-information
 //* suspectEntity[=].extension.url
@@ -103,7 +104,7 @@ Description: "example"
 * recorder.display = "Clinical Research Associate"
 * detected = "1905-08-23"
 * recordedDate = "1905-08-24"
-* event = http://snomed.info/sct#370901008 "Serious reportable event associated with product or device"
+* code = http://snomed.info/sct#370901008 "Serious reportable event associated with product or device"
 
 * extension[seriousness-criteria][0].extension[criterionPresent].valueBoolean = true
 * extension[seriousness-criteria][=].extension[criterionCode].valueCodeableConcept = #requiresPreventImpairment "required intervention to prevent permanent damage"

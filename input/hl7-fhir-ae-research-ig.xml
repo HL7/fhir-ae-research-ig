@@ -40,7 +40,7 @@
   <!-- This should be changed to 'not-open-source' or another license if appropriate for non-HL7-published content -->
   <license value="CC0-1.0"/>
   <!-- This is whatever FHIR version(s) the IG artifacts are targeting (not the version of this file, which should always be 'current release') -->
-  <fhirVersion value="4.0.1"/> <!--4.3.0-->
+  <fhirVersion value="5.0.0-ballot"/> <!--4.3.0-->
 <!--  <dependsOn>
     <uri value="https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.fall/0.9.1/files/131317"/>
     <packageId value="de.medizininformatikinitiative.kerndatensatz.fall"/>
@@ -73,11 +73,11 @@
       </reference>
       <description value="A test image example"/>
     </resource-->
-<resource>
+<!--resource>
 <reference>
 <reference value="StructureDefinition/AdverseEvent-clinical-research"/>
 </reference>
-</resource>
+</resource-->
     <!--resource>
       <reference>
         <reference value="Patient/example"/>
@@ -140,11 +140,11 @@
       <!--name value="toc.html"/>
       <title value="Table of Contents"/>
       <generation value="html"/-->
-      <nameUrl value="index.html"/>
+      <name value="index.html"/>
       <title value="Future AdverseEvents for Clinical Research Home Page"/>
       <generation value="html"/>
       <page>
-        <nameUrl value="background.html"/>
+        <name value="background.html"/>
         <title value="Background and Workflow"/>
         <generation value="html"/>
       </page>
@@ -160,11 +160,11 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
           <valueInteger value="3"/> 
         </extension>
-        <nameUrl value="conformance.html"/>
+        <name value="conformance.html"/>
         <title value="Conformance"/>
         <generation value="html"/>
         <page>
-          <nameUrl value="spec2.html"/>
+          <name value="spec2.html"/>
           <title value="Spec sub-page"/>
           <generation value="markdown"/>
         </page>
@@ -176,56 +176,70 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
           <valueInteger value="3"/> 
         </extension>
-        <nameUrl value="spec.html"/>
+        <name value="spec.html"/>
         <title value="Detailed Specification"/>
         <generation value="markdown"/>
         <!--page>
-          <nameUrl value="spec3.html"/>
+          <name value="spec3.html"/>
           <title value="Spec sub-page"/>
           <generation value="markdown"/>
         </page-->
       </page>
       <page>
-        <nameUrl value="downloads.html"/>
+        <name value="downloads.html"/>
         <title value="Useful Downloads"/>
         <generation value="html"/>
       </page>
       <page>
-        <nameUrl value="changes.html"/>
+        <name value="changes.html"/>
         <title value="IG Change History"/>
         <generation value="html"/>
       </page>
     </page>
     <!-- copyright year is a mandatory parameter -->
     <parameter>
+	<code>
 		<code value="copyrightyear"/>
+		</code>
       <value value="2019+"/>
     </parameter>
     <!-- releaselabel should be the ballot status for HL7-published IGs. -->
     <parameter>
       <!--code value="releaselabel"/-->
+	  <code>
 		<code value="releaselabel"/>
+		</code>
       <value value="ci-build"/>
     </parameter>
     <parameter>
       <!--code value="find-other-resources"/-->
+	  <code>
 		<code value="find-other-resources"/>
+		</code>
       <value value="true"/>
     </parameter>
     <parameter>
+	<code>
       <code value="path-resource"/>
+	  </code>
       <value value="input\history"/>
     </parameter>
     <parameter>
+	<code>
       <code value="path-binary"/>
+	  </code>
       <value value="input\cql"/>
     </parameter>
     <parameter>
+	<code>
       <code value="path-liquid"/>
+	  </code>
       <value value="templates\liquid"/>
     </parameter>
     <parameter>
+	<code>
       <code value="shownav"/>
+	  </code>
       <value value="true"/>
     </parameter>
 <!-- Uncomment one or more of these if you want to limit which syntaxes are supported or want to disable the display of mappings
@@ -246,7 +260,9 @@
       <value value="true"/>
     </parameter-->
     <parameter>
+	<code>
       <code value="showsource"/>
+	  </code>
       <value value="true"/>
     </parameter>
   </definition>
