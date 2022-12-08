@@ -46,7 +46,7 @@ Description: "TBD - Element to capture the presence or absence of specific facto
 ValueSet: AdverseEventSerCrit
 Id: adverse-event-seriousness-criteria-vs
 Title: "Adverse Event Seriousness Criteria"
-Description: "Action criteria usually associated with serious events that pose a threat to a patient's life or functioning. Adverse Events criteria to expand on the seriousness of the adverse event. Typically used in reporting for Clinical Research, post-market surveillance (e.g. Medwatch forms). This list comes from ICH E2B R3 (https://database.ich.org/sites/default/files/E2D_Guideline.pdf)."
+Description: "Action criteria usually associated with serious events that pose a threat to a patient's life or functioning. Adverse Events criteria to expand on the seriousness of the adverse event. Typically used in reporting for Clinical Research, post-market surveillance (e.g. Medwatch forms). The adverse event seriousness criteria value set is based on the ICH E2D Post-Approval Safety Data Management: Definitions and Standards for Expedited Reporting guidance (https://database.ich.org/sites/default/files/E2D_Guideline.pdf)."
 //* codes from system seriousness-criteria-cs
 * urn:oid:2.16.840.1.113883.3.989.2.1.1.19#34	"resultsInDeath" //"Was the serious adverse event life-threatening?"
 * urn:oid:2.16.840.1.113883.3.989.2.1.1.19#21	"isLifeThreatening" 
