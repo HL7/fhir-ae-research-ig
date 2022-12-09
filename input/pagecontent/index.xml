@@ -37,7 +37,7 @@ A single Adverse Event may need to be reported in multiple ways. Choosing the ap
   <a name="how to use this guide"> </a>
   <h3>How to Use this Guide</h3> 
   <p>
-  This implementation guide is focused on the use of the [AdverseEvent Resource in Clinical Research](StructureDefinition-AdverseEvent-clinical-research.html). When reviewing profiles begin with the snapshot view to understand the entire set of data elements and rules for implementation. The differential does no show elements unchanged from the parent, in the snapshot constraints inherited from the parent are visible. Those new to FHIR should review the Understanding FHIR section below.
+  This implementation guide is focused on the use of the <a href="StructureDefinition-AdverseEvent-clinical-research.html">AdverseEvent Resource in Clinical Research</a>. When reviewing profiles begin with the snapshot view to understand the entire set of data elements and rules for implementation. The differential does no show elements unchanged from the parent, in the snapshot constraints inherited from the parent are visible. Those new to FHIR should review the Understanding FHIR section below.
   </p>
   
   <a name="previous"> </a>
