@@ -38,7 +38,7 @@ Description: "TBD - Element to capture the presence or absence of specific facto
 * extension[criterionCode].valueCodeableConcept 1..1
 
 * extension[criterionPresent] ^short = "Presence or absence of the specified criteria"
-//* extension[criterionPresent] ^descripton = "Boolean to indicate if the specified criteria is present or absence"
+//* extension[criterionPresent] ^description = "Boolean to indicate if the specified criteria is present or absence"
 * extension[criterionPresent].value[x] only boolean
 * extension[criterionPresent].value[x] 1..1
 
