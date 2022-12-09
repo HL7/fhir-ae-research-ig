@@ -149,7 +149,7 @@
         <generation value="html"/>
       </page>
 	  <page>
-        <name value="examples.html"/>
+        <nameUrl value="examples.html"/>
         <title value="Real World examples"/>
         <generation value="markdown"/>
       </page>
