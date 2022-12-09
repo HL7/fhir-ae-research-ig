@@ -10,26 +10,39 @@
 <artifact id="Condition/AEHepaticFailureUseCase7complication" key="Condition-AEHepaticFailureUseCase7complication" name=""/>
 <artifact id="Patient/ClinicalTrialSubject5" key="Patient-ClinicalTrialSubject5" name=""/>
 <artifact id="Patient/SCHJO" key="Patient-SCHJO" name=""/>
+<artifact id="StructureDefinition/supporting-medication-info" key="StructureDefinition-supporting-medication-info" name="Additional information regarding medications the subject is taking"/>
 <artifact id="StructureDefinition/AdverseEvent-clinical-research" key="StructureDefinition-AdverseEvent-clinical-research" name="Adverse Event Clinical Research"/>
 <artifact id="ValueSet/adverse-event-outcome-clinical-research-vs" key="ValueSet-adverse-event-outcome-clinical-research-vs" name="Adverse Event Clinical Research Outcomes"/>
 <artifact id="ValueSet/adverse-event-seriousness-criteria-vs" key="ValueSet-adverse-event-seriousness-criteria-vs" name="Adverse Event Seriousness Criteria"/>
+<artifact id="ValueSet/adverse-event-status-vs" key="ValueSet-adverse-event-status-vs" name="Adverse Event Status"/>
 <artifact id="StructureDefinition/caused-subject-to-discontinue-study" key="StructureDefinition-caused-subject-to-discontinue-study" name="Adverse event caused subject to discontinue the study"/>
+<artifact id="ValueSet/adverse-event-contributing-factor-vs" key="ValueSet-adverse-event-contributing-factor-vs" name="AdverseEvent Contributing Factor"/>
+<artifact id="ValueSet/adverse-event-mitigating-action-vs" key="ValueSet-adverse-event-mitigating-action-vs" name="AdverseEvent Mitigating Action"/>
+<artifact id="ValueSet/adverse-event-preventive-action-vs" key="ValueSet-adverse-event-preventive-action-vs" name="AdverseEvent Preventive Action"/>
+<artifact id="ValueSet/adverse-event-seriousness-non-only-vs" key="ValueSet-adverse-event-seriousness-non-only-vs" name="AdverseEvent Seriousness Non-serious Codes Only"/>
+<artifact id="ValueSet/adverse-event-type-vs" key="ValueSet-adverse-event-type-vs" name="AdverseEvent Type"/>
 <artifact id="ValueSet/adverse-event-causality-related-vs" key="ValueSet-adverse-event-causality-related-vs" name="Causality Relatedness values"/>
+<artifact id="StructureDefinition/contributing-factor" key="StructureDefinition-contributing-factor" name="Contributing Factor"/>
 <artifact id="StructureDefinition/seriousness-criteria" key="StructureDefinition-seriousness-criteria" name="Criteria reviewed in determining serious adverse event"/>
 <artifact id="AdverseEvent/ClinicalResearchAdverseEventUseCase7" key="AdverseEvent-ClinicalResearchAdverseEventUseCase7" name="Example AdverseEvent - ClinicalResearchAdverseEventUseCase7"/>
 <artifact id="AdverseEvent/ClinicalResearchAdverseEventexample1" key="AdverseEvent-ClinicalResearchAdverseEventexample1" name="Example AdverseEvent - ClinicalResearchAdverseEventexample1"/>
-<artifact id="AdverseEvent/PatientInitiatedonClinicalTrialMedWatch3500BuseCase6b" key="AdverseEvent-PatientInitiatedonClinicalTrialMedWatch3500BuseCase6b" name="Example AdverseEvent - PatientInitiatedonClinicalTrialMedWatch3500BuseCase6b"/>
+<artifact id="StructureDefinition/expected-in-research-study" key="StructureDefinition-expected-in-research-study" name="Expected In Research Study"/>
+<artifact id="StructureDefinition/instance-codeable-concept" key="StructureDefinition-instance-codeable-concept" name="Instance Codeable Concept"/>
+<artifact id="StructureDefinition/mitigating-action" key="StructureDefinition-mitigating-action" name="Mitigating Action"/>
+<artifact id="StructureDefinition/note" key="StructureDefinition-note" name="Note"/>
+<artifact id="StructureDefinition/preventive-action" key="StructureDefinition-preventive-action" name="Preventive Action"/>
 <artifact id="StructureDefinition/severity-or-grade" key="StructureDefinition-severity-or-grade" name="Severity Or Grade"/>
+<artifact id="StructureDefinition/status" key="StructureDefinition-status" name="Workflow Status"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>
-<page key="" name="Background and Workflow"/>
-<page key="" name="Conformance"/>
-<page key="" name="Detailed Specification"/>
-<page key="" name="Future AdverseEvents for Clinical Research Home Page"/>
-<page key="" name="IG Change History"/>
-<page key="" name="Real World examples"/>
-<page key="" name="Spec sub-page"/>
+<page key="background" name="Background and Workflow"/>
+<page key="conformance" name="Conformance"/>
+<page key="spec" name="Detailed Specification"/>
+<page key="index" name="Future AdverseEvents for Clinical Research Home Page"/>
+<page key="changes" name="IG Change History"/>
+<page key="examples" name="Real World examples"/>
+<page key="spec2" name="Spec sub-page"/>
 <page key="toc" name="Table of Contents"/>
-<page key="" name="Useful Downloads"/>
+<page key="downloads" name="Useful Downloads"/>
 </specification>
