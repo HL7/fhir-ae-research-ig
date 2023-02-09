@@ -40,8 +40,8 @@ Description: "example"
 * subject = Reference(ClinicalTrialSubject5)
 * outcome = http://snomed.info/sct#405532008 "Adverse incident resulting in potentially permanent disabling damage"
 //* seriousness = http://terminology.hl7.org/CodeSystem/adverse-event-seriousness#serious
-* resultingCondition[0] = Reference(AEHepaticFailureUseCase7) "condition caused"
-* resultingCondition[1] = Reference(AEHepaticFailureUseCase7complication)
+* resultingEffect[0] = Reference(AEHepaticFailureUseCase7) "condition caused"
+* resultingEffect[1] = Reference(AEHepaticFailureUseCase7complication)
 * category = http://terminology.hl7.org/CodeSystem/adverse-event-category#medication-mishap "medication-mishap"
 * study.display = "NCT1010101"
 
@@ -81,8 +81,8 @@ Description: "example"
 * subject = Reference(ClinicalTrialSubject5)
 * outcome = http://snomed.info/sct#405532008 "Adverse incident resulting in potentially permanent disabling damage"
 //* seriousness = http://terminology.hl7.org/CodeSystem/adverse-event-seriousness#serious
-* resultingCondition[0] = Reference(AEHepaticFailureUseCase7)
-* resultingCondition[1] = Reference(AEHepaticFailureUseCase7complication)
+* resultingEffect[0] = Reference(AEHepaticFailureUseCase7)
+* resultingEffect[1] = Reference(AEHepaticFailureUseCase7complication)
 * category = http://terminology.hl7.org/CodeSystem/adverse-event-category#medication-mishap "medication-mishap"
 * study.display = "NCT1010101"
 
