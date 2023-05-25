@@ -90,8 +90,7 @@ Description: "Valueset for stating if a suspected entity is Not Related, Unlikel
 
 Invariant: aeClinRes-seriousness-1
 Description: "If seriousness is serious then must have at least one seriousness criterion."
-Expression: "(seriousness=http://terminology.hl7.org/CodeSystem/adverse-event-seriousness#serious AND extension[seriousness-criteria].exists()) OR seriousness=http://terminology.hl7.org/CodeSystem/adverse-event-seriousness#non-serious"
-Severity: #error
+Expression: "(seriousness.coding.system='http://terminology.hl7.org/CodeSystem/adverse-event-seriousness' and seriousness.coding.code='serious' and extension.where(url='http://hl7.org/fhir/uv/adverseeventclinicalresearch/StructureDefinition/seriousness-criteria').exists()) or (seriousness.coding.system='http://terminology.hl7.org/CodeSystem/adverse-event-seriousness' and seriousness.coding.code='non-serious')"Severity: #error
 //XPath: " "
 
 
