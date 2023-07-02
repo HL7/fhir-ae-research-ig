@@ -11,20 +11,30 @@
       </li>
       <li>
         <a href="examples.html">Real World examples</a>
+	  <!--/li-->
+		<ul>
+		  <li><a href="examples.html#introduction" id="markdown-toc-introduction">Introduction</a></li>
+		  <li><a href="examples.html#use-case-7---clinical-trial-significant-adverse-event" id="markdown-toc-use-case-7---clinical-trial-significant-adverse-event">Use Case 7 - Clinical trial: significant adverse event</a></li>
+		  <li><a href="examples.html#use-case-6b---for-medwatch-form-fda-3500b-being-used-during-a-clinical-trial" id="markdown-toc-use-case-6b---for-medwatch-form-fda-3500b-being-used-during-a-clinical-trial">Use case 6B - for MedWatch Form FDA 3500B being used during a clinical trial</a></li>
+		  <li><a href="examples.html#use-case-15---serious-adverse-event-research-study" id="markdown-toc-use-case-15---serious-adverse-event-research-study">Use Case 15 - Serious Adverse Event Research Study</a></li>
+		  <li><a href="examples.html#use-case-16-non-serious-adverse-event-research-study-medication" id="markdown-toc-use-case-16-non-serious-adverse-event-research-study-medication">Use Case 16 Non-Serious Adverse Event Research Study Medication</a></li>
+		  <li><a href="examples.html#use-case-17-non-serious-adverse-event-related-to-study-procedure-not-study-drug" id="markdown-toc-use-case-17-non-serious-adverse-event-related-to-study-procedure-not-study-drug">Use Case 17 Non-Serious Adverse Event Related to Study Procedure (not study drug)</a></li>
+		  <li><a href="exampleCancerClinicalTrial.html">Cancer Clinical Trial Example</a></li>
+		</ul>
       </li>
     </ul>
   </li>
 
-  <li class="dropdown">
+  <!--li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Specification<b class="caret">
       </b>
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="spec.html">Detailed Specification</a>
+        <a href="spec.html">Detailed Specifications</a>
       </li>
     </ul>
-  </li>
+  </li-->
   <li><a href="artifacts.html">Artifact Index</a></li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support<b class="caret">
@@ -39,5 +49,5 @@
       </li>
     </ul>
   </li>
-  <li><a href="conformance.html">Conformance Statement</a></li>
+  <!--li><a href="conformance.html">Conformance Statement</a></li-->
 </ul>      
