@@ -40,7 +40,7 @@
   <!-- This should be changed to 'not-open-source' or another license if appropriate for non-HL7-published content -->
   <license value="CC0-1.0"/>
   <!-- This is whatever FHIR version(s) the IG artifacts are targeting (not the version of this file, which should always be 'current release') -->
-  <fhirVersion value="5.0.0-snapshot3"/> <!--5.0.0-ballot> <4.3.0-->
+  <fhirVersion value="5.0.0"/> <!--5.0.0-ballot> <4.3.0> 5.0.0-snapshot3"/-->
 <!--  <dependsOn>
     <uri value="https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.fall/0.9.1/files/131317"/>
     <packageId value="de.medizininformatikinitiative.kerndatensatz.fall"/>
@@ -49,6 +49,503 @@
   <definition>
     <!-- You don't need to define any groupings.  The IGPublisher will define them for you.  You only need to do so if your IG is 'special' and it's
       inappropriate to use the defaults.  Feel free to provide feedback about the defaults... -->
+	  
+	 <resource>
+			<reference>
+				<reference value="StructureDefinition/AdverseEvent-clinical-research"/>
+			</reference>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Patient/SCHJO"/>
+				<display value="Use Case 1 - Serious Adverse Event"/>
+			</reference>
+			<name value="Use Case 1 - Serious Adverse Event"/>
+			<description value="Use Case 1 - SAE Patient SCHJO on Research Study XYZ, Study ID XYZ-123, Subject number XYZ-123-002."/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Patient/ClinicalTrialSubject5"/>
+				<display value="ClinicalTrialSubject5"/>
+			</reference>
+			<name value="ClinicalTrialSubject5"/>
+			<description value="Use case 7. Clinical Trial subject number 5. Acute Hepatic Failure."/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="AdverseEvent/ClinicalResearchAdverseEventexample1"/>
+				<display value="ClinicalResearchAdverseEventexample1"/>
+			</reference>
+			<name value="ClinicalResearchAdverseEventexample1"/>
+			<description value="example"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="AdverseEvent/ClinicalResearchAdverseEventUseCase7"/>
+				<display value="ClinicalResearchAdverseEventUseCase7"/>
+			</reference>
+			<name value="ClinicalResearchAdverseEventUseCase7"/>
+			<description value="example"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Condition/AEHepaticFailureUseCase7"/>
+				<display value="AEHepaticFailureUseCase7"/>
+			</reference>
+			<name value="AEHepaticFailureUseCase7"/>
+			<description value="The fifth subject enrolled in the trial develops severe hepatic failure complicated by encephalopathy one month after starting the study. The study sponsors determined that is an unanticipated problem that must be reported because although the risk of mild liver injury was foreseen, severe liver injury resulting in hepatic failure was unexpected in severity; possibly related to participation in the research; and serious."/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Condition/AEHepaticFailureUseCase7complication"/>
+				<display value="AEHepaticFailureUseCase7complication"/>
+			</reference>
+			<name value="AEHepaticFailureUseCase7complication"/>
+			<description value="The fifth subject enrolled in the trial develops severe hepatic failure complicated by encephalopathy one month after starting the study. The study sponsors determined that is an unanticipated problem that must be reported because although the risk of mild liver injury was foreseen, severe liver injury resulting in hepatic failure was unexpected in severity; possibly related to participation in the research; and serious."/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Patient/JanetPatient"/>
+				<display value="Janet Patient"/>
+			</reference>
+			<name value="Janet Patient"/>
+			<description value="Patient Janet, 64-year old woman on clinical trial"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="ResearchStudy/BreastCancerTrial"/>
+				<display value="Breast Cancer Trial"/>
+			</reference>
+			<name value="Breast Cancer Trial"/>
+			<description value="Breast Cancer clinical trial example"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Observation/weight-janet"/>
+				<display value="Janet weight Observation"/>
+			</reference>
+			<name value="Janet weight Observation"/>
+			<description value="Janet weight observation"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Provenance/provenance-for-weight"/>
+				<display value="Provenance for Janet weight Observation"/>
+			</reference>
+			<name value="Provenance for Janet weight Observation"/>
+			<description value="Provenance for Janet weight Observation"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Observation/blood-pressure-janet"/>
+				<display value="Janet Blood Pressure Observation"/>
+			</reference>
+			<name value="Janet Blood Pressure Observation"/>
+			<description value="Janet Blood Pressure Observation"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Provenance/provenance-for-blood-pressure-janet"/>
+				<display value="Provenance for Janet Blood Pressure  Observation"/>
+			</reference>
+			<name value="Provenance for Janet Blood Pressure  Observation"/>
+			<description value="Provenance for Janet Blood Pressure  Observation"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationStatement/example001"/>
+				<display value="Janet Tylenol PM med"/>
+			</reference>
+			<name value="Janet Tylenol PM med"/>
+			<description value="Self reported Janet Tylenol PM med"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationStatement/example007"/>
+				<display value="Janet allergy med"/>
+			</reference>
+			<name value="Janet allergy med"/>
+			<description value="Self reported Janet allergy med"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationStatement/example003"/>
+				<display value="Janet pill for water retention med not known"/>
+			</reference>
+			<name value="Janet pill for water retention med not known"/>
+			<description value="Self reported Janet pill for water retention med not known"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationAdministration/medicationAdministration-for-bresentrik"/>
+				<display value="Medication Administration for bresentrik"/>
+			</reference>
+			<name value="Medication Administration for bresentrik"/>
+			<description value="Study medication info Medication Administration for bresentrik"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Medication/bresentrik"/>
+				<display value="Medication is bresentrik"/>
+			</reference>
+			<name value="Medication is bresentrik"/>
+			<description value="Study medication, bresentrik"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationRequest/medicationrequest-for-bresentrik"/>
+				<display value="Medication Request for bresentrik"/>
+			</reference>
+			<name value="Medication Request for bresentrik"/>
+			<description value="Study medication info Medication Request for bresentrik"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationAdministration/medadmin0301"/>
+				<display value="Medication Administration of Med0301"/>
+			</reference>
+			<name value="Medication Administration of Med0301"/>
+			<description value="Medication administration example"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Condition/janetReported-condition"/>
+				<display value="Use case 6B - problem"/>
+			</reference>
+			<name value="Use case 6B - problem"/>
+			<description value="Use case 6B - patient reported AE problem"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="AdverseEvent/clinical-research-ae-example-medwatch-patient-report"/>
+				<display value="Use case 6B - patient reported AE during research study"/>
+			</reference>
+			<name value="Use case 6B - patient reported AE during research study"/>
+			<description value="Use case 6B - Patient report of Adverse Event, example of data that would be on MedWatch form as reported by Patient"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Patient/patient-example-kaitlyn-b" />
+				<display value="patient-example-kaitlyn-b" />
+			</reference>
+			<name value="patient-example-kaitlyn-b" />
+			<description value="Compass Trial example patient Kaitlyn" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Practitioner/practitioner-oncology-nurse-jane" />
+				<display value="practitioner-oncology-nurse-jane" />
+			</reference>
+			<name value="practitioner-oncology-nurse-jane" />
+			<description value="Example RN practitioner" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Practitioner/practitioner-owen-oncologist" />
+				<display value="practitioner-owen-oncologist" />
+			</reference>
+			<name value="practitioner-owen-oncologist" />
+			<description value="Example Oncologist" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationRequest/medication-request-example-kadcyla" />
+				<display value="medication-request-example-kadcyla" />
+			</reference>
+			<name value="medication-request-example-kadcyla" />
+			<description value="Example showing clinial trial medication Kadcyla" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationRequest/medication-request-example-tucatinib" />
+				<display value="medication-request-example-tucatinib" />
+			</reference>
+			<name value="medication-request-example-tucatinib" />
+			<description value="Example showing clinial trial medication Tucatinib" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationAdministration/medication-administration-kadcyla" />
+				<display value="medication-administration-kadcyla" />
+			</reference>
+			<name value="medication-administration-kadcyla" />
+			<description value="Example showing clinial trial medication adminstration Kadcyla" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationAdministration/medication-administration-tucatinib" />
+				<display value="medication-administration-tucatinib" />
+			</reference>
+			<name value="medication-administration-tucatinib" />
+			<description value="Example showing clinial trial medication adminstration Tucatinib" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="ResearchStudy/clinical-trial-example-compass" />
+				<display value="clinical-trial-example-compass" />
+			</reference>
+			<name value="clinical-trial-example-compass" />
+			<description value="Alliance COMPASS Protocol A011801" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="ResearchSubject/clinical-trial-example-subject" />
+				<display value="clinical-trial-example-subject" />
+			</reference>
+			<name value="clinical-trial-example-subject" />
+			<description value="Alliance COMPASS trial research subject" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationAdministration/medication-administration-kadcyla-reduced" />
+				<display value="medication-administration-kadcyla-reduced" />
+			</reference>
+			<name value="medication-administration-kadcyla-reduced" />
+			<description value="Example reduced dose of clinial trial medication adminstration Kadcyla" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationAdministration/medication-administration-tucatinib-reduced" />
+				<display value="medication-administration-tucatinib-reduced" />
+			</reference>
+			<name value="medication-administration-tucatinib-reduced" />
+			<description value="Example reduced does of clinial trial medication adminstration Tucatinib" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="AdverseEvent/adverse-event-compass-ex1" />
+				<display value="adverse-event-compass-ex1" />
+			</reference>
+			<name value="adverse-event-compass-ex1" />
+			<description value="Grade 1 ALT" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="AdverseEvent/adverse-event-compass-ex1a" />
+				<display value="adverse-event-compass-ex1a" />
+			</reference>
+			<name value="adverse-event-compass-ex1a" />
+			<description value="Grade 3 ALT" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="AdverseEvent/adverse-event-compass-ex1b" />
+				<display value="adverse-event-compass-ex1b" />
+			</reference>
+			<name value="adverse-event-compass-ex1b" />
+			<description value="ALT back to grade 1 and resolved" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationRequest/medication-request-example-zofran" />
+				<display value="medication-request-example-zofran" />
+			</reference>
+			<name value="medication-request-example-zofran" />
+			<description value="Example for medication Zofran" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="AdverseEvent/adverse-event-compass-ex2" />
+				<display value="adverse-event-compass-ex2" />
+			</reference>
+			<name value="adverse-event-compass-ex2" />
+			<description value="Grade 1 Nausea/vomiting  // both are AEs, which to use or make them separate?" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Condition/GIBleedUseCase15" />
+				<display value="GIBleedUseCase15" />
+			</reference>
+			<name value="GIBleedUseCase15" />
+			<description value="Gastrointestinal (GI) bleed" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="ResearchStudy/research-study-XYZ" />
+				<display value="research-study-XYZ" />
+			</reference>
+			<name value="research-study-XYZ" />
+			<description value="Use Case 15 Research Study XYZ" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Medication/study-medication-ABC" />
+				<display value="study-medication-ABC" />
+			</reference>
+			<name value="study-medication-ABC" />
+			<description value="Example study medication ABC" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationAdministration/study-medication-administration-ABC" />
+				<display value="study-medication-administration-ABC" />
+			</reference>
+			<name value="study-medication-administration-ABC" />
+			<description value="Example for clinial trial medication ABC" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Procedure/procedure-upper-endoscopy" />
+				<display value="procedure-upper-endoscopy" />
+			</reference>
+			<name value="procedure-upper-endoscopy" />
+			<description value="Example Procedure Upper Endoscopy" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="ResearchStudy/research-study-DISNEY" />
+				<display value="research-study-DISNEY" />
+			</reference>
+			<name value="research-study-DISNEY" />
+			<description value="Use Case 16 Research Study DISNEY" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Medication/study-medication-MMD" />
+				<display value="study-medication-MMD" />
+			</reference>
+			<name value="study-medication-MMD" />
+			<description value="Example study medication MMD" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationAdministration/study-medication-administration-MMD" />
+				<display value="study-medication-administration-MMD" />
+			</reference>
+			<name value="study-medication-administration-MMD" />
+			<description value="Example for clinial trial medication MMD" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Medication/medication-tylenol" />
+				<display value="medication-tylenol" />
+			</reference>
+			<name value="medication-tylenol" />
+			<description value="Example medication for Tylenol" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationAdministration/medication-administration-tylenol" />
+				<display value="medication-administration-tylenol" />
+			</reference>
+			<name value="medication-administration-tylenol" />
+			<description value="Example of Tylenol" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="ResearchStudy/research-study-acme" />
+				<display value="research-study-acme" />
+			</reference>
+			<name value="research-study-acme" />
+			<description value="Use Case 17 Research Study ACME" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="ResearchSubject/clinical-trial-acme-subject" />
+				<display value="clinical-trial-acme-subject" />
+			</reference>
+			<name value="clinical-trial-acme-subject" />
+			<description value="Clinical trial ACME research subject" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Procedure/clinical-trial-acme-procedure" />
+				<display value="clinical-trial-acme-procedure" />
+			</reference>
+			<name value="clinical-trial-acme-procedure" />
+			<description value="Clinical trial ACME protocol-prescribed procedure of a Lung CT Scan, with contrast dye" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationAdministration/study-medication-administration-WBY" />
+				<display value="study-medication-administration-WBY" />
+			</reference>
+			<name value="study-medication-administration-WBY" />
+			<description value="Example for clinial trial medication WBY" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Medication/medication-contrast-dye" />
+				<display value="medication-contrast-dye" />
+			</reference>
+			<name value="medication-contrast-dye" />
+			<description value="Example contrast dye medication" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationAdministration/medication-administration-contrast-dye" />
+				<display value="medication-administration-contrast-dye" />
+			</reference>
+			<name value="medication-administration-contrast-dye" />
+			<description value="Example medication administration for contrast dye" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Medication/medication-forhives" />
+				<display value="medication-forhives" />
+			</reference>
+			<name value="medication-forhives" />
+			<description value="Example medication for hives" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationAdministration/medication-administration-forhives" />
+				<display value="medication-administration-forhives" />
+			</reference>
+			<name value="medication-administration-forhives" />
+			<description value="Example medication administration for hives" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="AdverseEvent/ClinicalResearchAdverseEventUseCase17" />
+				<display value="ClinicalResearchAdverseEventUseCase17" />
+			</reference>
+			<name value="ClinicalResearchAdverseEventUseCase17" />
+			<description value="Adverse event from procedure, not study drug" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Medication/resstudy-medication-WBY" />
+				<display value="resstudy-medication-WBY" />
+			</reference>
+			<name value="resstudy-medication-WBY" />
+			<description value="Example clinical trial medication WBY" /></resource>
+		<resource>
+			<reference>
+				<reference value="AdverseEvent/ClinicalResearchAdverseEventUseCase15" />
+				<display value="ClinicalResearchAdverseEventUseCase15" />
+			</reference>
+			<name value="ClinicalResearchAdverseEventUseCase15" />
+			<description value="Serious Adverse Event Research Study Medication Example" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Patient/patient-moumic" />
+				<display value="Use Case 16 Patient MOUMIC" />
+			</reference>
+			<name value="Use Case 16 Patient MOUMIC" />
+			<description value="Use Case 16 Patient MOUMIC on Research Study DISNEY" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="AdverseEvent/ClinicalResearchAdverseEventUseCase16" />
+				<display value="ClinicalResearchAdverseEventUseCase16" />
+			</reference>
+			<name value="ClinicalResearchAdverseEventUseCase16" />
+			<description value="Non-Serious Adverse Event Research Study Medication Example" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Patient/patient-slp" />
+				<display value="Example patient SLP" />
+			</reference>
+			<name value="Example patient SLP" />
+			<description value="Patient enrolled in ACME study, taking Study Medication WBY 10 mg orally daily every morning for moderate asthma" />
+		</resource> 
+	  
+	  
+	  
+	  
     <!--resource>
       <reference>
         <reference value="StructureDefinition/mypatient"/>
@@ -141,19 +638,24 @@
       <title value="Table of Contents"/>
       <generation value="html"/-->
       <name value="index.html"/>
-      <title value="Future AdverseEvents for Clinical Research Home Page"/>
+      <title value="AdverseEvents for Clinical Research Home Page"/>
       <generation value="html"/>
       <page>
         <name value="background.html"/>
         <title value="Background and Workflow"/>
-        <generation value="html"/>
+        <generation value="markdown"/>
       </page>
 	  <page>
         <name value="examples.html"/>
         <title value="Real World examples"/>
         <generation value="markdown"/>
-      </page>
-	  <page>
+	  		<page>
+				<name value="exampleCancerClinicalTrial.html"/>
+				<title value="Cancer Clinical Trial Example"/>
+				<generation value="markdown"/>
+			</page>
+	  </page>
+	  <!--page>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/> 
         </extension> 
@@ -179,12 +681,12 @@
         <name value="spec.html"/>
         <title value="Detailed Specification"/>
         <generation value="markdown"/>
-        <!--page>
+        <page>
           <name value="spec3.html"/>
           <title value="Spec sub-page"/>
           <generation value="markdown"/>
-        </page-->
-      </page>
+        </page>
+      </page-->
       <page>
         <name value="downloads.html"/>
         <title value="Useful Downloads"/>
@@ -224,12 +726,33 @@
 	  </code>
       <value value="input\history"/>
     </parameter>
-    <parameter>
+	
+	<parameter>
+		<code>
+		<code value="special-url"/>
+		</code>
+		<value value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"/>
+	</parameter>
+	
+	<parameter>
+		<code>
+		<code value="special-url"/>
+		</code>
+		<value value="http://hl7.org/fhir/uv/adverseeventclinicalresearch/CodeSystem/fda-add-seriousness-criteria-cs"/>
+	</parameter>
+	
+	<parameter>
+		<code>
+		<code value="special-url"/>
+		</code>
+		<value value="http://hl7.org/fhir/uv/adverseeventclinicalresearch/CodeSystem/adverse-event-severity-or-grade-cs"/>
+	</parameter>
+    <!--parameter>
 	<code>
       <code value="path-binary"/>
 	  </code>
       <value value="input\cql"/>
-    </parameter>
+    </parameter-->
     <parameter>
 	<code>
       <code value="path-liquid"/>
@@ -259,11 +782,11 @@
       <code value="excludemap"/>
       <value value="true"/>
     </parameter-->
-    <parameter>
+    <!--parameter>
 	<code>
       <code value="showsource"/>
 	  </code>
       <value value="true"/>
-    </parameter>
+    </parameter-->
   </definition>
 </ImplementationGuide>
