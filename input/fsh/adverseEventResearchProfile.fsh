@@ -1,14 +1,3 @@
-//Extension: Note
-//Id: note
-//Title: "Note"
-//Description: "Comments made about the adverse event by the performer, subject or other participants."
-//* value[x] only Annotation
-
-//Extension: ExpectedInResearchStudy
-//Id: expected-in-research-study
-//Title: "Expected In Research Study"
-//Description: "Considered likely or probable or anticipated in the research study.  Whether the reported event matches any of the outcomes for the patient that are considered by the study as known or likely."
-//* value[x] only boolean
 
 Extension: SeverityOrGrade
 Id: severity-or-grade
@@ -260,8 +249,12 @@ Description: "An example profile of AdverseEvent for Research reporting."
 * study 1..1 MS
 
 * supportingInfo.item[x] ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
-* supportingInfo.item[x]  ^binding.extension.valueString = "Adverse Event Supporting Info"
+* supportingInfo.item[x] ^binding.extension.valueString = "Adverse Event Supporting Info"
+
+* preventiveAction 0..0
 
 * note ^short = "Comment on adverse event"
+
+* resultingEffect ^definition = "Information about the condition that occurred as a result of the adverse event."
 
 

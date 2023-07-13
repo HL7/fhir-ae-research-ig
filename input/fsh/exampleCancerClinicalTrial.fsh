@@ -1,4 +1,4 @@
-// Cancer clinical trial example (narrative provided by Alliance), idealy this would use mCODE profiles for cancer condition and cancer medications
+// Cancer clinical trial example (narrative provided by Alliance), ideally this would use mCODE profiles for cancer condition and cancer medications
 Instance: patient-example-kaitlyn-b
 InstanceOf: Patient
 Description: "Compass Trial example patient Kaitlyn"
@@ -138,7 +138,7 @@ Description: "Alliance COMPASS trial research subject"
 * study = Reference(clinical-trial-example-compass)
 * subject = Reference(patient-example-kaitlyn-b)
 
-// preventative action 
+// mitigating action 
 // Kadcyla was dose reduced to 3.0mg and 
 // Tucatinib was also dose reduced to 250mg twice daily per dose 
 Instance: medication-administration-kadcyla-reduced
@@ -240,10 +240,10 @@ Description: "ALT back to grade 1 and resolved"
 * expectedInResearchStudy = true
 * occurrencePeriod.end = "2020-06-10"
 * note[0].text = "treatment given with reduced dose per protocol guidelines"
-* preventiveAction[0].itemReference = Reference(medication-administration-kadcyla-reduced)
-* preventiveAction[+].itemReference = Reference(medication-administration-tucatinib-reduced)
+* mitigatingAction[0].itemReference = Reference(medication-administration-kadcyla-reduced)
+* mitigatingAction[+].itemReference = Reference(medication-administration-tucatinib-reduced)
 
-// Preventative action
+// mitigating action
 //Additional antiemetics were prescribed on 6/10/20 (Zofran 8mg orally every 6-8 hours as needed).
 Instance: medication-request-example-zofran
 InstanceOf: MedicationRequest
@@ -283,4 +283,4 @@ Description: "Grade 1 Nausea/vomiting"  // both are AEs, which to use or make th
 * suspectEntity[=].causality.entityRelatedness = urn:oid:2.16.840.1.113883.3.989.2.1.1.19#possibly "Possibly Related"
 * expectedInResearchStudy = true
 * occurrencePeriod.end = "2021-01-21"
-* preventiveAction[+].itemReference = Reference(medication-request-example-zofran)
+* mitigatingAction[+].itemReference = Reference(medication-request-example-zofran)
