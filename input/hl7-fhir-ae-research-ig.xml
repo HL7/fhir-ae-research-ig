@@ -207,6 +207,25 @@
 			<name value="Medication Administration of Med0301"/>
 			<description value="Medication administration example"/>
 		</resource>
+
+		<resource>
+			<reference>
+				<reference value="MedicationRequest/medicationrequest-for-study-medication-administration-ABC"/>
+				<display value="Medication Request for discontinued clinical trial medication ABC"/>
+			</reference>
+			<name value="Medication Request for discontinued clinical trial medication ABC"/>
+			<description value="Study medication info Medication Request for clinical trial medication ABC - discontinued"/>
+		</resource>
+
+		<resource>
+			<reference>
+				<reference value="MedicationRequest/medicationrequest0301-discontinue"/>
+				<display value="Medication Request for discontinued clinical trial medication 0301"/>
+			</reference>
+			<name value="Medication Request for discontinued clinical trial medication 0301"/>
+			<description value="Study medication info Medication Request for clinical trial medication 0301 - discontinued"/>
+		</resource>
+		
 		<resource>
 			<reference>
 				<reference value="Condition/janetReported-condition"/>

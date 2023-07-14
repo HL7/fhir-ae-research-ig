@@ -5,7 +5,6 @@
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
-<artifact id="MedicationRequest/medicationrequest-for-study-medication-administration-ABC" key="MedicationRequest-medicationrequest-for-study-medication-administration-ABC" name=""/>
 <artifact id="Condition/AEHepaticFailureUseCase7" key="Condition-AEHepaticFailureUseCase7" name="AEHepaticFailureUseCase7"/>
 <artifact id="Condition/AEHepaticFailureUseCase7complication" key="Condition-AEHepaticFailureUseCase7complication" name="AEHepaticFailureUseCase7complication"/>
 <artifact id="StructureDefinition/AdverseEvent-clinical-research" key="StructureDefinition-AdverseEvent-clinical-research" name="Adverse Event Clinical Research"/>
@@ -34,6 +33,8 @@
 <artifact id="MedicationAdministration/medicationAdministration-for-bresentrik" key="MedicationAdministration-medicationAdministration-for-bresentrik" name="Medication Administration for bresentrik"/>
 <artifact id="MedicationAdministration/medadmin0301" key="MedicationAdministration-medadmin0301" name="Medication Administration of Med0301"/>
 <artifact id="MedicationRequest/medicationrequest-for-bresentrik" key="MedicationRequest-medicationrequest-for-bresentrik" name="Medication Request for bresentrik"/>
+<artifact id="MedicationRequest/medicationrequest0301-discontinue" key="MedicationRequest-medicationrequest0301-discontinue" name="Medication Request for discontinued clinical trial medication 0301"/>
+<artifact id="MedicationRequest/medicationrequest-for-study-medication-administration-ABC" key="MedicationRequest-medicationrequest-for-study-medication-administration-ABC" name="Medication Request for discontinued clinical trial medication ABC"/>
 <artifact id="Medication/bresentrik" key="Medication-bresentrik" name="Medication is bresentrik"/>
 <artifact id="Provenance/provenance-for-blood-pressure-janet" key="Provenance-provenance-for-blood-pressure-janet" name="Provenance for Janet Blood Pressure Observation"/>
 <artifact id="Provenance/provenance-for-weight" key="Provenance-provenance-for-weight" name="Provenance for Janet weight Observation"/>

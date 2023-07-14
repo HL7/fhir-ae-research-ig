@@ -76,15 +76,17 @@ Description: "example"
 //Here we indicate medication discontinued with stopped status
 Instance: medicationrequest0301-discontinue
 InstanceOf: MedicationRequest
+Usage: #example
 Title: "Medication Request for discontinued clinical trial medication 0301"
 Description: "Study medication info Medication Request for clinical trial medication 0301 - discontinued"
-Usage: #example
+* contained[0] = med0301
 * status = #stopped "Stopped"
 * intent = #order
 * identifier.use = #official
 * identifier.system = "http://www.bmc.nl/portal/medstatements"
 * identifier.value = "med0301-studyDrug" 
-* medication.reference = Reference(med0301) "study medication"
+* medication.reference = Reference(med0301) 
+* medication.reference.display = "study medication"
 * subject = Reference(ClinicalTrialSubject5)
 * authoredOn = "1905-08-23"
 * requester.display = "Could be reference to inline contained profile such as Reference(practitioner-1) Ronald Bone, MD"
