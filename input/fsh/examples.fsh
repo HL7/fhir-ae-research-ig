@@ -43,8 +43,7 @@ Description: "example"
 //* suspectEntity[0].instanceReference.display = "Aspirin"
 //* suspectEntity[=].causality.entityRelatedness = http://terminology.hl7.org/CodeSystem/adverse-event-causality-assess#certain "Certain"
 
-* suspectEntity[+].instanceReference = Reference(medadmin0301)
-* suspectEntity[+].instanceReference.display = "Study Medication Use Case 7"
+* suspectEntity[+].instanceReference = Reference(medadmin0301) "Study Medication Use Case 7"
 * suspectEntity[=].causality.entityRelatedness = http://terminology.hl7.org/CodeSystem/adverse-event-causality-assess#certain "Certain"
 
 
@@ -90,10 +89,9 @@ Usage: #example
 * authoredOn = "1905-08-23"
 * requester.display = "Could be reference to inline contained profile such as Reference(practitioner-1) Ronald Bone, MD"
 * reason.concept = http://snomed.info/sct#9014002 "Psoriasis"
-* dosage.text = "500mg IV q6h x 3 days"
-* dosage.route = http://snomed.info/sct#47625008 "Intravenous route (qualifier value)"
-* dosage.method.text = "IV Push"
-* dosage.dose = 500 'mg' "mg"
+* dosageInstruction.text = "500mg IV q6h x 3 days"
+* dosageInstruction.route = http://snomed.info/sct#47625008 "Intravenous route (qualifier value)"
+* dosageInstruction.method.text = "IV Push"
 
 
 
