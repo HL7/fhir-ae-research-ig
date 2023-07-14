@@ -71,14 +71,14 @@
 			<name value="ClinicalTrialSubject5"/>
 			<description value="Use case 7. Clinical Trial subject number 5. Acute Hepatic Failure."/>
 		</resource>
-		<resource>
+		<!--resource>
 			<reference>
 				<reference value="AdverseEvent/ClinicalResearchAdverseEventexample1"/>
 				<display value="ClinicalResearchAdverseEventexample1"/>
 			</reference>
 			<name value="ClinicalResearchAdverseEventexample1"/>
 			<description value="example"/>
-		</resource>
+		</resource-->
 		<resource>
 			<reference>
 				<reference value="AdverseEvent/ClinicalResearchAdverseEventUseCase7"/>

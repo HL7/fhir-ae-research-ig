@@ -64,8 +64,8 @@ Description: "Non-Serious Adverse Event Research Study Medication Example"
 
 * seriousness = http://terminology.hl7.org/CodeSystem/adverse-event-seriousness#non-serious "Non-serious"
 * mitigatingAction[+].itemReference = Reference(medication-administration-tylenol)
-* mitigatingAction[+].itemCodeableConcept.text = "study drug dose not changed"
+//* mitigatingAction[+].itemCodeableConcept.text = "study drug dose not changed"
 
 * extension[caused-subject-to-discontinue-study].valueBoolean = false	
 * expectedInResearchStudy = true
-* note[0].text = "Headaches are mild, occur once a week and resolved with Tylenol, but still ongoing. Action taken with the study is dose not chnaged."
+* note[0].text = "Headaches are mild, occur once a week and resolved with Tylenol, but still ongoing. Action taken with the study is dose not changed."
