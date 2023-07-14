@@ -144,8 +144,7 @@ Description: "Medication administration example"
 * dosage.dose = 500 'mg' "mg"
 * eventHistory = Reference(signature) "Author's Signature"
 
-* mitigatingAction[+].itemReference = Reference(medicationrequest-for-study-medication-administration-ABC)
-* mitigatingAction[=].itemReference.display = "Medication Request where study drug prescription was discontinued"
+
 
 Instance: med0301
 InstanceOf: Medication
