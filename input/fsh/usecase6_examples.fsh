@@ -422,7 +422,7 @@ Description: "Use case 6B - patient reported AE problem"
 
 //research subject Janet?
 //no research subject added to the Patient reported one as the Patient would not be given their study id at this point
-
+//https://www.fda.gov/safety/medical-product-safety-information/medwatch-forms-fda-safety-reporting
 
 //ADVERSE EVENT
 Instance: clinical-research-ae-example-medwatch-patient-report
@@ -442,6 +442,20 @@ Description: "Use case 6B - Patient report of Adverse Event, example of data tha
 * extension[seriousness-criteria][0].extension[criterionPresent].valueBoolean = true
 * extension[seriousness-criteria][=].extension[criterionCode].valueCodeableConcept = $fda-add-seriousness-criteria-cs#requiresPreventImpairment "Required Intervention to Prevent Permanent Impairment or Damage (Devices)"
 //#requiresPreventImpairment "required intervention to prevent permanent damage"
+
+* extension[seriousness-criteria][0].extension[criterionCode].valueCodeableConcept = urn:oid:2.16.840.1.113883.3.989.2.1.1.19#35 "Results In Persistent Or Significant Disability"
+* extension[seriousness-criteria][=].extension[criterionPresent].valueBoolean = false
+* extension[seriousness-criteria][+].extension[criterionCode].valueCodeableConcept = urn:oid:2.16.840.1.113883.3.989.2.1.1.19#33 "Requires Inpatient Hospitalization"
+* extension[seriousness-criteria][=].extension[criterionPresent].valueBoolean = false
+* extension[seriousness-criteria][+].extension[criterionCode].valueCodeableConcept = urn:oid:2.16.840.1.113883.3.989.2.1.1.19#34 "Results In Death"
+* extension[seriousness-criteria][=].extension[criterionPresent].valueBoolean = false
+* extension[seriousness-criteria][+].extension[criterionCode].valueCodeableConcept = urn:oid:2.16.840.1.113883.3.989.2.1.1.19#21 "Is Life Threatening"
+* extension[seriousness-criteria][=].extension[criterionPresent].valueBoolean = false
+* extension[seriousness-criteria][+].extension[criterionCode].valueCodeableConcept = urn:oid:2.16.840.1.113883.3.989.2.1.1.19#12 "Congenital Anomaly or Birth Defect"
+* extension[seriousness-criteria][=].extension[criterionPresent].valueBoolean = false
+* extension[seriousness-criteria][+].extension[criterionCode].valueCodeableConcept = urn:oid:2.16.840.1.113883.3.989.2.1.1.19#26 "Other Medically Important Condition"
+* extension[seriousness-criteria][=].extension[criterionPresent].valueBoolean = false
+
 
 //A3
 //After receiving the study drug (bresentrik) during a study visit, 
@@ -540,4 +554,5 @@ When Janet clicked “Submit” on the electronic form, the data automatically f
 //The data is then absorbed within the receiver’s system to auto populate a MedWatch Form FDA 3500B for submission to the FDA within 24 hours.
 
 //Severity or grade is applied by clinical researcher, so a Patient would not provide one
-//* extension[severity-or-grade].valueCodeableConcept = $ae-severity-or-grade-cs#3 "Severe"
+//but an app might suggest one as patient authored based on data provided
+* extension[severity-or-grade].valueCodeableConcept = $ae-severity-or-grade-cs#2 "Moderate"
