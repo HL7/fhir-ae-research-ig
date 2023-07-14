@@ -16,7 +16,7 @@ Description: "Use case 7. Clinical Trial subject number 5. Acute Hepatic Failure
 * name
   * given[0] = "Subject 5"
   * family = "Clinical Trail"
-* identifier.display = "number 5"
+//* identifier.display = "number 5"
 
 
 //https://confluence.hl7.org/pages/viewpage.action?pageId=49646529#AdverseEventUseCases-UseCase7-Clinicaltrial:significantadverseevent
