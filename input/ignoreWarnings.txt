@@ -4,12 +4,17 @@
 # instructions for ignoreWarnings.txt https://confluence.hl7.org/pages/viewpage.action?pageId=66938614#ImplementationGuideParameters-ManagingWarningsandHints
 # (And include comments like this justifying why)
 
-# the cardinality has been reviewed an is correct. There is a choice of reference or codeable concept data types
-The slice definition for Extension.extension:item.value[x] has a maximum of 1 but the slices add up to a maximum of 2. Check that this is what is intended
-
 
 # an example used in the IG
 Code System URI 'http://examplesystem' is unknown so the code cannot be validated
+
+# need to double check, but these should be in the terminology server
+Code System URI 'http://terminology.hl7.org/CodeSystem/MDRAE' is unknown so the code cannot be validated
+
+# Code System URI 'http://terminology.hl7.org/5.0.0/CodeSystem-v3-ParticipationType' is unknown so the code cannot be validated
+
+# need to replace with correct terminology approved code system identification
+Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated
 
 
 # meeting with Terminology to talk about inclusion of this code system as a known external code system

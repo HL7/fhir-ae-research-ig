@@ -183,7 +183,7 @@ Description: "Grade 1 ALT"
 * outcome = urn:oid:2.16.840.1.113883.3.989.2.1.1.19#notrecoveredorresolved "Not recovering/not resolved"
 * occurrencePeriod.start = "2020-04-22"
 * recorder = Reference(practitioner-oncology-nurse-jane)
-* participant[0].function = http://terminology.hl7.org/5.0.0/CodeSystem-v3-ParticipationType#AUTHEN 
+* participant[0].function = http://terminology.hl7.org/CodeSystem/v3-ParticipationType#AUTHEN 
 * participant[=].actor = Reference(practitioner-owen-oncologist)
 * study = Reference(clinical-trial-example-compass)
 //* extension[research-subject-ref].valueReference = Reference(clinical-trial-example-subject)

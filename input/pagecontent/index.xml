@@ -1,5 +1,9 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
 
+<a name="intent"></a>
+<h3>Intent</h3>
+<p>The intent of this guide is to provide a profile on the FHIR AdverseEvent Resource suitable for Clinical Research</p>
+
   <a name="overview"> </a>
   <h3>Overview</h3>
 <p>
