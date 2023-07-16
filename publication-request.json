@@ -1,0 +1,15 @@
+{
+  "package-id": "hl7.fhir.uv.ae-research-ig",
+	"version": "1.0.0-ballot",
+	"path": "http://hl7.org/fhir/uv/ae-research-ig/2023SEP",
+	"milestone": false,
+	"status": "ballot",
+	"sequence": "STU 1",
+	"desc": "FHIR STU Release 1",
+	"descmd": "FHIR STU Release 1",
+	"first" : true,
+	"title": "Adverse Event Clinical Research",
+	"ci-build" : "https://build.fhir.org/ig/HL7/fhir-ae-research-ig/", 
+	"category": "Research",
+	"introduction": "The intent of this guide is to provide a profile on the FHIR AdverseEvent Resource suitable for Clinical Research."
+}

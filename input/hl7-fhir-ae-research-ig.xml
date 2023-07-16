@@ -3,23 +3,23 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R4/fhir-single.xsd">
   <id value="hl7.fhir.uv.adverseeventclinicalresearch"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="informative"/> 
+    <valueCode value="trial-use"/> 
   </extension> 
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-    <valueInteger value="1"/> 
+    <valueInteger value="2"/> 
   </extension>
 <!--  <extension url="http://hl7.org/fhir/tools/StructureDefinition/igpublisher-spreadsheet">
     <valueString value="resources-spreadsheet.xml"/>
   </extension>-->
   <url value="http://hl7.org/fhir/uv/adverseeventclinicalresearch/ImplementationGuide/hl7.fhir.uv.adverseeventclinicalresearch"/>
   <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
-  <version value="0.2.0"/>
-  <name value="adverseeventclinicalresearch"/>
+  <version value="1.0.0"/>
+  <name value="AdverseEventClinicalResearch"/>
   <title value="Adverse Event Clinical Research"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2015-01-01"/> 
-  <publisher value="HL7 International - Patient Care Work Group, Vulcan AdverseEvent groups"/>
+  <date value="2023-07-01"/> 
+  <publisher value="HL7 International - Biomedical Research and Regulation, Vulcan AdverseEvent groups"/>
   <contact>
     <telecom>
       <!-- Or whatever URL and/or email address(es) are appropriate -->

@@ -116,15 +116,15 @@ Description: "Breast Cancer clinical trial example"
 
 * comparisonGroup[0].name = "Arm A"
 //* arm[0].type = http://hl7.org/fhir/research-study-arm-type#experimental
-* comparisonGroup[0].type = http://examplesystem#experimental
+* comparisonGroup[0].type = http://hl7.org/fhir/research-study-arm-type#experimental "Experimental"
 * comparisonGroup[0].description = "Bresentrik (B) plus pertuzumab-matching placebo"
 * comparisonGroup[+].name = "Arm B"
 //* arm[=].type = http://examplesystem#experimental
-* comparisonGroup[=].type = http://examplesystem#experimental "experimental"
+* comparisonGroup[=].type = http://hl7.org/fhir/research-study-arm-type#experimental "Experimental"
 * comparisonGroup[=].description = "Bresentrik (B) plus pertuzumab"
 * comparisonGroup[+].name = "Arm C"
 //* arm[=].type = http://examplesystem#active-comparator
-* comparisonGroup[=].type = http://examplesystem#active-comparator "active-comparator"
+* comparisonGroup[=].type = http://hl7.org/fhir/research-study-arm-type#active-comparator "Active Comparator"
 * comparisonGroup[=].description = "Standard of care (Taxane (paclitaxel or docetaxel), trastuzumab, and pertuzumab)"
 
 * protocol.display = "This would reference the PlanDefinition which would contain references to Bresentrik"
