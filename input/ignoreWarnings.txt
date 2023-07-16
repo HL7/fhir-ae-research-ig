@@ -1,9 +1,11 @@
 == Suppressed Messages ==
 # instructions for ignoreWarnings.txt https://confluence.hl7.org/pages/viewpage.action?pageId=66938614#ImplementationGuideParameters-ManagingWarningsandHints
 
-# This is the correct code system URI
 # Code System URI 'http://terminology.hl7.org/CodeSystem/mdr' is unknown so the code cannot be validated
+
 # Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated
+
+# This is the correct code system URI
 INFORMATION: AdverseEvent/adverse-event-compass-ex2: AdverseEvent.code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/mdr' is unknown so the code cannot be validated
 INFORMATION: AdverseEvent/adverse-event-compass-ex1b: AdverseEvent.code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/mdr' is unknown so the code cannot be validated
 INFORMATION: AdverseEvent/adverse-event-compass-ex1a: AdverseEvent.code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/mdr' is unknown so the code cannot be validated
@@ -14,14 +16,16 @@ INFORMATION: AdverseEvent/ClinicalResearchAdverseEventUseCase17: AdverseEvent.co
 
 
 # Correct code system URI and code
-# None of the codings provided are in the value set 'Research Study Primary Purpose Type' (http://hl7.org/fhir/ValueSet/research-study-prim-purp-type|5.0.0), and a coding is recommended to come from this value set) (codes = http://terminology.hl7.org/CodeSystem/research-study-prim-purp-type#treatment)
 INFORMATION: ResearchStudy/BreastCancerTrial: ResearchStudy.primaryPurposeType: None of the codings provided are in the value set 'Research Study Primary Purpose Type' (http://hl7.org/fhir/ValueSet/research-study-prim-purp-type|5.0.0), and a coding is recommended to come from this value set) (codes = http://terminology.hl7.org/CodeSystem/research-study-prim-purp-type#treatment)
 
 
-# met with Terminology about inclusion of this code system as a known external code system representatives from FDA are working on getting the information together. I am following-up
 # Unknown System 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' specified%
+
 # % system urn:oid:2.16.840.1.113883.3.989.2.1.1.19
+
 # Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated
+
+# met with Terminology about inclusion of this code system as a known external code system representatives from FDA are working on getting the information together. I am following-up
 WARNING: ValueSet/adverse-event-seriousness-criteria-vs: ValueSet.compose[0].include[0]: Unknown System 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' specified, so Concepts and Filters can't be checked (Details: Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated)
 WARNING: ValueSet.where(id = 'adverse-event-seriousness-criteria-vs'): Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.3.989.2.1.1.19
 WARNING: ValueSet/adverse-event-outcome-clinical-research-vs: ValueSet.compose[0].include[0]: Unknown System 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' specified, so Concepts and Filters can't be checked (Details: Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated)
