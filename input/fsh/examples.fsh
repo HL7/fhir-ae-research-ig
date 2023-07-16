@@ -28,7 +28,7 @@ Description: "example"
 //* actuality = http://hl7.org/fhir/adverse-event-actuality#actual 
 * status = http://hl7.org/fhir/event-status#completed
 * subject = Reference(ClinicalTrialSubject5)
-* outcome = urn:oid:2.16.840.1.113883.3.989.2.1.1.19#roveringorresolving "Recovering/Resolving"
+* outcome = urn:oid:2.16.840.1.113883.3.989.2.1.1.19#recoveringorresolving "Recovering/Resolving"
 
 //* resultingCondition[0] = Reference(AEHepaticFailureUseCase7)
 * resultingEffect[0] = Reference(AEHepaticFailureUseCase7)

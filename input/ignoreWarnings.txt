@@ -4,14 +4,11 @@
 # instructions for ignoreWarnings.txt https://confluence.hl7.org/pages/viewpage.action?pageId=66938614#ImplementationGuideParameters-ManagingWarningsandHints
 # (And include comments like this justifying why)
 
-
 # an example used in the IG
 Code System URI 'http://examplesystem' is unknown so the code cannot be validated
 
-# need to double check, but these should be in the terminology server
-Code System URI 'http://terminology.hl7.org/CodeSystem/MDRAE' is unknown so the code cannot be validated
-
-# Code System URI 'http://terminology.hl7.org/5.0.0/CodeSystem-v3-ParticipationType' is unknown so the code cannot be validated
+# This is the correct code system URI
+Code System URI 'http://terminology.hl7.org/CodeSystem/mdr' is unknown so the code cannot be validated
 
 # need to replace with correct terminology approved code system identification
 Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated
@@ -20,7 +17,6 @@ Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown 
 # meeting with Terminology to talk about inclusion of this code system as a known external code system
 Unknown System 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' specified%
 % system urn:oid:2.16.840.1.113883.3.989.2.1.1.19
-UNKNOWN_CODESYSTEM; The provided code http://hl7.org/fhir/ValueSet/@all is not in the value set '' (from Tx-Server)
 Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated
-Binding http://hl7.org/fhir/uv/ae-research-backport-ig/ValueSet/adverse-event-outcome-clinical-research-vs could not be expanded
+
 

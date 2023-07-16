@@ -176,7 +176,7 @@ InstanceOf: AdverseEvent-clinical-research
 Description: "Grade 1 ALT"
 * subject = Reference(patient-example-kaitlyn-b)
 * status = #in-progress
-* code = http://terminology.hl7.org/CodeSystem/MDRAE#10001551  "Alanine aminotransferase increased" 
+* code = http://terminology.hl7.org/CodeSystem/mdr#10001551  "Alanine aminotransferase increased" 
 * code.text = "Alanine aminotransferase (ALT) increased at 50"
 * extension[severity-or-grade].valueCodeableConcept = $ae-severity-or-grade-cs#1 "Mild"
 * seriousness = http://terminology.hl7.org/CodeSystem/adverse-event-seriousness#non-serious "Non-serious"
@@ -198,7 +198,7 @@ InstanceOf: AdverseEvent-clinical-research
 Description: "Grade 3 ALT"
 * subject = Reference(patient-example-kaitlyn-b)
 * status = #in-progress
-* code = http://terminology.hl7.org/CodeSystem/MDRAE#10001551  "Alanine aminotransferase increased" 
+* code = http://terminology.hl7.org/CodeSystem/mdr#10001551  "Alanine aminotransferase increased" 
 * code.text = "Alanine aminotransferase (ALT) increased to 200"
 * extension[severity-or-grade].valueCodeableConcept = $ae-severity-or-grade-cs#3 "Severe"
 * seriousness = http://terminology.hl7.org/CodeSystem/adverse-event-seriousness#non-serious "Non-serious"
@@ -222,7 +222,7 @@ InstanceOf: AdverseEvent-clinical-research
 Description: "ALT back to grade 1 and resolved"
 * subject = Reference(patient-example-kaitlyn-b)
 * status = #completed
-* code = http://terminology.hl7.org/CodeSystem/MDRAE#10001551  "Alanine aminotransferase increased" 
+* code = http://terminology.hl7.org/CodeSystem/mdr#10001551  "Alanine aminotransferase increased" 
 * code.text = "Alanine aminotransferase (ALT) decreased to 60"
 * extension[severity-or-grade].valueCodeableConcept = $ae-severity-or-grade-cs#1 "Mild"
 * seriousness = http://terminology.hl7.org/CodeSystem/adverse-event-seriousness#non-serious "Non-serious"
@@ -265,7 +265,7 @@ InstanceOf: AdverseEvent-clinical-research
 Description: "Grade 1 Nausea/vomiting"  // both are AEs, which to use or make them separate?
 * subject = Reference(patient-example-kaitlyn-b)
 * status = #completed
-* code = http://terminology.hl7.org/CodeSystem/MDRAE#10028813  "Nausea" 
+* code = http://terminology.hl7.org/CodeSystem/mdr#10028813  "Nausea" 
 * code.text = "Nausea"
 * extension[severity-or-grade].valueCodeableConcept = $ae-severity-or-grade-cs#1 "Mild"
 * seriousness = http://terminology.hl7.org/CodeSystem/adverse-event-seriousness#non-serious "Non-serious"
@@ -273,7 +273,7 @@ Description: "Grade 1 Nausea/vomiting"  // both are AEs, which to use or make th
 // resolved on 6/10/20 after 3 more visits - goes to grade 3 then back to 1 then WNL
 * occurrencePeriod.start = "2020-05-25"
 * recorder = Reference(practitioner-oncology-nurse-jane)
-* participant[0].function = ParticipationType#AUTHEN 
+* participant[0].function = http://terminology.hl7.org/CodeSystem/v3-ParticipationType#AUTHEN 
 * participant[=].actor = Reference(practitioner-owen-oncologist)
 * study = Reference(clinical-trial-example-compass)
 //* extension[research-subject-ref].valueReference = Reference(clinical-trial-example-subject)

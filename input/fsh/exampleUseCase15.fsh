@@ -63,9 +63,6 @@ Usage: #example
 * supportingInformation = Reference(research-study-XYZ)
 * supportingInformation.display = "http://baseUrlOfHospitalHolding/PlanDefinition/protocol-for-the-ResearchStudy"
 
-
-
-
 // Upper Endoscopy Procedure for mitigating action
 Instance: procedure-upper-endoscopy
 InstanceOf: Procedure
@@ -80,9 +77,9 @@ Title: "ClinicalResearchAdverseEventUseCase15"
 Description: "Serious Adverse Event Research Study Medication Example"
 * status = #completed //http://hl7.org/fhir/event-status#completed
 * subject = Reference(SCHJO)
-* code = http://terminology.hl7.org/CodeSystem/MDRAE#10017955 "Gastrointestinal haemorrhage"
+* code = http://terminology.hl7.org/CodeSystem/mdr#10017955 "Gastrointestinal haemorrhage"
 
-//* outcome = urn:oid:2.16.840.1.113883.3.989.2.1.1.19#roveringorresolving "Recovering/Resolving"
+//* outcome = urn:oid:2.16.840.1.113883.3.989.2.1.1.19#recoveringorresolving "Recovering/Resolving"
 //change outcome to resolved to reflect end-state 
 * outcome = urn:oid:2.16.840.1.113883.3.989.2.1.1.19#recoveredorresolved "Recovered/Resolved"
 

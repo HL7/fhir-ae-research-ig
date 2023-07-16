@@ -72,7 +72,7 @@ Description: "This value set includes codes that describe the type of outcome fr
 * urn:oid:2.16.840.1.113883.3.989.2.1.1.19#notrecoveredorresolved "Not recovering/not resolved" 
 * urn:oid:2.16.840.1.113883.3.989.2.1.1.19#resolvedwithsequelae "Recovered/Resolved with sequelae"
 * urn:oid:2.16.840.1.113883.3.989.2.1.1.19#recoveredorresolved "Recovered/Resolved"
-* urn:oid:2.16.840.1.113883.3.989.2.1.1.19#roveringorresolving "Recovering/Resolving"
+* urn:oid:2.16.840.1.113883.3.989.2.1.1.19#recoveringorresolving "Recovering/Resolving"
 
 
 
