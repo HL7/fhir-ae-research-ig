@@ -89,7 +89,7 @@ InstanceOf: AdverseEvent-clinical-research
 Description: "Adverse event from procedure, not study drug"
 * subject = Reference(patient-slp)
 * status = #completed
-* code = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C57954 "Urticaria" 
+* code = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C57954 "Grade 2 - Urticaria" 
 * code.text = "Moderate hives"
 * extension[severity-or-grade].valueCodeableConcept = $ae-severity-or-grade-cs#2 "Moderate"
 * seriousness = http://terminology.hl7.org/CodeSystem/adverse-event-seriousness#non-serious "Non-serious"

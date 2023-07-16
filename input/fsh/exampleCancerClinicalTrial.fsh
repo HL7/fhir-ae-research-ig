@@ -137,6 +137,7 @@ Description: "Alliance COMPASS trial research subject"
 * progress.subjectState = http://terminology.hl7.org/CodeSystem/research-subject-state#on-study "On-study"
 * study = Reference(clinical-trial-example-compass)
 * subject = Reference(patient-example-kaitlyn-b)
+* consent.display = "this would be a reference to a Consent instance"
 
 // mitigating action 
 // Kadcyla was dose reduced to 3.0mg and 
@@ -205,7 +206,7 @@ Description: "Grade 3 ALT"
 * outcome = urn:oid:2.16.840.1.113883.3.989.2.1.1.19#notrecoveredorresolved "Not recovering/not resolved"
 * occurrencePeriod.start = "2020-05-13"
 * recorder = Reference(practitioner-oncology-nurse-jane)
-* participant[0].function = ParticipationType#AUTHEN 
+* participant[0].function = http://terminology.hl7.org/CodeSystem/v3-ParticipationType#AUTHEN 
 * participant[=].actor = Reference(practitioner-owen-oncologist)
 * study = Reference(clinical-trial-example-compass)
 //* extension[research-subject-ref].valueReference = Reference(clinical-trial-example-subject)
@@ -229,7 +230,7 @@ Description: "ALT back to grade 1 and resolved"
 * outcome = urn:oid:2.16.840.1.113883.3.989.2.1.1.19#recoveredorresolved "Recovered/Resolved"
 * occurrencePeriod.start = "2020-05-20"
 * recorder = Reference(practitioner-oncology-nurse-jane)
-* participant[0].function = ParticipationType#AUTHEN 
+* participant[0].function = http://terminology.hl7.org/CodeSystem/v3-ParticipationType#AUTHEN 
 * participant[=].actor = Reference(practitioner-owen-oncologist)
 * study = Reference(clinical-trial-example-compass)
 //* extension[research-subject-ref].valueReference = Reference(clinical-trial-example-subject)

@@ -59,7 +59,6 @@ Description: "Patient Janet, 64-year old woman on clinical trial"
 * managingOrganization.identifier.value = "f001"
 * managingOrganization.display = "Reference(Organization/f001) Burgers University Medical Centre"
 
-
 // is participating in a breast cancer clinical trial.
 Instance: BreastCancerTrial
 InstanceOf: ResearchStudy
