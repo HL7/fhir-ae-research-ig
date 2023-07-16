@@ -769,13 +769,6 @@ Within this guide are several examples. Every effort has been made to capture th
 		<code>
 		<code value="special-url"/>
 		</code>
-		<value value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"/>
-	</parameter>
-	
-	<parameter>
-		<code>
-		<code value="special-url"/>
-		</code>
 		<value value="http://hl7.org/fhir/uv/adverseeventclinicalresearch/CodeSystem/fda-add-seriousness-criteria-cs"/>
 	</parameter>
 	
