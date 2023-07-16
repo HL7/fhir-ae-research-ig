@@ -728,7 +728,7 @@ Within this guide are several examples. Every effort has been made to capture th
       <page>
         <name value="downloads.html"/>
         <title value="Useful Downloads"/>
-        <generation value="html"/>
+        <generation value="markdown"/>
       </page>
       <page>
         <name value="changes.html"/>
@@ -741,7 +741,7 @@ Within this guide are several examples. Every effort has been made to capture th
 	<code>
 		<code value="copyrightyear"/>
 		</code>
-      <value value="2019+"/>
+      <value value="2020+"/>
     </parameter>
     <!-- releaselabel should be the ballot status for HL7-published IGs. -->
     <parameter>

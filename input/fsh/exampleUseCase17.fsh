@@ -100,8 +100,8 @@ Description: "Adverse event from procedure, not study drug"
 //* extension[research-subject-ref].valueReference = Reference(clinical-trial-acme-subject)
 * suspectEntity[0].instanceReference = Reference(study-medication-administration-WBY)
 * suspectEntity[=].causality.entityRelatedness = urn:oid:2.16.840.1.113883.3.989.2.1.1.19#unlikely "Unlikely Related"
-* suspectEntity[+].instanceReference = Reference(clinical-trial-acme-procedure)
-* suspectEntity[=].causality.entityRelatedness = urn:oid:2.16.840.1.113883.3.989.2.1.1.19#possibly "Possibly Related"
+
+
 * suspectEntity[+].instanceReference = Reference(medication-administration-contrast-dye)
 * suspectEntity[=].causality.entityRelatedness = urn:oid:2.16.840.1.113883.3.989.2.1.1.19#related "Related"
 
@@ -110,4 +110,4 @@ Description: "Adverse event from procedure, not study drug"
 * extension[caused-subject-to-discontinue-study].valueBoolean = false	
 * mitigatingAction[+].itemReference = Reference(medication-administration-forhives)
 //* mitigatingAction[+].itemCodeableConcept.text = "study drug dose not changed"
-//* contributingFactor[+].itemReference = Reference(medication-administration-contrast-dye)
+* contributingFactor[+].itemReference = Reference(clinical-trial-acme-procedure)

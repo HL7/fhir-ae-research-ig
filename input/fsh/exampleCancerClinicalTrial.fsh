@@ -187,7 +187,7 @@ Description: "Grade 1 ALT"
 * participant[0].function = http://terminology.hl7.org/CodeSystem/v3-ParticipationType#AUTHEN 
 * participant[=].actor = Reference(practitioner-owen-oncologist)
 * study = Reference(clinical-trial-example-compass)
-//* extension[research-subject-ref].valueReference = Reference(clinical-trial-example-subject)
+* extension[research-subject-ref].valueReference = Reference(clinical-trial-example-subject)
 * suspectEntity[0].instanceReference = Reference(medication-administration-kadcyla)
 * suspectEntity[=].causality.entityRelatedness = urn:oid:2.16.840.1.113883.3.989.2.1.1.19#possibly "Possibly Related"
 * suspectEntity[+].instanceReference = Reference(medication-administration-tucatinib)
