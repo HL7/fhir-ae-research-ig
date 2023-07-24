@@ -5,71 +5,12 @@
 
 # Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated
 
-# This is the correct code system URI
-INFORMATION: AdverseEvent/adverse-event-compass-ex2: AdverseEvent.code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/mdr' is unknown so the code cannot be validated
-INFORMATION: AdverseEvent/adverse-event-compass-ex1b: AdverseEvent.code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/mdr' is unknown so the code cannot be validated
-INFORMATION: AdverseEvent/adverse-event-compass-ex1a: AdverseEvent.code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/mdr' is unknown so the code cannot be validated
-INFORMATION: AdverseEvent/adverse-event-compass-ex1: AdverseEvent.code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/mdr' is unknown so the code cannot be validated
-INFORMATION: AdverseEvent/ClinicalResearchAdverseEventUseCase16: AdverseEvent.code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/mdr' is unknown so the code cannot be validated
-INFORMATION: AdverseEvent/ClinicalResearchAdverseEventUseCase15: AdverseEvent.code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/mdr' is unknown so the code cannot be validated
-INFORMATION: AdverseEvent/ClinicalResearchAdverseEventUseCase17: AdverseEvent.code.coding[0]: Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated
-
+# This is the correct code system URI see https://terminology.hl7.org/5.2.0/CodeSystem-mdr.json.html and https://terminology.hl7.org/CodeSystem-v3-nciThesaurus.json.html 
+Code System URI 'https://www.meddra.org' is unknown so the code cannot be validated
+Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated
+Error from server: Unable to provide support for code system http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl
+Unknown System 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' specified, so Concepts and Filters can't be checked (Details: Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated)
+Unknown System 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' specified, so Concepts and Filters can't be checked (Details: The CodeSystem http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl is unknown (from Tx-Server))
 
 # Correct code system URI and code see https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/code.20and.20system.20look.20right.20-.20getting.20error.20from.20IG.20publisher 
 INFORMATION: ResearchStudy/BreastCancerTrial: ResearchStudy.primaryPurposeType: None of the codings provided are in the value set 'Research Study Primary Purpose Type' (http://hl7.org/fhir/ValueSet/research-study-prim-purp-type|5.0.0), and a coding is recommended to come from this value set) (codes = http://terminology.hl7.org/CodeSystem/research-study-prim-purp-type#treatment)
-
-
-# Unknown System 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' specified%
-
-# % system urn:oid:2.16.840.1.113883.3.989.2.1.1.19
-
-# Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated
-
-# met with Terminology about inclusion of this code system as a known external code system representatives from FDA are working on getting the information together. I am following-up
-WARNING: ValueSet/adverse-event-seriousness-criteria-vs: ValueSet.compose[0].include[0]: Unknown System 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' specified, so Concepts and Filters can't be checked (Details: Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated)
-WARNING: ValueSet.where(id = 'adverse-event-seriousness-criteria-vs'): Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.3.989.2.1.1.19
-WARNING: ValueSet/adverse-event-outcome-clinical-research-vs: ValueSet.compose[0].include[0]: Unknown System 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' specified, so Concepts and Filters can't be checked (Details: Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated)
-WARNING: ValueSet.where(id = 'adverse-event-outcome-clinical-research-vs'): Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.3.989.2.1.1.19
-WARNING: ValueSet/adverse-event-causality-related-vs: ValueSet.compose[0].include[0]: Unknown System 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' specified, so Concepts and Filters can't be checked (Details: The CodeSystem urn:oid:2.16.840.1.113883.3.989.2.1.1.19 is unknown (from Tx-Server))
-WARNING: ValueSet.where(id = 'adverse-event-causality-related-vs'): Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.3.989.2.1.1.19
-INFORMATION: AdverseEvent/clinical-research-ae-example-medwatch-patient-report: AdverseEvent.extension[0].extension[1].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated
-INFORMATION: AdverseEvent/clinical-research-ae-example-medwatch-patient-report: AdverseEvent.extension[1].extension[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated
-INFORMATION: AdverseEvent/clinical-research-ae-example-medwatch-patient-report: AdverseEvent.extension[2].extension[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated
-INFORMATION: AdverseEvent/clinical-research-ae-example-medwatch-patient-report: AdverseEvent.extension[3].extension[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated
-INFORMATION: AdverseEvent/clinical-research-ae-example-medwatch-patient-report: AdverseEvent.extension[4].extension[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated
-INFORMATION: AdverseEvent/clinical-research-ae-example-medwatch-patient-report: AdverseEvent.extension[5].extension[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated
-INFORMATION: AdverseEvent/clinical-research-ae-example-medwatch-patient-report: AdverseEvent.outcome[0].coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated
-INFORMATION: AdverseEvent/clinical-research-ae-example-medwatch-patient-report: AdverseEvent.suspectEntity[0].causality.entityRelatedness.coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated
-INFORMATION: AdverseEvent/clinical-research-ae-example-medwatch-patient-report: AdverseEvent.suspectEntity[1].causality.entityRelatedness.coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated
-INFORMATION: AdverseEvent/adverse-event-compass-ex2: AdverseEvent.outcome[0].coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated
-INFORMATION: AdverseEvent/adverse-event-compass-ex2: AdverseEvent.suspectEntity[0].causality.entityRelatedness.coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated
-INFORMATION: AdverseEvent/adverse-event-compass-ex2: AdverseEvent.suspectEntity[1].causality.entityRelatedness.coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated
-INFORMATION: AdverseEvent/adverse-event-compass-ex1b: AdverseEvent.outcome[0].coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated
-INFORMATION: AdverseEvent/adverse-event-compass-ex1b: AdverseEvent.suspectEntity[0].causality.entityRelatedness.coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated
-INFORMATION: AdverseEvent/adverse-event-compass-ex1b: AdverseEvent.suspectEntity[1].causality.entityRelatedness.coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated
-INFORMATION: AdverseEvent/adverse-event-compass-ex1a: AdverseEvent.outcome[0].coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated
-INFORMATION: AdverseEvent/adverse-event-compass-ex1a: AdverseEvent.suspectEntity[0].causality.entityRelatedness.coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated
-INFORMATION: AdverseEvent/adverse-event-compass-ex1a: AdverseEvent.suspectEntity[1].causality.entityRelatedness.coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated
-INFORMATION: AdverseEvent/adverse-event-compass-ex1: AdverseEvent.outcome[0].coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated
-INFORMATION: AdverseEvent/adverse-event-compass-ex1: AdverseEvent.suspectEntity[0].causality.entityRelatedness.coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated
-INFORMATION: AdverseEvent/adverse-event-compass-ex1: AdverseEvent.suspectEntity[1].causality.entityRelatedness.coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated
-INFORMATION: AdverseEvent/ClinicalResearchAdverseEventUseCase7: AdverseEvent.extension[0].extension[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated
-INFORMATION: AdverseEvent/ClinicalResearchAdverseEventUseCase7: AdverseEvent.extension[1].extension[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated
-INFORMATION: AdverseEvent/ClinicalResearchAdverseEventUseCase7: AdverseEvent.extension[2].extension[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated
-INFORMATION: AdverseEvent/ClinicalResearchAdverseEventUseCase7: AdverseEvent.extension[3].extension[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated
-INFORMATION: AdverseEvent/ClinicalResearchAdverseEventUseCase7: AdverseEvent.extension[4].extension[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated
-INFORMATION: AdverseEvent/ClinicalResearchAdverseEventUseCase7: AdverseEvent.extension[5].extension[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated
-INFORMATION: AdverseEvent/ClinicalResearchAdverseEventUseCase7: AdverseEvent.outcome[0].coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated
-INFORMATION: AdverseEvent/ClinicalResearchAdverseEventUseCase17: AdverseEvent.outcome[0].coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated
-INFORMATION: AdverseEvent/ClinicalResearchAdverseEventUseCase17: AdverseEvent.suspectEntity[0].causality.entityRelatedness.coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated
-INFORMATION: AdverseEvent/ClinicalResearchAdverseEventUseCase17: AdverseEvent.suspectEntity[1].causality.entityRelatedness.coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated
-INFORMATION: AdverseEvent/ClinicalResearchAdverseEventUseCase16: AdverseEvent.outcome[0].coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated
-INFORMATION: AdverseEvent/ClinicalResearchAdverseEventUseCase16: AdverseEvent.suspectEntity[0].causality.entityRelatedness.coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated
-INFORMATION: AdverseEvent/ClinicalResearchAdverseEventUseCase15: AdverseEvent.extension[1].extension[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated
-INFORMATION: AdverseEvent/ClinicalResearchAdverseEventUseCase15: AdverseEvent.extension[2].extension[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated
-INFORMATION: AdverseEvent/ClinicalResearchAdverseEventUseCase15: AdverseEvent.extension[3].extension[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated
-INFORMATION: AdverseEvent/ClinicalResearchAdverseEventUseCase15: AdverseEvent.extension[4].extension[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated
-INFORMATION: AdverseEvent/ClinicalResearchAdverseEventUseCase15: AdverseEvent.extension[5].extension[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated
-INFORMATION: AdverseEvent/ClinicalResearchAdverseEventUseCase15: AdverseEvent.extension[6].extension[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated
-INFORMATION: AdverseEvent/ClinicalResearchAdverseEventUseCase15: AdverseEvent.outcome[0].coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated
-INFORMATION: AdverseEvent/ClinicalResearchAdverseEventUseCase15: AdverseEvent.suspectEntity[0].causality.entityRelatedness.coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated

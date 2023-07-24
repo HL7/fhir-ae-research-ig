@@ -93,17 +93,17 @@ Description: "Adverse event from procedure, not study drug"
 * code.text = "Moderate hives"
 * extension[severity-or-grade].valueCodeableConcept = $ae-severity-or-grade-cs#2 "Moderate"
 * seriousness = http://terminology.hl7.org/CodeSystem/adverse-event-seriousness#non-serious "Non-serious"
-* outcome = urn:oid:2.16.840.1.113883.3.989.2.1.1.19#recoveredorresolved "Recovered/Resolved"
+* outcome = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C49498 "Recovered/Resolved"
 * occurrencePeriod.start = "2021-01-15"
 * occurrencePeriod.end = "2021-01-15"
 * study = Reference(research-study-acme)
 //* extension[research-subject-ref].valueReference = Reference(clinical-trial-acme-subject)
 * suspectEntity[0].instanceReference = Reference(study-medication-administration-WBY)
-* suspectEntity[=].causality.entityRelatedness = urn:oid:2.16.840.1.113883.3.989.2.1.1.19#unlikely "Unlikely Related"
+* suspectEntity[=].causality.entityRelatedness = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C53257 "Unlikely Related"
 
 
 * suspectEntity[+].instanceReference = Reference(medication-administration-contrast-dye)
-* suspectEntity[=].causality.entityRelatedness = urn:oid:2.16.840.1.113883.3.989.2.1.1.19#related "Related"
+* suspectEntity[=].causality.entityRelatedness = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C53260 "Related"
 
 * expectedInResearchStudy = false
 * note[0].text = "The action taken with the study treatment was the study drug dose not changed"

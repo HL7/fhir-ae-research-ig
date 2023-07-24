@@ -28,7 +28,7 @@ Description: "example"
 //* actuality = http://hl7.org/fhir/adverse-event-actuality#actual 
 * status = http://hl7.org/fhir/event-status#completed
 * subject = Reference(ClinicalTrialSubject5)
-* outcome = urn:oid:2.16.840.1.113883.3.989.2.1.1.19#recoveringorresolving "Recovering/Resolving"
+* outcome = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C49496  "Recovering/Resolving"
 
 //* resultingCondition[0] = Reference(AEHepaticFailureUseCase7)
 * resultingEffect[0] = Reference(AEHepaticFailureUseCase7)
@@ -52,17 +52,17 @@ Description: "example"
 * recordedDate = "1905-08-24"
 * code = http://snomed.info/sct#370901008 "Serious reportable event associated with product or device"
 
-* extension[seriousness-criteria][0].extension[criterionCode].valueCodeableConcept = urn:oid:2.16.840.1.113883.3.989.2.1.1.19#35 "Results In Persistent Or Significant Disability"
+* extension[seriousness-criteria][0].extension[criterionCode].valueCodeableConcept = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C11338	"Results In Persistent Or Significant Disability"
 * extension[seriousness-criteria][=].extension[criterionPresent].valueBoolean = false
-* extension[seriousness-criteria][+].extension[criterionCode].valueCodeableConcept = urn:oid:2.16.840.1.113883.3.989.2.1.1.19#33 "Requires Inpatient Hospitalization"
+* extension[seriousness-criteria][+].extension[criterionCode].valueCodeableConcept = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C83052	"Requires Inpatient Hospitalization"
 * extension[seriousness-criteria][=].extension[criterionPresent].valueBoolean = true
-* extension[seriousness-criteria][+].extension[criterionCode].valueCodeableConcept = urn:oid:2.16.840.1.113883.3.989.2.1.1.19#34 "Results In Death"
+* extension[seriousness-criteria][+].extension[criterionCode].valueCodeableConcept = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C48275	"Results In Death"
 * extension[seriousness-criteria][=].extension[criterionPresent].valueBoolean = false
-* extension[seriousness-criteria][+].extension[criterionCode].valueCodeableConcept = urn:oid:2.16.840.1.113883.3.989.2.1.1.19#21 "Is Life Threatening"
+* extension[seriousness-criteria][+].extension[criterionCode].valueCodeableConcept = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C84266	"Is Life Threatening"
 * extension[seriousness-criteria][=].extension[criterionPresent].valueBoolean = true
-* extension[seriousness-criteria][+].extension[criterionCode].valueCodeableConcept = urn:oid:2.16.840.1.113883.3.989.2.1.1.19#12 "Congenital Anomaly or Birth Defect"
+* extension[seriousness-criteria][+].extension[criterionCode].valueCodeableConcept = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C83117	"Congenital Anomaly or Birth Defect"
 * extension[seriousness-criteria][=].extension[criterionPresent].valueBoolean = false
-* extension[seriousness-criteria][+].extension[criterionCode].valueCodeableConcept = urn:oid:2.16.840.1.113883.3.989.2.1.1.19#26 "Other Medically Important Condition"
+* extension[seriousness-criteria][+].extension[criterionCode].valueCodeableConcept = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C82521	"Other Medically Important Condition"
 * extension[seriousness-criteria][=].extension[criterionPresent].valueBoolean = false
 * extension[seriousness-criteria][+].extension[criterionCode].valueCodeableConcept = $fda-add-seriousness-criteria-cs#requiresPreventImpairment "Required Intervention to Prevent Permanent Impairment or Damage (Devices)"
 * extension[seriousness-criteria][=].extension[criterionPresent].valueBoolean = true

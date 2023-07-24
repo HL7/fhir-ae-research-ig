@@ -77,11 +77,11 @@ Title: "ClinicalResearchAdverseEventUseCase15"
 Description: "Serious Adverse Event Research Study Medication Example"
 * status = #completed //http://hl7.org/fhir/event-status#completed
 * subject = Reference(SCHJO)
-* code = http://terminology.hl7.org/CodeSystem/mdr#10017955 "Gastrointestinal haemorrhage"
+* code = https://www.meddra.org#10017955 "Gastrointestinal haemorrhage"
 
-//* outcome = urn:oid:2.16.840.1.113883.3.989.2.1.1.19#recoveringorresolving "Recovering/Resolving"
+//* outcome = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C49496  "Recovering/Resolving"
 //change outcome to resolved to reflect end-state 
-* outcome = urn:oid:2.16.840.1.113883.3.989.2.1.1.19#recoveredorresolved "Recovered/Resolved"
+* outcome = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C49498 "Recovered/Resolved"
 
 * extension[severity-or-grade].valueCodeableConcept = $ae-severity-or-grade-cs#3 "Severe"
 
@@ -89,23 +89,23 @@ Description: "Serious Adverse Event Research Study Medication Example"
 * resultingEffect[0] = Reference(GIBleedUseCase15)
 * study = Reference(research-study-XYZ)
 * suspectEntity[0].instanceReference = Reference(study-medication-administration-ABC)
-* suspectEntity[=].causality.entityRelatedness = urn:oid:2.16.840.1.113883.3.989.2.1.1.19#possibly "Possibly Related"
+* suspectEntity[=].causality.entityRelatedness = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C53258 "Possibly Related"
 * occurrencePeriod.start = "2021-12-02"
 * occurrencePeriod.end = "2021-12-09"
 
 * seriousness = http://terminology.hl7.org/CodeSystem/adverse-event-seriousness#serious "Serious"
 
-* extension[seriousness-criteria][0].extension[criterionCode].valueCodeableConcept = urn:oid:2.16.840.1.113883.3.989.2.1.1.19#35 "Results In Persistent Or Significant Disability"
+* extension[seriousness-criteria][0].extension[criterionCode].valueCodeableConcept = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C11338	"Results In Persistent Or Significant Disability"
 * extension[seriousness-criteria][=].extension[criterionPresent].valueBoolean = false
-* extension[seriousness-criteria][+].extension[criterionCode].valueCodeableConcept = urn:oid:2.16.840.1.113883.3.989.2.1.1.19#33 "Requires Inpatient Hospitalization"
+* extension[seriousness-criteria][+].extension[criterionCode].valueCodeableConcept = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C83052	"Requires Inpatient Hospitalization"
 * extension[seriousness-criteria][=].extension[criterionPresent].valueBoolean = true
-* extension[seriousness-criteria][+].extension[criterionCode].valueCodeableConcept = urn:oid:2.16.840.1.113883.3.989.2.1.1.19#34 "Results In Death"
+* extension[seriousness-criteria][+].extension[criterionCode].valueCodeableConcept = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C48275	"Results In Death"
 * extension[seriousness-criteria][=].extension[criterionPresent].valueBoolean = false
-* extension[seriousness-criteria][+].extension[criterionCode].valueCodeableConcept = urn:oid:2.16.840.1.113883.3.989.2.1.1.19#21 "Is Life Threatening"
+* extension[seriousness-criteria][+].extension[criterionCode].valueCodeableConcept = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C84266	"Is Life Threatening"
 * extension[seriousness-criteria][=].extension[criterionPresent].valueBoolean = true
-* extension[seriousness-criteria][+].extension[criterionCode].valueCodeableConcept = urn:oid:2.16.840.1.113883.3.989.2.1.1.19#12 "Congenital Anomaly or Birth Defect"
+* extension[seriousness-criteria][+].extension[criterionCode].valueCodeableConcept = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C83117	"Congenital Anomaly or Birth Defect"
 * extension[seriousness-criteria][=].extension[criterionPresent].valueBoolean = false
-* extension[seriousness-criteria][+].extension[criterionCode].valueCodeableConcept = urn:oid:2.16.840.1.113883.3.989.2.1.1.19#26 "Other Medically Important Condition"
+* extension[seriousness-criteria][+].extension[criterionCode].valueCodeableConcept = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C82521	"Other Medically Important Condition"
 * extension[seriousness-criteria][=].extension[criterionPresent].valueBoolean = false
 * extension[seriousness-criteria][+].extension[criterionCode].valueCodeableConcept = $fda-add-seriousness-criteria-cs#requiresPreventImpairment "Required Intervention to Prevent Permanent Impairment or Damage (Devices)"
 * extension[seriousness-criteria][=].extension[criterionPresent].valueBoolean = true
@@ -113,7 +113,8 @@ Description: "Serious Adverse Event Research Study Medication Example"
 * mitigatingAction[+].itemReference = Reference(procedure-upper-endoscopy)
 
 //consider changing to MedAmin reference to study drug being stopped
-* mitigatingAction[+].itemCodeableConcept.coding = http://snomed.info/sct#274512008 "Drug therapy discontinued (situation)"
+//* mitigatingAction[+].itemCodeableConcept.coding = http://snomed.info/sct#274512008 "Drug therapy discontinued (situation)"
+* mitigatingAction[+].itemCodeableConcept.coding = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C49502 "DRUG WITHDRAWN"
 * mitigatingAction[=].itemCodeableConcept.text = "study drug withdrawn"
 
 * mitigatingAction[+].itemReference = Reference(medicationrequest-for-study-medication-administration-ABC)

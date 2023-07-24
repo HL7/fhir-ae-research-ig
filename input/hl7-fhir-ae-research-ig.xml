@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Start by finding all references to "myig" and updating to appropriate text for your IG, including changing realm -->
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R4/fhir-single.xsd">
-  <id value="hl7.fhir.uv.adverseeventclinicalresearch"/>
+  <id value="hl7.fhir.uv.ae-research-ig"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="trial-use"/> 
   </extension> 
@@ -11,7 +11,7 @@
 <!--  <extension url="http://hl7.org/fhir/tools/StructureDefinition/igpublisher-spreadsheet">
     <valueString value="resources-spreadsheet.xml"/>
   </extension>-->
-  <url value="http://hl7.org/fhir/uv/adverseeventclinicalresearch/ImplementationGuide/hl7.fhir.uv.adverseeventclinicalresearch"/>
+  <url value="http://hl7.org/fhir/uv/ae-research-ig/ImplementationGuide/hl7.fhir.uv.ae-research-ig"/>
   <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
   <version value="1.0.0-ballot"/>
   <name value="AdverseEventClinicalResearch"/>
@@ -55,7 +55,7 @@ Within this guide are several examples. Every effort has been made to capture th
       <code value="001"/>
     </coding>
   </jurisdiction>
-  <packageId value="hl7.fhir.uv.adverseeventclinicalresearch"/>
+  <packageId value="hl7.fhir.uv.ae-research-ig"/>
   <!-- This should be changed to 'not-open-source' or another license if appropriate for non-HL7-published content -->
   <license value="CC0-1.0"/>
   <!-- This is whatever FHIR version(s) the IG artifacts are targeting (not the version of this file, which should always be 'current release') -->
@@ -65,6 +65,21 @@ Within this guide are several examples. Every effort has been made to capture th
     <packageId value="de.medizininformatikinitiative.kerndatensatz.fall"/>
     <version value="0.9.1"/>
   </dependsOn>-->
+  <!--  "dependsOn" : [{
+    "id" : "hl7tx",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on HL7 Terminology"
+    }],
+    "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
+    "packageId" : "hl7.terminology.r4",
+    "version" : "5.0.0"
+  }-->
+  <!--dependsOn>
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+    <packageId value="hl7.terminology"/>
+    <version value="5.2.0"/>
+  </dependsOn-->
   <definition>
     <!-- You don't need to define any groupings.  The IGPublisher will define them for you.  You only need to do so if your IG is 'special' and it's
       inappropriate to use the defaults.  Feel free to provide feedback about the defaults... -->

@@ -11,10 +11,10 @@ Usage: #definition
 * fhirVersion = #5.0.0
 * format[0] = #json
 * format[+] = #xml
-* implementationGuide[0] = "http://hl7.org/fhir/uv/ae-research-backport-ig/ImplementationGuide/hl7.fhir.uv.ae-research-backport-ig"
+* implementationGuide[0] = "http://hl7.org/fhir/uv/ae-research-ig/ImplementationGuide/hl7.fhir.uv.ae-research-ig"
 * rest.mode = #server
 * rest.resource[0].type = #AdverseEvent
-* rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/ae-research-backport-ig/StructureDefinition/AdverseEvent-clinical-research"
+* rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/ae-research-ig/StructureDefinition/AdverseEvent-clinical-research"
 * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #read

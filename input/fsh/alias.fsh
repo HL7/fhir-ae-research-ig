@@ -1,2 +1,2 @@
-Alias: $ae-severity-or-grade-cs = http://hl7.org/fhir/uv/adverseeventclinicalresearch/CodeSystem/adverse-event-severity-or-grade-cs
-Alias: $fda-add-seriousness-criteria-cs = http://hl7.org/fhir/uv/adverseeventclinicalresearch/CodeSystem/fda-add-seriousness-criteria-cs
+Alias: $ae-severity-or-grade-cs = http://hl7.org/fhir/uv/ae-research-ig/CodeSystem/adverse-event-severity-or-grade-cs
+Alias: $fda-add-seriousness-criteria-cs = http://hl7.org/fhir/uv/ae-research-ig/CodeSystem/fda-add-seriousness-criteria-cs
