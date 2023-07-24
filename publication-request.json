@@ -1,12 +1,13 @@
 {
   "package-id": "hl7.fhir.uv.ae-research-ig",
 	"version": "1.0.0-ballot",
-	"path": "http://hl7.org/fhir/uv/ae-research-ig/2023SEP",
-	"milestone": false,
+	"path": "http://hl7.org/fhir/uv/ae-research-ig/2023Sep-ballot",
+    "mode" : "working",
 	"status": "ballot",
 	"sequence": "STU 1",
-	"desc": "FHIR STU Release 1",
-	"descmd": "FHIR STU Release 1",
+	
+	"desc": "FHIR STU Release 1 AdverseEvent Clinical Research Profile",
+	"descmd": "FHIR STU Release 1 AdverseEvent Clinical Research Profile",
 	"first" : true,
 	"title": "Adverse Event Clinical Research",
 	"ci-build" : "https://build.fhir.org/ig/HL7/fhir-ae-research-ig/", 

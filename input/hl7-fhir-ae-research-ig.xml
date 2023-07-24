@@ -13,20 +13,20 @@
   </extension>-->
   <url value="http://hl7.org/fhir/uv/adverseeventclinicalresearch/ImplementationGuide/hl7.fhir.uv.adverseeventclinicalresearch"/>
   <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
-  <version value="1.0.0"/>
+  <version value="1.0.0-ballot"/>
   <name value="AdverseEventClinicalResearch"/>
   <title value="Adverse Event Clinical Research"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2023-07-01"/> 
   <publisher value="HL7 International - Biomedical Research and Regulation, Vulcan AdverseEvent groups"/>
-  <contact>
-    <telecom>
-      <!-- Or whatever URL and/or email address(es) are appropriate -->
-      <system value="url"/>
-      <value value="http://hl7.org/Special/committees/[something]"/>
-    </telecom>
-  </contact>
+    <contact>
+        <name value="Biomedical Research and Regulation WG"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://hl7.org/Special/committees/rcrim"/>
+        </telecom>
+    </contact>
   <description value="### Intent
 The intent of this guide is to provide a profile on the FHIR AdverseEvent Resource suitable for Clinical Research.
 
@@ -725,6 +725,11 @@ Within this guide are several examples. Every effort has been made to capture th
           <generation value="markdown"/>
         </page>
       </page-->
+	  <page>
+        <name value="security.html"/>
+        <title value="Security Note"/>
+        <generation value="markdown"/>
+      </page>
       <page>
         <name value="downloads.html"/>
         <title value="Useful Downloads"/>

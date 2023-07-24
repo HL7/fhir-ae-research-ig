@@ -15,7 +15,7 @@ INFORMATION: AdverseEvent/ClinicalResearchAdverseEventUseCase15: AdverseEvent.co
 INFORMATION: AdverseEvent/ClinicalResearchAdverseEventUseCase17: AdverseEvent.code.coding[0]: Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated
 
 
-# Correct code system URI and code
+# Correct code system URI and code see https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/code.20and.20system.20look.20right.20-.20getting.20error.20from.20IG.20publisher 
 INFORMATION: ResearchStudy/BreastCancerTrial: ResearchStudy.primaryPurposeType: None of the codings provided are in the value set 'Research Study Primary Purpose Type' (http://hl7.org/fhir/ValueSet/research-study-prim-purp-type|5.0.0), and a coding is recommended to come from this value set) (codes = http://terminology.hl7.org/CodeSystem/research-study-prim-purp-type#treatment)
 
 
