@@ -693,19 +693,23 @@ Within this guide are several examples. Every effort has been made to capture th
       <name value="index.html"/>
       <title value="AdverseEvents for Clinical Research Home Page"/>
       <generation value="html"/>
+	  <sourceUrl value="index.html"/>
       <page>
         <name value="background.html"/>
         <title value="Background and Workflow"/>
         <generation value="markdown"/>
+		<sourceUrl value="background.html"/>
       </page>
 	  <page>
         <name value="examples.html"/>
         <title value="Real World examples"/>
+		<sourceUrl value="examples.html"/>
         <generation value="markdown"/>
 	  		<page>
 				<name value="exampleCancerClinicalTrial.html"/>
 				<title value="Cancer Clinical Trial Example"/>
 				<generation value="markdown"/>
+				<sourceUrl value="exampleCancerClinicalTrial.html"/>
 			</page>
 	  </page>
 	  <!--page>
@@ -744,16 +748,19 @@ Within this guide are several examples. Every effort has been made to capture th
         <name value="security.html"/>
         <title value="Security Note"/>
         <generation value="markdown"/>
+		<sourceUrl value="security.html"/>
       </page>
       <page>
         <name value="downloads.html"/>
         <title value="Useful Downloads"/>
         <generation value="markdown"/>
+		<sourceUrl value="downloads.html"/>
       </page>
       <page>
         <name value="changes.html"/>
         <title value="IG Change History"/>
         <generation value="html"/>
+		<sourceUrl value="changes.html"/>
       </page>
     </page>
     <!-- copyright year is a mandatory parameter -->
