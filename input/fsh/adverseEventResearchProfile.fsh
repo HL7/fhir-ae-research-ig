@@ -201,7 +201,7 @@ Description: "If seriousness is serious then must have at least one seriousness 
 Expression: 
 "(seriousness.coding
 .exists(system='http://terminology.hl7.org/CodeSystem/adverse-event-seriousness' and code='serious')
-and extension('http://hl7.org/fhir/uv/ae-research-backport-ig/StructureDefinition/seriousness-criteria').exists()
+and extension('http://hl7.org/fhir/uv/ae-research-ig/StructureDefinition/seriousness-criteria').exists()
 and seriousness.coding
 .exists(system='http://terminology.hl7.org/CodeSystem/adverse-event-seriousness' and code='non-serious').not()
 )
@@ -211,7 +211,7 @@ and code='non-serious') and
 seriousness.coding
 .exists(system='http://terminology.hl7.org/CodeSystem/adverse-event-seriousness' and code='serious').not()
 and
-extension('http://hl7.org/fhir/uv/ae-research-backport-ig/StructureDefinition/seriousness-criteria').exists().not()
+extension('http://hl7.org/fhir/uv/ae-research-ig/StructureDefinition/seriousness-criteria').exists().not()
 )"
 
 //"(AdverseEvent.seriousness.coding.system='http://terminology.hl7.org/CodeSystem/adverse-event-seriousness' and AdverseEvent.seriousness.coding.code='serious' and extension.where(url='http://hl7.org/fhir/uv/ae-research-ig/StructureDefinition/seriousness-criteria').exists()) or (AdverseEvent.seriousness.coding.system='http://terminology.hl7.org/CodeSystem/adverse-event-seriousness' and AdverseEvent.seriousness.coding.code='non-serious')"
