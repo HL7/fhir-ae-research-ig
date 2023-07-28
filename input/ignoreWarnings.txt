@@ -6,6 +6,7 @@
 # Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated
 
 # This is the correct code system URI see https://terminology.hl7.org/5.2.0/CodeSystem-mdr.json.html and https://terminology.hl7.org/CodeSystem-v3-nciThesaurus.json.html 
+The definition for the Code System with URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' doesnt provide any codes so the code cannot be validated
 Code System URI 'https://www.meddra.org' is unknown so the code cannot be validated
 Code System with URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' doesnt provide any codes so the code cannot be validated
 Error from server: Unable to provide support for code system http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl
