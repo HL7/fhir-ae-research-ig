@@ -19,7 +19,7 @@ This IG will allow clinical trial AE representation in systems, including EHRs a
 
 The following image shows a notional workflow for collecting and reporting adverse events and serious adverse events (SAE) for pre-market clinical trials. The dotted line represents a future vision of data flow using FHIR which will most likely be covered by a separate MedWatch IG that builds upon this IG.
 
-<img src="ClinicalResearchAEScope-PreMarket.png" alt="Clinical Research AE Pre-Market" width="50%" style="float:none; margin: 0px 0px 0px 0px;" />
+<img src="ClinicalResearchAEScope-PreMarket-v2.png" alt="Clinical Research AE Pre-Market" width="50%" style="float:none; margin: 0px 0px 0px 0px;" />
 
 Example scenarios: Pre-market clinical trial reporting of serious adverse events (SAE) using FHIR and utilized as part of clinical decision support actions within a clinical research trial setting.
 
@@ -30,7 +30,7 @@ Example scenarios: Pre-market clinical trial reporting of serious adverse events
 
 The following image shows a notional workflow for collecting and reporting adverse events, post-market. The dotted line represents a future vision of data flow using FHIR which will most likely be covered by a separate MedWatch IG that builds upon this IG.
 
-<img src="ClinicalResearchAEScope-PostMarket.png" alt="Clinical Research AE Post-Market" width="50%" style="float:none; margin: 0px 0px 0px 0px;" />
+<img src="ClinicalResearchAEScope-PostMarket-v2.png" alt="Clinical Research AE Post-Market" width="50%" style="float:none; margin: 0px 0px 0px 0px;" />
 
 Example scenarios: Post-market reporting of adverse events using FHIR for longitudinal safety surveillance.
 
