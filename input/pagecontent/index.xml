@@ -2,7 +2,10 @@
 
 <a name="intent"></a>
 <h3>Intent</h3>
-<p>The intent of this guide is to provide a profile on the FHIR AdverseEvent Resource suitable for Clinical Research.</p>
+<p>The intent of this guide is to provide a baseline profile on the FHIR AdverseEvent Resource suitable for Clinical Research.The profile serves as foundational specification to meet general needs in communicating adverse events in clinical research. Key elements are highlighted with MS and required cardinality. Also, the implementation guide (IG) provides useful terminology bindings for the clinical research use case. And, there are examples to aid understanding. The IG was developed by subject matter experts and tested through connectathons.
+
+This version is R5, there is also an  <a href="http://hl7.org/fhir/uv/ae-research-backport-ig/ImplementationGuide/hl7.fhir.uv.ae-research-backport-ig">R4 backport</a>for convenience to those systems that cannot operate on FHIR R5.  
+ </p>
 
   <a name="overview"> </a>
   <h3>Overview</h3>
@@ -48,7 +51,7 @@ A single Adverse Event (AE) may need to be reported in multiple ways. Choosing t
   <a name="previous"> </a>
   <h3>Previous Specifications</h3>
   <p>
-    FHIR STU4 contained a non-normative version of the AdverseEvent Resource. The specification here is based on changes made in R5 and supersedes the use of the R4 Resource.
+    FHIR STU4 contained a non-normative version of the AdverseEvent Resource. The specification here is based on changes made in R5.
   </p>
   <a name="fhir"> </a>
   <h3>Understanding FHIR</h3>
