@@ -229,7 +229,7 @@ Profile: AdverseEventClinicalResearch
 Parent: AdverseEvent
 Id: AdverseEvent-clinical-research
 Title: "Adverse Event Clinical Research"
-Description: "An example profile of AdverseEvent for Research reporting."
+Description: "Foundational profile of AdverseEvent for Clinical Research communications."
 
 * obeys aeClinRes-seriousness-1
 
