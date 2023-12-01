@@ -12,11 +12,11 @@ The known risk profile of the new oral agent prior to this event included mild e
 
 The study sponsors determined that is an unanticipated problem that must be reported because although the risk of mild liver injury was foreseen, severe liver injury resulting in hepatic failure was unexpected in severity; possibly related to participation in the research; and serious.
 
-### FDA MedWatch Form being used during a clinical trial
+### FDA MedWatch 3500A Form being used during a clinical trial
 
 (Link to [Example AdverseEvent Clinical Research Profile](AdverseEvent-clinical-research-ae-example-medwatch-patient-report.html))
 
-A 64-year-old woman (Janet) is participating in a breast cancer clinical trial and taking an investigational drug. As part of her participation in the study, she was instructed to use a patient reported outcomes (ePRO) application to report an adverse event that resulted in any of the following: hospitalization, required help to prevent permanent harm, disability or health problem, birth defect, life-threatening, death, other serious/important medical incident. (This list identifies the event as being "serious events".)
+A 64-year-old woman (Janet) is participating in a breast cancer clinical trial and taking an investigational drug. As part of her participation in the study, she was instructed to use a patient reported outcomes (ePRO) application to report an adverse event that resulted in any of the following: hospitalization, required help to prevent permanent harm, disability or health problem, birth defect, life-threatening, death, other serious/important medical incident (this list identifies the event as being "serious events"). The application is designed to capture data elements found on the 3500A Form. 
 
 The Clinical Investigator (CI) receives a notification that Janet has an adverse event and reviews the event in Janet’s EHR system.   The adverse event form is pre-populated from EHR data for the clinical investigator.  The CI assesses causality for Janet’s adverse event and submits the serious adverse event to the sponsor.  The sponsor reviews the received adverse event and performs its own causality assessment.  Since this event is a Suspected Unexpected Serious Adverse Reaction (SUSAR) within FDA’s regulation.  If the Suspected Unexpected Serious Adverse Reaction (SUSAR) was life threating or death, it is submitted within 7 calendar days.
 
