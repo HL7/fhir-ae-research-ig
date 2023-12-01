@@ -15,6 +15,12 @@
 		</div-->
 		<p></p>
 	</div>
-	
+		<div>
+		<a name="Note on identifiers"></a>
+		<h3>Note on identifiers</h3>
+		<p>
+			The FHIR identifier data element provides for a place to put a business identifier. It has a rich set of metadata that can be associated with the identifier such as assigner, namespace, valid period, use and type. Business identifiers such as the Investigational New Drug (IND#) can be represented. However, the use case will determine if the business identifier should be placed on the AdverseEvent Clinical Research Profile, or a more appropriate Resource. In the case of IND#, for example, the IND# should be placed on a Medication Resource data instance as one of the slices of Medication.identifier. 
+		</p>
+	</div>
   <!--p>See <a href="sequencing.html">Variant Reporting</a> for details on use.</p-->
 </div>
