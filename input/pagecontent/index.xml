@@ -13,24 +13,30 @@ A single Adverse Event (AE) may need to be reported in multiple ways. Choosing t
     This guide, the Clinical Research adverse event implementation guide, is for the clinical research setting. In this setting, the event is tracked and evaluated as part of the clinical research process for the research study.
   </p>
   <p>
-  In the research setting an adverse event is the result of an intervention that caused unintentional harm to a specific subject or group of subjects (this is surfaced in the profile as a constraint of ‘actual’ for the value of ‘actuality’). An example of an adverse event in the clinical research setting would be a patient develops renal failure while on a study drug. These events are characterized by the need to capture cause-and-effect (although they might not be known at the time of the event), severity, and outcome. 
+  In the research setting an adverse event means any untoward medical occurrence associated with the use of a drug in humans, whether or not considered drug related (this is surfaced in the profile as a constraint of ‘actual’ for the value of ‘actuality’). An example of an adverse event in the clinical research setting would be a patient develops renal failure while on a study drug. These events are characterized by the need to capture cause-and-effect (although they might not be known at the time of the event), seriousness, severity, and outcome. 
   </p>
   <p>
   The context of an adverse event is also important, and captured in the AdverseEvent Clinical Research Profile data elements. A subject may have condition(s) or current treatments (medications, diet, devices) that impact their response to a newly introduced medication, device or procedure. Knowledge of these variables is essential in establishing a cause-and-effect relationship for an adverse event. This information is represented with corresponding resources (e.g. Procedure Resource for procedures, etc.) and referenced.
   </p>
   <p>
-   A potential adverse event may also be called a near miss or an error, these are not reported with the AdverseEvent Clinical Research Profile.
+   A potential adverse event may also be called a near miss or an error, which are not reported with the AdverseEvent Clinical Research Profile.
   </p>
   <a name="scope"> </a>
   <h3>Scope</h3>
   <p>
-  This FHIR IG enables the collection of adverse events in real-world data (RWD) sources such as electronic health records (EHR) and personal health records (PHR) that occur during clinical trials. It ensures the appropriate AE representation required to support clinical research trials within a regulated environment. As the AEs are collected in RWD sources, the data can be transmitted via FHIR to clinical trial management systems, regulatory agencies, sponsors, and clinical research organizations for further processing and reporting. 
+  This FHIR IG enables the collection of adverse events from sources of real-world data (RWD) such as electronic health records (EHR) and personal health records (PHR) that patients experience while enrolled in clinical trials. In addition, this IG will also collect adverse events from RWD for post-market surveillance.
   </p>
+<p>
+  This IG ensures the appropriate AE representation required to support regulated clinical trials. It is assumed this IG is implemented (by HCPs, sponsors, CROs) as described to ensure that the originating source (e.g., EHRs) capture such details (i.e., it's not an after-the-fact process). As the AEs are collected in RWD sources, the data can be transmitted via FHIR to sponsors, regulatory agencies, and clinical research organizations for further processing and reporting.
+</p>
   <p>
-  In the pre-market clinical research setting, serious adverse events must be reported to the sponsor, clinical research organization, and regulatory agencies within a specific time frame for Institutional Review Boards (IRBs) and Data Safety Monitoring Board (DSMB) review. By using this IG, a clinical investigator can document an AE in the EHR, it can be received by a secondary clinical trial management system for triage and then forwarded to the sponsor and regulatory agencies. Similarly, a patient on a clinical trial can record an adverse event in their PHR that is then shared with the clinical investigator and reported to the sponsor and regulatory agencies as necessary. In a post-market situation, a patient, provider, or manufacturer can record the adverse event in a system and then report it to the FDA as a FHIR based MedWatch form.
+  In the pre-market clinical research setting, the clinical investigator must report serious and non-serious adverse events to all applicable parties. A serious adverse event must be reported to the sponsor, clinical research organization, and regulatory agencies within a specific time frame. By using this IG, a clinical investigator can document an AE in the EHR system, it can be transmitted to an electronic data capture (EDC) system, a component of the clinical trial management system for triage and then forwarded to the sponsor and regulatory agencies. Similarly, a patient on a clinical trial can record an adverse event in an electronic patient reported outcomes (ePRO) system, which is then shared with the clinical investigator and reported to the sponsor and regulatory agencies as necessary.
   </p>
+ <p>
+  In a post-market setting, a patient or their caregiver, healthcare provider, pharmacies or medical products manufacturers can record the adverse event from the EHR system to the medical product manufacturers and regulatory agencies (e.g., FDA).  For FDA submission, this IG can support the population of certain requirements in a future MedWatch form FHIR IG. 
+</p>
   <p>
-  Within this guide are several examples. Every effort has been made to capture the most important details of the use of the AdverseEvent profile. However, some examples may provide only a stub to referenced resources (e.g. instances of Patient Resource will be referenced using logical ids but are not resolvable, implementation of Patient is left for other guidance and is not the subject of this guide). Connectathons are ideal opportunities to create, compare and consider the holistic implementation of all FHIR Resources.
+    Within this guide there are several use cases/examples. Every effort has been made to capture the most important details of the use of the AdverseEvent profile. However, some examples may provide only a stub to referenced resources (e.g., instances of Patient Resource will be referenced using logical ids but are not resolvable, implementation of Patient is left for other guidance and is not the subject of this guide). Connectathons are ideal opportunities to create, compare and consider the holistic implementation of all FHIR Resources.
   </p>
   
   <a name="how to use this guide"> </a>
@@ -86,7 +92,7 @@ A single Adverse Event (AE) may need to be reported in multiple ways. Choosing t
   <a name="acknowledgments"> </a>
   <h3>Acknowledgments</h3>
   <p>
-  This IG is sponsored by the HL7 <a href="https://www.hl7.org/Special/committees/rcrim/index.cfm">HL7 Biomedical Research and Regulation</a> Work Group and co-sponsored by the HL7 <a href="https://www.hl7.org/Special/committees/patientcare/index.cfm">Patient Care</a> and <a href="https://www.hl7.org/Special/committees/healthcaredevices/index.cfm">Devices</a> Work Groups.
+  This IG is sponsored by the <a href="https://www.hl7.org/Special/committees/rcrim/index.cfm">HL7 Biomedical Research and Regulation</a> Work Group and co-sponsored by the HL7 <a href="https://www.hl7.org/Special/committees/patientcare/index.cfm">Patient Care</a> and <a href="https://www.hl7.org/Special/committees/healthcaredevices/index.cfm">Devices</a> Work Groups.
   </p>
   <p>
   The development of the Clinical Research Adverse Event Implementation Guide was made possible by the <a href="https://confluence.hl7.org/display/VA/Vulcan+Accelerator+Home">Vulcan FHIR Accelerator</a>, a member driven community that exists to help Clinical and Translational Research start using FHIR to manage the vast amount of data they have to work with. 
