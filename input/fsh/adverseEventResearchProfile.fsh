@@ -20,7 +20,7 @@ Description: "Indicates if the subject discontinued the study due to the adverse
 Extension: SeriousnessCriteria
 Id: seriousness-criteria
 Title: "Criteria reviewed in determining serious adverse event"
-Description: "TBD - Element to capture the presence or absence of specific factors (criteria) associated with serious adverse events."
+Description: "Element to capture the presence or absence of specific factors (criteria) associated with serious adverse events."
 * ^context.type = #element
 * ^context.expression = "AdverseEvent"
 * extension contains
