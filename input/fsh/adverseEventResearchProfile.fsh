@@ -271,8 +271,13 @@ Description: "Foundational profile of AdverseEvent for Clinical Research communi
 * outcome from adverse-event-outcome-clinical-research-vs (required)
 * study 1..1 MS
 
-* supportingInfo.item[x] ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
-* supportingInfo.item[x] ^binding.extension.valueString = "Adverse Event Supporting Info"
+//* supportingInfo.item[x] ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
+//* supportingInfo.item[x] ^binding.extension.valueString = "Adverse Event Supporting Info"
+
+//* supportingInfo.item[x] from http://hl7.org/fhir/ValueSet/adverse-event-supporting-info (example)
+//* supportingInfo.item[x] ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
+//* supportingInfo.item[x] ^binding.extension.valueString = "Adverse Event Supporting Info"
+//* supportingInfo.item[x] ^binding.description = "Codes describing the supporting information relevant to the event."
 
 * preventiveAction 0..0
 
