@@ -1,13 +1,13 @@
 Instance: patient-moumic
 InstanceOf: Patient
-Title: "Use Case 16 Patient MOUMIC"
-Description: "Use Case 16 Patient MOUMIC on Research Study DISNEY"
+Title: "Patient MOUMIC"
+Description: "Patient MOUMIC on Research Study DISNEY"
 * name.family = "Example"
 * name.given[0] = "MOUMIC"
 
 Instance: research-study-DISNEY
 InstanceOf: ResearchStudy
-Description: "Use Case 16 Research Study DISNEY"
+Description: "Research Study DISNEY"
 * title = "Research Study DISNEY"
 * identifier.value = "DUCK-828"
 * status =  http://hl7.org/fhir/research-study-status#active "Active"
