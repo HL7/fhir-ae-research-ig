@@ -92,10 +92,10 @@ Within this guide are several examples. Every effort has been made to capture th
 		<resource>
 			<reference>
 				<reference value="Patient/SCHJO"/>
-				<display value="Use Case 1 - Serious Adverse Event"/>
+				<display value="Serious Adverse Event"/>
 			</reference>
-			<name value="Use Case 1 - Serious Adverse Event"/>
-			<description value="Use Case 1 - SAE Patient SCHJO on Research Study XYZ, Study ID XYZ-123, Subject number XYZ-123-002."/>
+			<name value="Serious Adverse Event"/>
+			<description value="SAE Patient SCHJO on Research Study XYZ, Study ID XYZ-123, Subject number XYZ-123-002."/>
 		</resource>
 		<resource>
 			<reference>
@@ -103,7 +103,7 @@ Within this guide are several examples. Every effort has been made to capture th
 				<display value="ClinicalTrialSubject5"/>
 			</reference>
 			<name value="ClinicalTrialSubject5"/>
-			<description value="Use case 7. Clinical Trial subject number 5. Acute Hepatic Failure."/>
+			<description value="Clinical Trial subject number 5. Acute Hepatic Failure."/>
 		</resource>
 		<!--resource>
 			<reference>
@@ -115,26 +115,26 @@ Within this guide are several examples. Every effort has been made to capture th
 		</resource-->
 		<resource>
 			<reference>
-				<reference value="AdverseEvent/ClinicalResearchAdverseEventUseCase7"/>
-				<display value="ClinicalResearchAdverseEventUseCase7"/>
+				<reference value="AdverseEvent/ClinicalTrialSignificantAdverseEvent"/>
+				<display value="ClinicalTrialSignificantAdverseEvent"/>
 			</reference>
-			<name value="ClinicalResearchAdverseEventUseCase7"/>
+			<name value="ClinicalTrialSignificantAdverseEvent"/>
 			<description value="example"/>
 		</resource>
 		<resource>
 			<reference>
-				<reference value="Condition/AEHepaticFailureUseCase7"/>
-				<display value="AEHepaticFailureUseCase7"/>
+				<reference value="Condition/AEHepaticFailure"/>
+				<display value="AEHepaticFailure"/>
 			</reference>
-			<name value="AEHepaticFailureUseCase7"/>
+			<name value="AEHepaticFailure"/>
 			<description value="The fifth subject enrolled in the trial develops severe hepatic failure complicated by encephalopathy one month after starting the study. The study sponsors determined that is an unanticipated problem that must be reported because although the risk of mild liver injury was foreseen, severe liver injury resulting in hepatic failure was unexpected in severity; possibly related to participation in the research; and serious."/>
 		</resource>
 		<resource>
 			<reference>
-				<reference value="Condition/AEHepaticFailureUseCase7complication"/>
-				<display value="AEHepaticFailureUseCase7complication"/>
+				<reference value="Condition/AEHepaticFailurecomplication"/>
+				<display value="AEHepaticFailurecomplication"/>
 			</reference>
-			<name value="AEHepaticFailureUseCase7complication"/>
+			<name value="AEHepaticFailurecomplication"/>
 			<description value="The fifth subject enrolled in the trial develops severe hepatic failure complicated by encephalopathy one month after starting the study. The study sponsors determined that is an unanticipated problem that must be reported because although the risk of mild liver injury was foreseen, severe liver injury resulting in hepatic failure was unexpected in severity; possibly related to participation in the research; and serious."/>
 		</resource>
 		<resource>
@@ -263,18 +263,18 @@ Within this guide are several examples. Every effort has been made to capture th
 		<resource>
 			<reference>
 				<reference value="Condition/janetReported-condition"/>
-				<display value="Use case 6B - problem"/>
+				<display value="Problem"/>
 			</reference>
-			<name value="Use case 6B - problem"/>
-			<description value="Use case 6B - patient reported AE problem"/>
+			<name value="Problem"/>
+			<description value="Patient reported AE problem"/>
 		</resource>
 		<resource>
 			<reference>
 				<reference value="AdverseEvent/clinical-research-ae-example-medwatch-patient-report"/>
-				<display value="Use case 6B - patient reported AE during research study"/>
+				<display value="Patient reported AE during research study"/>
 			</reference>
-			<name value="Use case 6B - patient reported AE during research study"/>
-			<description value="Use case 6B - Patient report of Adverse Event, example of data that would be on MedWatch form as reported by Patient"/>
+			<name value="Patient reported AE during research study"/>
+			<description value="Patient report of Adverse Event, example of data that would be on MedWatch form as reported by Patient"/>
 		</resource>
 		<resource>
 			<reference>
@@ -406,10 +406,10 @@ Within this guide are several examples. Every effort has been made to capture th
 		</resource>
 		<resource>
 			<reference>
-				<reference value="Condition/GIBleedUseCase15" />
-				<display value="GIBleedUseCase15" />
+				<reference value="Condition/GIBleed" />
+				<display value="GIBleed" />
 			</reference>
-			<name value="GIBleedUseCase15" />
+			<name value="GIBleed" />
 			<description value="Gastrointestinal (GI) bleed" />
 		</resource>
 		<resource>
@@ -418,7 +418,7 @@ Within this guide are several examples. Every effort has been made to capture th
 				<display value="research-study-XYZ" />
 			</reference>
 			<name value="research-study-XYZ" />
-			<description value="Use Case 15 Research Study XYZ" />
+			<description value="Research Study XYZ" />
 		</resource>
 		<resource>
 			<reference>
@@ -450,7 +450,7 @@ Within this guide are several examples. Every effort has been made to capture th
 				<display value="research-study-DISNEY" />
 			</reference>
 			<name value="research-study-DISNEY" />
-			<description value="Use Case 16 Research Study DISNEY" />
+			<description value="Research Study DISNEY" />
 		</resource>
 		<resource>
 			<reference>
@@ -490,7 +490,7 @@ Within this guide are several examples. Every effort has been made to capture th
 				<display value="research-study-acme" />
 			</reference>
 			<name value="research-study-acme" />
-			<description value="Use Case 17 Research Study ACME" />
+			<description value="Research Study ACME" />
 		</resource>
 		<resource>
 			<reference>
@@ -550,10 +550,10 @@ Within this guide are several examples. Every effort has been made to capture th
 		</resource>
 		<resource>
 			<reference>
-				<reference value="AdverseEvent/ClinicalResearchAdverseEventUseCase17" />
-				<display value="ClinicalResearchAdverseEventUseCase17" />
+				<reference value="AdverseEvent/AdverseEventFromProcedureNotStudyDrug" />
+				<display value="AdverseEventFromProcedureNotStudyDrug" />
 			</reference>
-			<name value="ClinicalResearchAdverseEventUseCase17" />
+			<name value="AdverseEventFromProcedureNotStudyDrug" />
 			<description value="Adverse event from procedure, not study drug" />
 		</resource>
 		<resource>
@@ -565,26 +565,26 @@ Within this guide are several examples. Every effort has been made to capture th
 			<description value="Example clinical trial medication WBY" /></resource>
 		<resource>
 			<reference>
-				<reference value="AdverseEvent/ClinicalResearchAdverseEventUseCase15" />
-				<display value="ClinicalResearchAdverseEventUseCase15" />
+				<reference value="AdverseEvent/SeriousAdverseEventResearchStudy" />
+				<display value="SeriousAdverseEventResearchStudy" />
 			</reference>
-			<name value="ClinicalResearchAdverseEventUseCase15" />
+			<name value="SeriousAdverseEventResearchStudy" />
 			<description value="Serious Adverse Event Research Study Medication Example" />
 		</resource>
 		<resource>
 			<reference>
 				<reference value="Patient/patient-moumic" />
-				<display value="Use Case 16 Patient MOUMIC" />
+				<display value="Patient MOUMIC" />
 			</reference>
-			<name value="Use Case 16 Patient MOUMIC" />
-			<description value="Use Case 16 Patient MOUMIC on Research Study DISNEY" />
+			<name value="Patient MOUMIC" />
+			<description value="Patient MOUMIC on Research Study DISNEY" />
 		</resource>
 		<resource>
 			<reference>
-				<reference value="AdverseEvent/ClinicalResearchAdverseEventUseCase16" />
-				<display value="ClinicalResearchAdverseEventUseCase16" />
+				<reference value="AdverseEvent/NonSeriousAdverseEventResearchStudyMed" />
+				<display value="NonSeriousAdverseEventResearchStudyMed" />
 			</reference>
-			<name value="ClinicalResearchAdverseEventUseCase16" />
+			<name value="NonSeriousAdverseEventResearchStudyMed" />
 			<description value="Non-Serious Adverse Event Research Study Medication Example" />
 		</resource>
 		<resource>

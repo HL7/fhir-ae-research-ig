@@ -1,5 +1,5 @@
 // Adverse Event Example Use Case 15
-Instance: GIBleedUseCase15
+Instance: GIBleed
 InstanceOf: Condition
 Description: "Gastrointestinal (GI) bleed"
 * subject = Reference(SCHJO)
@@ -10,7 +10,7 @@ Description: "Gastrointestinal (GI) bleed"
 //Research Study XYZ, Study ID XYZ-123,
 Instance: research-study-XYZ
 InstanceOf: ResearchStudy
-Description: "Use Case 15 Research Study XYZ"
+Description: "Research Study XYZ"
 * title = "Research Study XYZ"
 * identifier.value = "XYZ-123"
 * status =  http://hl7.org/fhir/research-study-status#active "Active"
@@ -71,9 +71,9 @@ Description: "Example Procedure Upper Endoscopy"
 * status = http://hl7.org/fhir/event-status#completed "Completed"
 * code = http://snomed.info/sct#1255196002 "Esophagogastroduodenoscopy with control of hemorrhage of esophagus (procedure)"
 
-Instance: ClinicalResearchAdverseEventUseCase15
+Instance: SeriousAdverseEventResearchStudy
 InstanceOf: AdverseEvent-clinical-research
-Title: "ClinicalResearchAdverseEventUseCase15"
+Title: "SeriousAdverseEventResearchStudy"
 Description: "Serious Adverse Event Research Study Medication Example"
 * status = #completed //http://hl7.org/fhir/event-status#completed
 * subject = Reference(SCHJO)
@@ -85,8 +85,8 @@ Description: "Serious Adverse Event Research Study Medication Example"
 
 * extension[severity-or-grade].valueCodeableConcept = $ae-severity-or-grade-cs#3 "Severe"
 
-//* resultingCondition[0] = Reference(GIBleedUseCase15)
-* resultingEffect[0] = Reference(GIBleedUseCase15)
+//* resultingCondition[0] = Reference(GIBleed)
+* resultingEffect[0] = Reference(GIBleed)
 * study = Reference(research-study-XYZ)
 * suspectEntity[0].instanceReference = Reference(study-medication-administration-ABC)
 * suspectEntity[=].causality.entityRelatedness = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C53258 "Possibly Related"

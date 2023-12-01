@@ -396,8 +396,8 @@ Description: "Study medication, bresentrik"
 Instance: janetReported-condition
 InstanceOf: Condition
 Usage: #example
-Title: "Use case 6B - problem"
-Description: "Use case 6B - patient reported AE problem"
+Title: "Problem"
+Description: "Patient reported AE problem"
 * identifier.value = "12345"
 * code = http://snomed.info/sct#332982000 "Uncontrollable vomiting"
 * subject = Reference(JanetPatient) "Janet"
@@ -427,8 +427,8 @@ Description: "Use case 6B - patient reported AE problem"
 Instance: clinical-research-ae-example-medwatch-patient-report
 InstanceOf: AdverseEvent-clinical-research
 Usage: #example
-Title: "Use case 6B - patient reported AE during research study"
-Description: "Use case 6B - Patient report of Adverse Event, example of data that would be on MedWatch form as reported by Patient" 
+Title: "Patient reported AE during research study"
+Description: "Patient report of Adverse Event, example of data that would be on MedWatch form as reported by Patient" 
 * status = http://hl7.org/fhir/event-status#completed
 
 //A1 What kind of problem was it? (Check all that apply)
@@ -463,17 +463,11 @@ Description: "Use case 6B - Patient report of Adverse Event, example of data tha
 //A4 note
 * note[+].authorReference = Reference(JanetPatient)
 * note[=].time = 2023-04-12
-* note[=].text = "Use case for MedWatch Form FDA 3500B being used during a clinical trial%:  
-A 64-year old woman %(Janet%) is participating in a breast cancer clinical trial. As part of her participation in the study, she was instructed to use a specific consumer facing FHIR application to report an adverse event that resulted in any of the following: hospitalization, required help to prevent permanent harm, disability or health problem, birth defect, life-threatening, death, other serious/important medical incident. %(This list identifies serious events.%)  
+* note[=].text = "A 64-year-old woman (Janet) is participating in a breast cancer clinical trial and taking an investigational drug. As part of her participation in the study, she was instructed to use a patient reported outcomes (ePRO) application to report an adverse event that resulted in any of the following: hospitalization, required help to prevent permanent harm, disability or health problem, birth defect, life-threatening, death, other serious/important medical incident (this list identifies the event as being serious events). The application is designed to capture data elements found on the 3500A Form. 
 
-Janet created an account in the consumer facing FHIR application and imported her health records from her three %(3%) health systems. The data from her health systems were aggregated to allow her a single view of all her medical information. Janet was able to add more information that was not included in her imported data %(OTC drugs, vitamins, etc.%).  
+The Clinical Investigator (CI) receives a notification that Janet has an adverse event and reviews the event in Janet’s EHR system. The adverse event form is pre-populated from EHR data for the clinical investigator. The CI assesses causality for Janet’s adverse event and submits the serious adverse event to the sponsor. The sponsor reviews the received adverse event and performs its own causality assessment. Since this event is a Suspected Unexpected Serious Adverse Reaction (SUSAR) within FDA’s regulation. If the Suspected Unexpected Serious Adverse Reaction (SUSAR) was life threatening or death, it is submitted within 7 calendar days.
 
-After receiving the study drug %(bresentrik%) during a study visit, Janet went home and began vomiting uncontrollably. Her husband called an ambulance and Janet was taken to the hospital where she was treated in the ER and released.  
-
-The following morning, Janet opened the study designated consumer facing FHIR application and completed the MedWatch Form FDA 3500B as earlier directed. The form provides her the opportunity to choose to auto fill several of the areas to allow for faster/easier completion of the form %(demographics, meds, allergies, conditions, labs%). She is given the option to display and choose the relevant items from each category %(example%: only current meds she is taking, current labs, etc. which might be a subset of her full PHR%).  
-
-When Janet clicked “Submit” on the electronic form, the data automatically flowed to the investigator %(or to whomever was designated to receive the data%). The data is then absorbed within the receiver’s system to auto populate a MedWatch Form FDA 3500B for submission to the FDA within 24 hours."
-
+Any other types of seriousness are submitted within 15 calendar days."
 
 //Janet went home and began vomiting uncontrollably. 
 //problem

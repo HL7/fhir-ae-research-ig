@@ -47,9 +47,9 @@ Description: "Example of Tylenol"
 * dosage.route = http://snomed.info/sct#26643006 "Oral use"
 
 
-Instance: ClinicalResearchAdverseEventUseCase16
+Instance: NonSeriousAdverseEventResearchStudyMed
 InstanceOf: AdverseEvent-clinical-research
-Title: "ClinicalResearchAdverseEventUseCase16"
+Title: "NonSeriousAdverseEventResearchStudyMed"
 Description: "Non-Serious Adverse Event Research Study Medication Example"
 * status = #completed //http://hl7.org/fhir/event-status#completed
 * subject = Reference(patient-moumic)

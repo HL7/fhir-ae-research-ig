@@ -12,7 +12,7 @@ Description: "Patient enrolled in ACME study, taking Study Medication WBY 10 mg 
 
 Instance: research-study-acme
 InstanceOf: ResearchStudy
-Description: "Use Case 17 Research Study ACME"
+Description: "Research Study ACME"
 * title = "Research Study ACME"
 * identifier.value = "ACME-789"
 * status =  http://hl7.org/fhir/research-study-status#active "Active"
@@ -84,7 +84,7 @@ Description: "Example medication administration for hives"
 * dosage.dose = 50 'mg' "mg"
 * dosage.route = http://snomed.info/sct#129326001 "Injection"
 
-Instance: ClinicalResearchAdverseEventUseCase17
+Instance: AdverseEventFromProcedureNotStudyDrug
 InstanceOf: AdverseEvent-clinical-research
 Description: "Adverse event from procedure, not study drug"
 * subject = Reference(patient-slp)

@@ -12,7 +12,7 @@ Instance: ClinicalTrialSubject5
 InstanceOf: Patient
 Usage: #example
 Title: "ClinicalTrialSubject5"
-Description: "Use case 7. Clinical Trial subject number 5. Acute Hepatic Failure."
+Description: "Clinical Trial subject number 5. Acute Hepatic Failure."
 * name
   * given[0] = "Subject 5"
   * family = "Clinical Trail"
@@ -20,20 +20,20 @@ Description: "Use case 7. Clinical Trial subject number 5. Acute Hepatic Failure
 
 
 //https://confluence.hl7.org/pages/viewpage.action?pageId=49646529#AdverseEventUseCases-UseCase7-Clinicaltrial:significantadverseevent
-Instance: ClinicalResearchAdverseEventUseCase7
+Instance: ClinicalTrialSignificantAdverseEvent
 InstanceOf: AdverseEvent-clinical-research
 Usage: #example
-Title: "ClinicalResearchAdverseEventUseCase7"
+Title: "ClinicalTrialSignificantAdverseEvent"
 Description: "example"
 //* actuality = http://hl7.org/fhir/adverse-event-actuality#actual 
 * status = http://hl7.org/fhir/event-status#completed
 * subject = Reference(ClinicalTrialSubject5)
 * outcome = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C49496  "Recovering/Resolving"
 
-//* resultingCondition[0] = Reference(AEHepaticFailureUseCase7)
-* resultingEffect[0] = Reference(AEHepaticFailureUseCase7)
-//* resultingCondition[1] = Reference(AEHepaticFailureUseCase7complication)
-* resultingEffect[+] = Reference(AEHepaticFailureUseCase7complication)
+//* resultingCondition[0] = Reference(AEHepaticFailure)
+* resultingEffect[0] = Reference(AEHepaticFailure)
+//* resultingCondition[1] = Reference(AEHepaticFailurecomplication)
+* resultingEffect[+] = Reference(AEHepaticFailurecomplication)
 
 //* category = http://terminology.hl7.org/CodeSystem/adverse-event-category#medication-mishap "Medication Mishap"
 
@@ -43,7 +43,7 @@ Description: "example"
 //* suspectEntity[0].instanceReference.display = "Aspirin"
 //* suspectEntity[=].causality.entityRelatedness = http://terminology.hl7.org/CodeSystem/adverse-event-causality-assess#certain "Certain"
 
-* suspectEntity[+].instanceReference = Reference(medadmin0301) "Study Medication Use Case 7"
+* suspectEntity[+].instanceReference = Reference(medadmin0301) "Study Medication"
 * suspectEntity[=].causality.entityRelatedness = http://terminology.hl7.org/CodeSystem/adverse-event-causality-assess#certain "Certain"
 
 
@@ -97,20 +97,20 @@ Description: "Study medication info Medication Request for clinical trial medica
 
 
 
-Instance: AEHepaticFailureUseCase7
+Instance: AEHepaticFailure
 InstanceOf: Condition
 Usage: #example
-Title: "AEHepaticFailureUseCase7"
+Title: "AEHepaticFailure"
 Description: "The fifth subject enrolled in the trial develops severe hepatic failure complicated by encephalopathy one month after starting the study. The study sponsors determined that is an unanticipated problem that must be reported because although the risk of mild liver injury was foreseen, severe liver injury resulting in hepatic failure was unexpected in severity; possibly related to participation in the research; and serious."
 * subject = Reference(ClinicalTrialSubject5)
 * severity = http://snomed.info/sct#24484000 "Severe"
 * code =  http://snomed.info/sct#197270009 "Acute Hepatic Failure"
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
 
-Instance: AEHepaticFailureUseCase7complication
+Instance: AEHepaticFailurecomplication
 InstanceOf: Condition
 Usage: #example
-Title: "AEHepaticFailureUseCase7complication"
+Title: "AEHepaticFailurecomplication"
 Description: "The fifth subject enrolled in the trial develops severe hepatic failure complicated by encephalopathy one month after starting the study. The study sponsors determined that is an unanticipated problem that must be reported because although the risk of mild liver injury was foreseen, severe liver injury resulting in hepatic failure was unexpected in severity; possibly related to participation in the research; and serious."
 * subject = Reference(ClinicalTrialSubject5)
 * severity = http://snomed.info/sct#24484000 "Severe"
