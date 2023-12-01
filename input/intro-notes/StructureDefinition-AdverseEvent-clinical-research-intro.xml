@@ -15,6 +15,29 @@
 		</div-->
 		<p></p>
 	</div>
+		
+		<div>
+		<a name="Use of data elements"></a>
+		<h3>Use of data elements</h3>
+		<p>
+			The concepts modeled in each of these data elements include important distinctions and serve separate purposes in the context of a clinical trial. Specifically:
+       </p><p>
+Severity and grade characterize the degree or intensity of an adverse event, but not necessarily the degree of impact on the subject or the subject’s health. For example, headache can be severe but not life-threatening, whereas even a less severe hemorrhage could be far more dangerous. 
+       </p><p>
+Seriousness criteria describe the medical significance of the event, and the risk to the subject’s life or their ability to function. Seriousness criteria also have very specific implications with regard to reporting to regulatory bodies for clinical trials. Clinical trial protocols commonly specify precise reporting requirements based on seriousness criteria.
+       </p><p>
+The event element is used to specify what occurred to the subject. That is, the event itself that can be further characterized in its severity and its seriousness. While it is true that the event type includes values for death or mortality, in cases where a subject experiences another type of event, the model must provide a distinct structure to capture that information.
+       </p><p>
+The adverse event outcome concept is required to capture whether events were or are ongoing. This information is a necessary component of evaluating clinical trials and may be needed for regulatory reporting. While in some particular cases certain adverse events may result in an outcome of death, creating coincidental overlap with information that may be captured elsewhere in the model, in many cases this structure is required to reflect information with a separate, distinct meaning. 
+       </p><p>
+The approach in the IG reflects our efforts to ensure that the model supports the core use cases required for data capture and reporting for clinical trials. The individuals and organizations creating and using clinical trial data are required to understand these use cases and their implications for populating the data structures defined in the IG; and in many cases the consequences for mishandling these data have regulatory implications. 
+		</p><p>
+		
+		Finally, please note that AdverseEvent.extension:seriousness-criteria and AdverseEvent.extension:severity or AdverseEvent.extension:grade SHALL NOT be used to communicate that the patient has died. The value of "Death" used in these elements reflects the possibility of the event occurring.
+		</p>
+		
+	</div>
+	
 		<div>
 		<a name="Note on identifiers"></a>
 		<h3>Note on identifiers</h3>
