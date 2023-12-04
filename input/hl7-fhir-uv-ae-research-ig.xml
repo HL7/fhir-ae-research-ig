@@ -8,6 +8,11 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="2"/> 
   </extension>
+  
+  	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+		<valueCode value="brr"/>
+	</extension>
+  
 <!--  <extension url="http://hl7.org/fhir/tools/StructureDefinition/igpublisher-spreadsheet">
     <valueString value="resources-spreadsheet.xml"/>
   </extension>-->
@@ -16,15 +21,15 @@
   <version value="1.0.0-ballot"/>
   <name value="AdverseEventClinicalResearch"/>
   <title value="Adverse Event Clinical Research"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2023-07-01"/> 
-  <publisher value="HL7 International - Biomedical Research and Regulation, Vulcan AdverseEvent groups"/>
+	<publisher value="HL7 International / Biomedical Research and Regulation"/>
     <contact>
         <name value="Biomedical Research and Regulation WG"/>
         <telecom>
             <system value="url"/>
-            <value value="http://hl7.org/Special/committees/rcrim"/>
+            <value value="http://www.hl7.org/Special/committees/rcrim"/>
         </telecom>
     </contact>
   <description value="### Intent
@@ -48,10 +53,10 @@ In the pre-market clinical research setting, serious adverse events must be repo
 
 Within this guide are several examples. Every effort has been made to capture the most important details of the use of the AdverseEvent profile. However, some examples may provide only a stub to referenced resources (e.g. instances of Patient Resource will be referenced using logical ids but are not resolvable, implementation of Patient is left for other guidance and is not the subject of this guide). Connectathons are ideal opportunities to create, compare and consider the holistic implementation of all FHIR Resources."/>
   <jurisdiction>
-    <!-- This first repetition will drive SNOMED release used -->
+    <!--This first repetition will drive SNOMED release used -->
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <!-- This is the code for universal -->
+      <!--This is the code for universal-->
       <code value="001"/>
     </coding>
   </jurisdiction>
@@ -778,13 +783,13 @@ Within this guide are several examples. Every effort has been made to capture th
 		</code>
       <value value="ballot"/>
     </parameter>
-    <parameter>
-      <!--code value="find-other-resources"/-->
+    <!--parameter>
+      <code value="find-other-resources"/>
 	  <code>
 		<code value="find-other-resources"/>
 		</code>
       <value value="true"/>
-    </parameter>
+    </parameter-->
     <parameter>
 	<code>
       <code value="path-resource"/>
@@ -792,7 +797,7 @@ Within this guide are several examples. Every effort has been made to capture th
       <value value="input\history"/>
     </parameter>
 	
-	<parameter>
+	<!--parameter>
 		<code>
 		<code value="special-url"/>
 		</code>
@@ -804,7 +809,7 @@ Within this guide are several examples. Every effort has been made to capture th
 		<code value="special-url"/>
 		</code>
 		<value value="http://hl7.org/fhir/uv/adverseeventclinicalresearch/CodeSystem/adverse-event-severity-or-grade-cs"/>
-	</parameter>
+	</parameter-->
     <!--parameter>
 	<code>
       <code value="path-binary"/>
@@ -823,28 +828,6 @@ Within this guide are several examples. Every effort has been made to capture th
 	  </code>
       <value value="true"/>
     </parameter>
-<!-- Uncomment one or more of these if you want to limit which syntaxes are supported or want to disable the display of mappings
-    <parameter>
-      <code value="excludexml"/>
-      <value value="true"/>
-    </parameter>
-    <parameter>
-      <code value="excludejson"/>
-      <value value="true"/>
-    </parameter>
-    <parameter>
-      <code value="excludettl"/>
-      <value value="true"/>
-    </parameter>
-    <parameter>
-      <code value="excludemap"/>
-      <value value="true"/>
-    </parameter-->
-    <!--parameter>
-	<code>
-      <code value="showsource"/>
-	  </code>
-      <value value="true"/>
-    </parameter-->
+
   </definition>
 </ImplementationGuide>
