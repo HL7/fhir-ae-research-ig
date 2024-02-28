@@ -76,8 +76,9 @@ Description: "Device suspected entity"
 * status = #completed
 
 * code = http://snomed.info/sct#370903006  "Patient death or serious disability associated with the use or function of a device in patient care, in which the device is used or functions other than as intended (event)" 
-* code.text = "Patient death due to device malfunction"
+* code.text = "Patient death due to device explosion"
 
+* category = http://terminology.hl7.org/CodeSystem/adverse-event-category#device "Device"
 
 * extension[ae-grade].valueCodeableConcept = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C48275 "Grade 5 Death related to adverse event"
 
