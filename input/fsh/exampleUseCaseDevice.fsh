@@ -1,4 +1,4 @@
-// Cancer clinical trial example (narrative provided by Alliance), ideally this would use mCODE profiles for cancer condition and cancer medications
+// Cancer clinical trial example 
 Instance: patient-example-kaitlyn-b1
 InstanceOf: Patient
 Description: "Compass Trial example patient Kaitlynn B1"
@@ -125,17 +125,18 @@ Instance: device-infuser
 InstanceOf: Device
 Description: "Infuser which exploded"
 Usage: #example
-* identifier.type.coding.system = "http://hl7.org/fhir/NamingSystem/iccbba-din"
+* identifier.type.coding.system = "http://hl7.org/fhir/NamingSystem/hibcc-dI"
 * identifier.value = "10896128002012"
 * displayName = "HYperspeed Chemo Infuser"
 * udiCarrier.deviceIdentifier = "10896128002012"
-* udiCarrier.issuer = "http://hl7.org/fhir/NamingSystem/iccbba-other"
+* udiCarrier.issuer = "http://hl7.org/fhir/NamingSystem/hibcc-dI"
 * udiCarrier.jurisdiction = "http://hl7.org/fhir/NamingSystem/fda-udi"
 * status = #inactive
 * manufacturer = "Safe Device Co"
 * manufactureDate = "2000-02-01"
 * expirationDate = "2021-02-01"
 * modelNumber = "FRN"
+* serialNumber = "C7H5N3O6"
 * category = http://hl7.org/fhir/device-category#reusable "Reusable"
 * name[0].value = "Hyperspeed"
 * name[=].type = http://hl7.org/fhir/device-nametype#registered-name "Registered name"
