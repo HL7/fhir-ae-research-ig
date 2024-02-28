@@ -600,10 +600,56 @@ Within this guide are several examples. Every effort has been made to capture th
 			<name value="Example patient SLP" />
 			<description value="Patient enrolled in ACME study, taking Study Medication WBY 10 mg orally daily every morning for moderate asthma" />
 		</resource> 
-	  
-	  
-	  
-	  
+
+		<resource>
+			<reference>
+				<reference value="AdverseEvent/adverse-event-device-death" />
+				<display value="adverse-event-device-death" />
+			</reference>
+			<name value="adverse-event-device-death" />
+			<description value="Device suspected entity" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Device/device-infuser" />
+				<display value="Infuser which exploded" />
+			</reference>
+			<name value="Infuser which exploded" />
+			<description value="Infuser which exploded" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="ResearchSubject/clinical-trial-example-subject1" />
+				<display value="clinical-trial-example-subject1" />
+			</reference>
+			<name value="clinical-trial-example-subject1" />
+			<description value="Alliance COMPASS trial research subject" />
+		</resource> 
+		<resource>
+			<reference>
+				<reference value="MedicationAdministration/medication-administration-kadcyla1" />
+				<display value="medication-administration-kadcyla1" />
+			</reference>
+			<name value="medication-administration-kadcyla1" />
+			<description value="Example showing clinical trial medication adminstration Kadcyla" />
+		</resource> 
+		<resource>
+			<reference>
+				<reference value="MedicationRequest/medication-request-example-kadcyla1" />
+				<display value="medication-request-example-kadcyla1" />
+			</reference>
+			<name value="medication-request-example-kadcyla1" />
+			<description value="Example showing clinical trial medication Kadcyla" />
+		</resource> 
+		<resource>
+			<reference>
+				<reference value="Patient/patient-example-kaitlyn-b1" />
+				<display value="patient-example-kaitlyn-b1" />
+			</reference>
+			<name value="patient-example-kaitlyn-b1" />
+			<description value="Compass Trial example patient Kaitlynn B1" />
+		</resource> 
+		
     <!--resource>
       <reference>
         <reference value="StructureDefinition/mypatient"/>

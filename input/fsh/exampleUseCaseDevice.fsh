@@ -56,23 +56,6 @@ Description: "Example showing clinical trial medication adminstration Kadcyla"
 * dosage.dose = 3.6 'mg' "mg"
 * dosage.route = http://snomed.info/sct#47625008 "Intravenous route (qualifier value)"
 
-Instance: medication-administration-tucatinib1
-InstanceOf: MedicationAdministration
-Description: "Example showing clinical trial medication adminstration Tucatinib"
-* status = #completed "completed"
-* medication.concept = http://www.nlm.nih.gov/research/umls/rxnorm#2361290 "tucatinib 150 MG Oral Tablet"
-* subject = Reference(patient-example-kaitlyn-b1)
-* performer.actor.reference = Reference(practitioner-oncology-nurse-jane)
-//* reasonReference = Reference(kaitlyn-primary-cancer-condition-ex1)
-* request = Reference(medication-request-example-tucatinib)
-* occurenceDateTime = "2020-04-01"
-* note.authorReference = Reference(practitioner-oncology-nurse-jane)
-* note.time = "2020-04-01"
-* note.text = "Patient took 2 tablets"
-* dosage.dose = 300 'MG' "MG"
-* dosage.route = http://snomed.info/sct#26643006 "Oral route (qualifier value)"
-
-
 Instance: clinical-trial-example-subject1
 InstanceOf: ResearchSubject
 Description: "Alliance COMPASS trial research subject"
@@ -98,7 +81,7 @@ Description: "Device suspected entity"
 
 * extension[ae-grade].valueCodeableConcept = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C48275 "Grade 5 Death related to adverse event"
 
-* seriousness = http://terminology.hl7.org/CodeSystem/adverse-event-seriousness#Serious "Serious"
+* seriousness = http://terminology.hl7.org/CodeSystem/adverse-event-seriousness#serious "Serious"
 
 * extension[seriousness-criteria][0].extension[criterionCode].valueCodeableConcept = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C11338	"Results In Persistent Or Significant Disability"
 * extension[seriousness-criteria][=].extension[criterionPresent].valueBoolean = false
@@ -129,9 +112,7 @@ Description: "Device suspected entity"
 * suspectEntity[0].instanceReference = Reference(device-infuser)
 * suspectEntity[=].causality.entityRelatedness = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C53260 "Related"
 
-* suspectEntity[0].instanceReference = Reference(medication-administration-kadcyla1)
-* suspectEntity[=].causality.entityRelatedness = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C53256 "Not Related"
-* suspectEntity[+].instanceReference = Reference(medication-administration-tucatinib1)
+* suspectEntity[+].instanceReference = Reference(medication-administration-kadcyla1)
 * suspectEntity[=].causality.entityRelatedness = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C53256 "Not Related"
 
 * expectedInResearchStudy = false
@@ -145,21 +126,21 @@ Description: "Infuser which exploded"
 Usage: #example
 * identifier.type.coding.system = "http://hl7.org/fhir/NamingSystem/iccbba-din"
 * identifier.value = "10896128002012"
-//* displayName = "HYperspeed Chemo Infuser"
-//* udiCarrier.deviceIdentifier = "10896128002012"
-//* udiCarrier.issuer = "http://hl7.org/fhir/NamingSystem/iccbba-other"
-//* udiCarrier.jurisdiction = "http://hl7.org/fhir/NamingSystem/fda-udi"
+* displayName = "HYperspeed Chemo Infuser"
+* udiCarrier.deviceIdentifier = "10896128002012"
+* udiCarrier.issuer = "http://hl7.org/fhir/NamingSystem/iccbba-other"
+* udiCarrier.jurisdiction = "http://hl7.org/fhir/NamingSystem/fda-udi"
 * status = #inactive
-//* manufacturer = "Safe Device Co"
-//* manufactureDate = "2000-02-01"
-//* expirationDate = "2021-02-01"
-//* modelNumber = "FRN"
-//* category = http://hl7.org/fhir/device-category#reusable "Reusable"
-//* name[0].value = "Hyperspeed"
-//* name[=].type = http://hl7.org/fhir/device-nametype#registered-name "Registered name"
-//* type.text = "Infusion Pump"
-//* owner.display = "Place that owns the device"
-//* location.display = "Where device is found"
+* manufacturer = "Safe Device Co"
+* manufactureDate = "2000-02-01"
+* expirationDate = "2021-02-01"
+* modelNumber = "FRN"
+* category = http://hl7.org/fhir/device-category#reusable "Reusable"
+* name[0].value = "Hyperspeed"
+* name[=].type = http://hl7.org/fhir/device-nametype#registered-name "Registered name"
+* type.text = "Infusion Pump"
+* owner.display = "Place that owns the device"
+* location.display = "Where device is found"
 
 
 
