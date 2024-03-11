@@ -40,7 +40,7 @@ Description: "Element to capture the presence or absence of specific factors (cr
 * extension[criterionCode] ^short = "Action criteria usually associated with events that pose a threat to a patient's life or functioning"
 //* extension[criterionCode] ^description = "Action criteria usually associated with events that pose a threat to a patient's life or functioning"
 * extension[criterionCode].value[x] only CodeableConcept
-* extension[criterionCode].valueCodeableConcept from http://terminology.hl7.org/ValueSet/adverse-event-seriousness-criteria-vs (extensible)
+* extension[criterionCode].valueCodeableConcept from http://terminology.hl7.org/ValueSet/adverse-event-clinical-research-seriousness-criteria (extensible)
 //adverse-event-seriousness-criteria-vs (extensible)
 * extension[criterionCode].valueCodeableConcept 1..1
 
