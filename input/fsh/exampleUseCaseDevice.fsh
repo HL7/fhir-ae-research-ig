@@ -123,7 +123,7 @@ Description: "Device suspected entity"
 
 Instance: device-infuser
 InstanceOf: Device
-Description: "Infuser which exploded"
+Description: "Device-Infuser that exploded"
 Usage: #example
 * identifier.type.coding.system = "http://hl7.org/fhir/NamingSystem/hibcc-dI"
 * identifier.value = "10896128002012"
