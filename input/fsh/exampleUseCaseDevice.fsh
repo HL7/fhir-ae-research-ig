@@ -123,11 +123,11 @@ Description: "Device suspected entity"
 
 Instance: device-infuser
 InstanceOf: Device
-Description: "Device-Infuser that exploded"
+Description: "Device - Infuser that exploded"
 Usage: #example
 * identifier.type.coding.system = "http://hl7.org/fhir/NamingSystem/hibcc-dI"
 * identifier.value = "10896128002012"
-* displayName = "HYperspeed Chemo Infuser"
+* displayName = "Hyperspeed Chemo Infuser"
 * udiCarrier.deviceIdentifier = "10896128002012"
 * udiCarrier.issuer = "http://hl7.org/fhir/NamingSystem/hibcc-dI"
 * udiCarrier.jurisdiction = "http://hl7.org/fhir/NamingSystem/fda-udi"
