@@ -612,10 +612,10 @@ Within this guide are several examples. Every effort has been made to capture th
 		<resource>
 			<reference>
 				<reference value="Device/device-infuser" />
-				<display value="Infuser which exploded" />
+				<display value="Device - Infuser that exploded" />
 			</reference>
-			<name value="Infuser which exploded" />
-			<description value="Infuser which exploded" />
+			<name value="Device - Infuser that exploded" />
+			<description value="Device - Infuser that exploded" />
 		</resource>
 		<resource>
 			<reference>
