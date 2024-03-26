@@ -44,8 +44,7 @@ Description: "example"
 //* suspectEntity[=].causality.entityRelatedness = http://terminology.hl7.org/CodeSystem/adverse-event-causality-assess#certain "Certain"
 
 * suspectEntity[+].instanceReference = Reference(medadmin0301) "Study Medication"
-* suspectEntity[=].causality.entityRelatedness = http://terminology.hl7.org/CodeSystem/adverse-event-causality-assess#certain "Certain"
-
+* suspectEntity[=].causality.entityRelatedness = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C53260 "Related"
 
 * recorder.display = "Clinical Research Associate"
 * detected = "1905-08-23"
