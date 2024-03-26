@@ -3,38 +3,98 @@
 Reference to draft item http://hl7.org/fhir/standards-status|1.0.0
 Reference to draft item http://hl7.org/fhir/hl7-work-group|1.0.0
 Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+Reference to draft CodeSystem http://hl7.org/fhir/standards-status|1.0.0
+Reference to draft CodeSystem http://hl7.org/fhir/hl7-work-group|1.0.0
+Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
 
+# Errors due to NCI codes not in Tx server.Codes are in THO Value sets. Merge has been made to include them https://github.com/FHIR/packages/pull/28. And Zulip-chat https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/Trouble.20with.20NCI.20Thesaurus.20Terms.20in.20Value.20Sets/near/426616847 indicates they will be present when tx updated next
+ERROR: AdverseEvent/AdverseEventFromProcedureNotStudyDrug: AdverseEvent.outcome[0]: None of the codings provided are in the value set 'Adverse Event Clinical Research Outcomes' (http://terminology.hl7.org/ValueSet/adverse-event-clinical-research-outcomes|1.0.0), and a coding from this value set is required) (codes = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C49498)
+ERROR: AdverseEvent/ClinicalTrialSignificantAdverseEvent: AdverseEvent.outcome[0]: None of the codings provided are in the value set 'Adverse Event Clinical Research Outcomes' (http://terminology.hl7.org/ValueSet/adverse-event-clinical-research-outcomes|1.0.0), and a coding from this value set is required) (codes = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C49496)
+INFORMATION: AdverseEvent/ClinicalTrialSignificantAdverseEvent: AdverseEvent.suspectEntity[0].causality.entityRelatedness: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/adverse-event-causality-assess|1.0.0
+ERROR: AdverseEvent/NonSeriousAdverseEventResearchStudyMed: AdverseEvent.outcome[0]: None of the codings provided are in the value set 'Adverse Event Clinical Research Outcomes' (http://terminology.hl7.org/ValueSet/adverse-event-clinical-research-outcomes|1.0.0), and a coding from this value set is required) (codes = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C49494)
+ERROR: AdverseEvent/SeriousAdverseEventResearchStudy: AdverseEvent.outcome[0]: None of the codings provided are in the value set 'Adverse Event Clinical Research Outcomes' (http://terminology.hl7.org/ValueSet/adverse-event-clinical-research-outcomes|1.0.0), and a coding from this value set is required) (codes = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C49498)
+ERROR: AdverseEvent/adverse-event-compass-ex1: AdverseEvent.outcome[0]: None of the codings provided are in the value set 'Adverse Event Clinical Research Outcomes' (http://terminology.hl7.org/ValueSet/adverse-event-clinical-research-outcomes|1.0.0), and a coding from this value set is required) (codes = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C49494)
+ERROR: AdverseEvent/adverse-event-compass-ex1a: AdverseEvent.outcome[0]: None of the codings provided are in the value set 'Adverse Event Clinical Research Outcomes' (http://terminology.hl7.org/ValueSet/adverse-event-clinical-research-outcomes|1.0.0), and a coding from this value set is required) (codes = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C49494)
+ERROR: AdverseEvent/adverse-event-compass-ex1b: AdverseEvent.outcome[0]: None of the codings provided are in the value set 'Adverse Event Clinical Research Outcomes' (http://terminology.hl7.org/ValueSet/adverse-event-clinical-research-outcomes|1.0.0), and a coding from this value set is required) (codes = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C49498)
+ERROR: AdverseEvent/adverse-event-compass-ex2: AdverseEvent.outcome[0]: None of the codings provided are in the value set 'Adverse Event Clinical Research Outcomes' (http://terminology.hl7.org/ValueSet/adverse-event-clinical-research-outcomes|1.0.0), and a coding from this value set is required) (codes = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C49494)
+ERROR: AdverseEvent/adverse-event-device-death: AdverseEvent.outcome[0]: None of the codings provided are in the value set 'Adverse Event Clinical Research Outcomes' (http://terminology.hl7.org/ValueSet/adverse-event-clinical-research-outcomes|1.0.0), and a coding from this value set is required) (codes = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C48275)
+ERROR: AdverseEvent/clinical-research-ae-example-medwatch-patient-report: AdverseEvent.outcome[0]: None of the codings provided are in the value set 'Adverse Event Clinical Research Outcomes' (http://terminology.hl7.org/ValueSet/adverse-event-clinical-research-outcomes|1.0.0), and a coding from this value set is required) (codes = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C49498)
+
+
+# Warnings due to NCI codes not in Tx server. Codes are in THO Value sets. Merge has been made to include them https://github.com/FHIR/packages/pull/28. And Zulip-chat https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/Trouble.20with.20NCI.20Thesaurus.20Terms.20in.20Value.20Sets/near/426616847 indicates they will be present when tx updated next
+Unknown Code 'C49498' in the system 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
+Unknown Code 'C57954' in the system 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
+Unknown Code 'C53257' in the system 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
+Unknown Code 'C53260' in the system 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
+Unknown Code 'C201939' in the system 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
+Unknown Code 'C11338' in the system 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
+Unknown Code 'C83052' in the system 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
+Unknown Code 'C48275' in the system 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
+Unknown Code 'C84266' in the system 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
+Unknown Code 'C83117' in the system 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
+Unknown Code 'C82521' in the system 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
+Unknown Code 'C49498' in the system 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
+Unknown Code 'C57954' in the system 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
+Unknown Code 'C53257' in the system 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
+Unknown Code 'C53260' in the system 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
+Unknown Code 'C49496' in the system 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment 
+Unknown Code 'C53258' in the system 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment 
+Unknown Code 'C49502' in the system 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
+Unknown Code 'C41338' in the system 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
+Unknown Code 'C49494' in the system 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment 
+Unknown Code 'C53258' in the system 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
+Unknown Code 'C41340' in the system 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
+Unknown Code 'C53256' in the system 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
+Unknown Code 'C41340' in the system 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
+Unknown Code 'C53256' in the system 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
+
+# reference to adverse-event-category is intended
+Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/adverse-event-category|1.0.0
+
+# reference to adverse-event-severity is intended
+Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/adverse-event-severity|1.0.0
+
+# Error is due to a known issue that is slated to be addressed see Zulip thread https://chat.fhir.org/#narrow/stream/179166-implementers/topic/Values.20for.20Device.2EudiCarrier.2Eissuer
+ERROR: Device/device-infuser: Device.identifier[0].type.coding[0].system: URL value 'http://hl7.org/fhir/NamingSystem/hibcc-dI' does not resolve
+ERROR: Device/device-infuser: Device.udiCarrier[0].issuer: URL value 'http://hl7.org/fhir/NamingSystem/hibcc-dI' does not resolve
+ERROR: Device/device-infuser: Device.udiCarrier[0].jurisdiction: URL value 'http://hl7.org/fhir/NamingSystem/fda-udi' does not resolve
+WARNING: Device/device-infuser: Device.identifier[0].type.coding[0].system: A definition for CodeSystem 'http://hl7.org/fhir/NamingSystem/hibcc-dI' could not be found, so the code cannot be validated
+
+
+# reference to reason-medication-given is intended
+Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/reason-medication-given|1.0.0
+
+# reference to dose-rate-type is intended
+Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/dose-rate-type|1.0.0
+
+# reference to provenance-participant-type is intended
+Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/provenance-participant-type|1.0.0
+
+# reference to event-status is intended
+Reference to experimental item http://hl7.org/fhir/event-status|5.0.0
+Reference to experimental CodeSystem http://hl7.org/fhir/event-status|5.0.0
+
+# reference to research-subject-state-type is intended
+Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/research-subject-state-type|1.0.0
+
+# reference to research-study-phase is intended
+Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/research-study-phase|1.0.0
+
+# reference to the THO version of this Code set is intended. The R5 Resource points to a R5 embedded version. The concepts are consistent
+None of the codings provided are in the value set 'Research Study Primary Purpose Type' (http://hl7.org/fhir/ValueSet/research-study-prim-purp-type|5.0.0), and a coding is recommended to come from this value set) (codes = http://terminology.hl7.org/CodeSystem/research-study-prim-purp-type#treatment)
 
 
 # Code System URI 'http://terminology.hl7.org/CodeSystem/mdr' is unknown so the code cannot be validated
 
 # Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated
 
-# This is the correct code system URI see https://terminology.hl7.org/5.2.0/CodeSystem-mdr.json.html and https://terminology.hl7.org/CodeSystem-v3-nciThesaurus.json.html 
-
+# This is the correct code system URI see https://terminology.hl7.org/5.2.0/CodeSystem-mdr.json.html
 Code System URI 'https://www.meddra.org' is unknown so the code cannot be validated
-The definition for the Code System with URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' doesnt provide any codes so the code cannot be validated
-Code System with URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' doesnt provide any codes so the code cannot be validated
-Error from server: Unable to provide support for code system http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl
-Unknown System 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' specified, so Concepts and Filters can't be checked (Details: Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated)
+A definition for CodeSystem 'https://www.meddra.org' could not be found, so the code cannot be validated
 
-# reference to event-status is intended
-Reference to experimental item http://hl7.org/fhir/event-status|5.0.0
 
 # correct code system
 Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' could not be found so the code cannot be validated
 
 # correct code system
 The definition for the Code System with URI 'https://www.meddra.org' doesnt provide any codes so the code cannot be validated
-
-# new THO requests see https://jira.hl7.org/browse/UP-485
-ValueSet http://terminology.hl7.org/ValueSet/adverse-event-clinical-research-grades not found
-The valueSet reference http://terminology.hl7.org/ValueSet/adverse-event-clinical-research-grades on element Extension.value[x] could not be resolved
-ValueSet http://terminology.hl7.org/ValueSet/adverse-event-clinical-research-outcomes not found
-The valueSet reference http://terminology.hl7.org/ValueSet/adverse-event-clinical-research-outcomes on element AdverseEvent.outcome could not be resolved
-Binding http://terminology.hl7.org/ValueSet/adverse-event-clinical-research-outcomes could not be located
-ValueSet http://terminology.hl7.org/ValueSet/adverse-event-seriousness-criteria-vs not found
-The valueSet reference http://terminology.hl7.org/ValueSet/adverse-event-seriousness-criteria-vs on element Extension.extension.value[x] could not be resolved
-ValueSet http://terminology.hl7.org/ValueSet/adverse-event-clinical-research-causality-relatedness not found
-The valueSet reference http://terminology.hl7.org/ValueSet/adverse-event-clinical-research-causality-relatedness on element Extension.extension.extension.value[x] could not be resolved
-The valueSet reference http://terminology.hl7.org/ValueSet/adverse-event-clinical-research-causality-relatedness on element AdverseEvent.suspectEntity.causality.entityRelatedness could not be resolved

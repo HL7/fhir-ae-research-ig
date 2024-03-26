@@ -46,3 +46,8 @@ The investigator said the reaction to the contrast dye was â€œUNLIKELY RELATEDâ€
 ### Cancer Clinical Trial with Non-serious Adverse Events
 
 This [use case persona](exampleCancerClinicalTrial.html) describes a hypothetical cancer patient on a cancer clinical trial with example instances to demonstrate how the adverse event profile can be used to guide the creation of resources representing a clinically realistic scenario.
+
+### Device Example
+
+Exemplification of referencing a device in an adverse event, [Device Example](AdverseEvent-adverse-event-device-death.html). The example has a device as the suspected entity, but the AdverseEvent Clinical Research Profile also has a reference for Device as a participant, contributingFactor, mitigatingAction, and supportingInfo. 
+

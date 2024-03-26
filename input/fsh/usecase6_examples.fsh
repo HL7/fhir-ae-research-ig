@@ -296,7 +296,7 @@ Description: "Self reported Janet pill for water retention med not known"
 * dosage.sequence = 1
 * dosage.text = "1 tablet per day"
 * dosage.asNeeded = false
-* dosage.route = http://snomed.info/sct#260548002 "Oral"
+* dosage.route = http://snomed.info/sct#26643006 "Oral Route"
 * dosage.doseAndRate.type = http://terminology.hl7.org/CodeSystem/dose-rate-type#ordered "Ordered"
 * dosage.doseAndRate.doseQuantity = 1 http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm#TAB "tab"
 * dosage.maxDosePerPeriod.numerator.value = 1
