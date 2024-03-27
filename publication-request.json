@@ -1,7 +1,7 @@
 {
   "package-id": "hl7.fhir.uv.ae-research-ig",
-	"version": "1.0.0-ballot",
-	"path": "http://hl7.org/fhir/uv/ae-research-ig/2023Sep",
+	"version": "1.0.0",
+	"path": "http://hl7.org/fhir/uv/ae-research-ig",
         "mode" : "working",
 	"status": "ballot",
 	"sequence": "STU 1",
