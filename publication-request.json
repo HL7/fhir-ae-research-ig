@@ -2,8 +2,8 @@
   "package-id": "hl7.fhir.uv.ae-research-ig",
 	"version": "1.0.0",
 	"path": "http://hl7.org/fhir/uv/ae-research-ig",
-        "mode" : "working",
-	"status": "ballot",
+        "mode" : "milestone",
+	"status": "trial-use",
 	"sequence": "STU 1",
 	
 	"desc": "FHIR STU Release 1 AdverseEvent Clinical Research Profile",
