@@ -827,7 +827,7 @@ Within this guide are several examples. Every effort has been made to capture th
 	  <code>
 		<code value="releaselabel"/>
 		</code>
-      <value value="ballot"/>
+      <value value="STU1"/>
     </parameter>
     <!--parameter>
       <code value="find-other-resources"/>
