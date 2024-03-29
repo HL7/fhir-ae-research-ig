@@ -41,5 +41,3 @@ None of the codings provided are in the value set 'Research Study Primary Purpos
 # This is the correct code system URI see https://terminology.hl7.org/5.2.0/CodeSystem-mdr.json.html
 A definition for CodeSystem 'https://www.meddra.org' could not be found, so the code cannot be validated
 
-# Code is correct. Being used as an example. Not requested to be in NCIT as is not part of any specific value set.
-# Unknown Code 'C49502' in the system 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
