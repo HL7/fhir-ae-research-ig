@@ -555,12 +555,23 @@ Within this guide are several examples. Every effort has been made to capture th
 		</resource>
 		<resource>
 			<reference>
+				<reference value="Condition/AEModeratehives" />
+				<display value="AEModeratehives" />
+			</reference>
+			<name value="AEModeratehives" />
+			<description value="Moderate hives" />
+		</resource>
+		<resource>
+			<reference>
 				<reference value="AdverseEvent/AdverseEventFromProcedureNotStudyDrug" />
 				<display value="AdverseEventFromProcedureNotStudyDrug" />
 			</reference>
 			<name value="AdverseEventFromProcedureNotStudyDrug" />
 			<description value="Adverse event from procedure, not study drug" />
 		</resource>
+		
+
+		
 		<resource>
 			<reference>
 				<reference value="Medication/resstudy-medication-WBY" />
@@ -586,12 +597,22 @@ Within this guide are several examples. Every effort has been made to capture th
 		</resource>
 		<resource>
 			<reference>
+				<reference value="Condition/AEHeadache" />
+				<display value="AEHeadache" />
+			</reference>
+			<name value="AEHeadache" />
+			<description value="Headache" />
+		</resource>
+		<resource>
+			<reference>
 				<reference value="AdverseEvent/NonSeriousAdverseEventResearchStudyMed" />
 				<display value="NonSeriousAdverseEventResearchStudyMed" />
 			</reference>
 			<name value="NonSeriousAdverseEventResearchStudyMed" />
 			<description value="Non-Serious Adverse Event Research Study Medication Example" />
 		</resource>
+
+		
 		<resource>
 			<reference>
 				<reference value="Patient/patient-slp" />
@@ -650,6 +671,7 @@ Within this guide are several examples. Every effort has been made to capture th
 			<description value="Compass Trial example patient Kaitlynn B1" />
 		</resource> 
 		
+
     <!--resource>
       <reference>
         <reference value="StructureDefinition/mypatient"/>

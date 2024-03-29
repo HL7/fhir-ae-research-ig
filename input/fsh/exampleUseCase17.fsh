@@ -84,13 +84,37 @@ Description: "Example medication administration for hives"
 * dosage.dose = 50 'mg' "mg"
 * dosage.route = http://snomed.info/sct#129326001 "Injection"
 
+
+
+Instance: AEModeratehives
+InstanceOf: Condition
+Usage: #example
+Title: "AEModeratehives"
+Description: "Moderate Hives"
+* subject = Reference(patient-slp)
+* severity = http://snomed.info/sct#6736007 "Moderate severity"
+* severity.text = "Moderate"
+* code.coding[0] = http://snomed.info/sct#402408009 "Acute urticaria"
+* code.coding[1] = https://www.meddra.org#10040785 "Urticaria"
+* code.text = "Moderate hives"
+
+//http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C57954 "Grade 2 - Urticaria" 
+//medra Urticaria 10040785
+
+* clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
+
+
 Instance: AdverseEventFromProcedureNotStudyDrug
 InstanceOf: AdverseEvent-clinical-research
 Description: "Adverse event from procedure, not study drug"
 * subject = Reference(patient-slp)
 * status = #completed
-* code = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C57954 "Grade 2 - Urticaria" 
+* code = https://www.meddra.org#10019211 "Hypersensitivity reaction"
 * code.text = "Moderate hives"
+
+* resultingEffect[0] = Reference(AEModeratehives)
+* resultingEffect[0].display = "Moderate hives"
+
 * extension[ae-severity].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/adverse-event-severity#moderate "Moderate"
 * seriousness = http://terminology.hl7.org/CodeSystem/adverse-event-seriousness#non-serious "Non-serious"
 * outcome = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C49498 "Recovered/Resolved"
@@ -101,7 +125,6 @@ Description: "Adverse event from procedure, not study drug"
 * suspectEntity[0].instanceReference = Reference(study-medication-administration-WBY)
 * suspectEntity[=].causality.entityRelatedness = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C53257 "Unlikely Related"
 
-
 * suspectEntity[+].instanceReference = Reference(medication-administration-contrast-dye)
 * suspectEntity[=].causality.entityRelatedness = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C53260 "Related"
 
@@ -111,3 +134,5 @@ Description: "Adverse event from procedure, not study drug"
 * mitigatingAction[+].itemReference = Reference(medication-administration-forhives)
 //* mitigatingAction[+].itemCodeableConcept.text = "study drug dose not changed"
 * contributingFactor[+].itemReference = Reference(clinical-trial-acme-procedure)
+
+//* supportingInfo[+].itemCodeableConcept = https://www.meddra.org#10040785 "Urticaria"

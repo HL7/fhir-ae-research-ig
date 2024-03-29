@@ -450,7 +450,7 @@ Description: "Patient report of Adverse Event, example of data that would be on 
 * extension[seriousness-criteria][=].extension[criterionPresent].valueBoolean = false
 * extension[seriousness-criteria][+].extension[criterionCode].valueCodeableConcept = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C83052	"Requires Inpatient Hospitalization"
 * extension[seriousness-criteria][=].extension[criterionPresent].valueBoolean = false
-* extension[seriousness-criteria][+].extension[criterionCode].valueCodeableConcept = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C48275	"Results In Death"
+* extension[seriousness-criteria][+].extension[criterionCode].valueCodeableConcept = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C48275	"Death Related to Adverse Event"
 * extension[seriousness-criteria][=].extension[criterionPresent].valueBoolean = false
 * extension[seriousness-criteria][+].extension[criterionCode].valueCodeableConcept = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C84266	"Is Life Threatening"
 * extension[seriousness-criteria][=].extension[criterionPresent].valueBoolean = false
@@ -499,13 +499,13 @@ Any other types of seriousness are submitted within 15 calendar days."
 // in suspect entity
 // note also need supporting-Info medicationRequest
 * suspectEntity[+].instanceReference = Reference(bresentrik) 
-* suspectEntity[=].causality.entityRelatedness = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C53258 "Possibly"
+* suspectEntity[=].causality.entityRelatedness = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C53258 "Possibly Related"
 * suspectEntity[=].causality.author = Reference(JanetPatient) "Janet"
 
 * supportingInfo[+].itemReference = Reference(MedicationAdministration/medicationAdministration-for-bresentrik)
 
 * suspectEntity[+].instanceReference = Reference(BreastCancerTrial)
-* suspectEntity[=].causality.entityRelatedness = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C53258 "Possibly"
+* suspectEntity[=].causality.entityRelatedness = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C53258 "Possibly Related"
 * suspectEntity[=].causality.author = Reference(JanetPatient) "Janet"
 * study = Reference(BreastCancerTrial)
  

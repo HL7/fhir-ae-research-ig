@@ -99,7 +99,7 @@ Description: "Serious Adverse Event Research Study Medication Example"
 * extension[seriousness-criteria][=].extension[criterionPresent].valueBoolean = false
 * extension[seriousness-criteria][+].extension[criterionCode].valueCodeableConcept = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C83052	"Requires Inpatient Hospitalization"
 * extension[seriousness-criteria][=].extension[criterionPresent].valueBoolean = true
-* extension[seriousness-criteria][+].extension[criterionCode].valueCodeableConcept = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C48275	"Results In Death"
+* extension[seriousness-criteria][+].extension[criterionCode].valueCodeableConcept = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C48275	"Death Related to Adverse Event"
 * extension[seriousness-criteria][=].extension[criterionPresent].valueBoolean = false
 * extension[seriousness-criteria][+].extension[criterionCode].valueCodeableConcept = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C84266	"Is Life Threatening"
 * extension[seriousness-criteria][=].extension[criterionPresent].valueBoolean = true
