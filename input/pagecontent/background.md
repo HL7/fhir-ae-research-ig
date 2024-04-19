@@ -32,7 +32,7 @@ The following image shows a notional workflow for collecting and reporting adver
 
 <img src="ClinicalResearchAEScope-PostMarket-v2.png" alt="Clinical Research AE Post-Market" width="50%" style="float:none; margin: 0px 0px 0px 0px;" />
 
-Example scenarios: Post-market reporting of adverse events using FHIR for longitudinal safety surveillance.
+Example scenarios: Postmarketing adverse event reporting using FHIR for safety surveillance.
 
 * Patient records adverse event that is sent to FDA
 * Provider records adverse event in EHR that is sent to FDA

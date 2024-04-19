@@ -1,6 +1,6 @@
 ### Introduction
 
-The following use cases are exemplified with FHIR instances in this guide. Every effort has been made to be accurate, especially with regards to the AdverseEvent Clinical Research Profile instances, but these are intended as examples and may not include referenced data such as an Encounter. They are from real world examples and show how the AdveseEvent Clinical Research Profile is intended to be generally used. Keep in mind that it is intended that the profile in this guide be derived from to produce use case specific guidance. The examples are demonstrative of using FHIR in adverse event reporting but not prescriptive. As the use of adverse event reporting with FHIR matures, the examples could become outdated.
+The following use cases are exemplified with FHIR instances in this guide. Every effort has been made to be accurate, especially with regards to the AdverseEvent Clinical Research Profile instances, but these are intended as examples and may not include referenced data such as an Encounter. They are from real world examples and show how the AdverseEvent Clinical Research Profile is intended to be generally used. Keep in mind that it is intended that the profile in this guide be derived from to produce use case specific guidance. The examples are demonstrative of using FHIR in adverse event reporting but not prescriptive. As the use of adverse event reporting with FHIR matures, the examples could become outdated.
 
 ### Clinical trial: significant adverse event
 
