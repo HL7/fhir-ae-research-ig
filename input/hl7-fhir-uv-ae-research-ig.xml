@@ -311,7 +311,7 @@ Within this guide are several examples. Every effort has been made to capture th
 				<display value="medication-request-example-kadcyla" />
 			</reference>
 			<name value="medication-request-example-kadcyla" />
-			<description value="Example showing clinial trial medication Kadcyla" />
+			<description value="Example showing clinical trial medication Kadcyla" />
 		</resource>
 		<resource>
 			<reference>
@@ -319,7 +319,7 @@ Within this guide are several examples. Every effort has been made to capture th
 				<display value="medication-request-example-tucatinib" />
 			</reference>
 			<name value="medication-request-example-tucatinib" />
-			<description value="Example showing clinial trial medication Tucatinib" />
+			<description value="Example showing clinical trial medication Tucatinib" />
 		</resource>
 		<resource>
 			<reference>
@@ -327,7 +327,7 @@ Within this guide are several examples. Every effort has been made to capture th
 				<display value="medication-administration-kadcyla" />
 			</reference>
 			<name value="medication-administration-kadcyla" />
-			<description value="Example showing clinial trial medication adminstration Kadcyla" />
+			<description value="Example showing clinical trial medication administration Kadcyla" />
 		</resource>
 		<resource>
 			<reference>
@@ -335,7 +335,7 @@ Within this guide are several examples. Every effort has been made to capture th
 				<display value="medication-administration-tucatinib" />
 			</reference>
 			<name value="medication-administration-tucatinib" />
-			<description value="Example showing clinial trial medication adminstration Tucatinib" />
+			<description value="Example showing clinical trial medication administration Tucatinib" />
 		</resource>
 		<resource>
 			<reference>
@@ -359,7 +359,7 @@ Within this guide are several examples. Every effort has been made to capture th
 				<display value="medication-administration-kadcyla-reduced" />
 			</reference>
 			<name value="medication-administration-kadcyla-reduced" />
-			<description value="Example reduced dose of clinial trial medication adminstration Kadcyla" />
+			<description value="Example reduced dose of clinical trial medication administration Kadcyla" />
 		</resource>
 		<resource>
 			<reference>
@@ -367,7 +367,7 @@ Within this guide are several examples. Every effort has been made to capture th
 				<display value="medication-administration-tucatinib-reduced" />
 			</reference>
 			<name value="medication-administration-tucatinib-reduced" />
-			<description value="Example reduced does of clinial trial medication adminstration Tucatinib" />
+			<description value="Example reduced does of clinical trial medication administration Tucatinib" />
 		</resource>
 		<resource>
 			<reference>
@@ -439,7 +439,7 @@ Within this guide are several examples. Every effort has been made to capture th
 				<display value="study-medication-administration-ABC" />
 			</reference>
 			<name value="study-medication-administration-ABC" />
-			<description value="Example for clinial trial medication ABC" />
+			<description value="Example for clinical trial medication ABC" />
 		</resource>
 		<resource>
 			<reference>
@@ -471,7 +471,7 @@ Within this guide are several examples. Every effort has been made to capture th
 				<display value="study-medication-administration-MMD" />
 			</reference>
 			<name value="study-medication-administration-MMD" />
-			<description value="Example for clinial trial medication MMD" />
+			<description value="Example for clinical trial medication MMD" />
 		</resource>
 		<resource>
 			<reference>
@@ -519,7 +519,7 @@ Within this guide are several examples. Every effort has been made to capture th
 				<display value="study-medication-administration-WBY" />
 			</reference>
 			<name value="study-medication-administration-WBY" />
-			<description value="Example for clinial trial medication WBY" />
+			<description value="Example for clinical trial medication WBY" />
 		</resource>
 		<resource>
 			<reference>
@@ -652,7 +652,7 @@ Within this guide are several examples. Every effort has been made to capture th
 				<display value="medication-administration-kadcyla1" />
 			</reference>
 			<name value="medication-administration-kadcyla1" />
-			<description value="Example showing clinical trial medication adminstration Kadcyla" />
+			<description value="Example showing clinical trial medication administration Kadcyla" />
 		</resource> 
 		<resource>
 			<reference>
