@@ -1,8 +1,8 @@
 {
 	"package-id": "hl7.fhir.uv.ae-research-ig",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"path": "http://hl7.org/fhir/uv/ae-research-ig/STU1",
-        "mode" : "milestone",
+        "mode" : "technical-correction",
 	"status": "trial-use",
 	"sequence": "STU 1",
 	

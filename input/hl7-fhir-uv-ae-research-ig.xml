@@ -18,7 +18,7 @@
   </extension>-->
   <url value="http://hl7.org/fhir/uv/ae-research-ig/ImplementationGuide/hl7.fhir.uv.ae-research-ig"/>
   <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
-  <version value="1.0.0"/>
+  <version value="1.0.1"/>
   <name value="AdverseEventClinicalResearch"/>
   <title value="Adverse Event Clinical Research"/>
   <status value="active"/>
