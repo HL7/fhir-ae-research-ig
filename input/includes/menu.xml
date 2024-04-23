@@ -46,6 +46,9 @@
       <li>
         <a href="downloads.html">Downloads</a>
       </li>
+	  <li>
+        <a href="changes.html">Change log</a>
+      </li>
     </ul>
   </li>
   <!--li><a href="conformance.html">Conformance Statement</a></li-->
