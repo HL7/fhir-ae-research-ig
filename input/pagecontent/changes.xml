@@ -1,10 +1,57 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
 	<p>
-    This provides a list of changes to the MyIG specification since its initial release
+    This provides a list of changes to the IG specification since its initial release
   </p>
-  <a name="0.1.0"> </a>
+  <a name="1.0.1"> </a>
 	<p>
-		<b>2099-01-01 v0.1.0 - My IG R1 (STU ballot 1) Ballot Candidate</b> based on FHIR R5
+		<b>v1.0.1</b>
+		<div>
+https://jira.hl7.org/browse/FHIR-45332
+
+AdverseEvents for Clinical Research Home Page - Adverse Event Clinical Research v1.0.0 (hl7.org)
+
+add Memorial Sloan Kettering to your list.
+Add a space after the period before The profile.
+The intent of this guide is to provide a baseline profile on the FHIR AdverseEvent Resource suitable for Clinical Research. The profile serves as foundational specification to meet general needs in communicating adverse events in clinical research. Key elements are highlighted with MS and required cardinality. Also, the implementation guide (IG) provides useful terminology bindings for the clinical research use case. And, there are examples to aid understanding. The IG was developed by subject matter experts and tested through connectathons. This version is R5, there is also an R4 backport for convenience to those systems that cannot operate on FHIR R5.
+
+Background and Workflow - Adverse Event Clinical Research v1.0.0 (hl7.org)
+
+
+Postmarketing Adverse Event Reporting instead of Post-market reporting
+Remove longitudinal in the sentence below:
+Example scenarios: Post-market reporting of adverse events using FHIR for longitudinal safety surveillance.
+
+Real World examples - Adverse Event Clinical Research v1.0.0 (hl7.org)
+
+Correct the spelling of AdverseEvent:
+Introduction
+
+The following use cases are exemplified with FHIR instances in this guide. Every effort has been made to be accurate, especially with regards to the AdverseEvent Clinical Research Profile instances, but these are intended as examples and may not include referenced data such as an Encounter. They are from real world examples and show how the AdverseEvent Clinical Research Profile is intended to be generally used. Keep in mind that it is intended that the profile in this guide be derived from to produce use case specific guidance. The examples are demonstrative of using FHIR in adverse event reporting but not prescriptive. As the use of adverse event reporting with FHIR matures, the examples could become outdated.
+
+Artifacts Summary - Adverse Event Clinical Research v1.0.0 (hl7.org)
+
+Check spelling of clinical and administration on this page
+medication-administration-kadcyla-reduced
+
+Example reduced dose of clinical trial medication administration Kadcyla
+
+study-medication-administration-ABC
+
+Example for clinial trial medication ABC
+
+study-medication-administration-MMD
+
+Example for clinial trial medication MMD
+
+study-medication-administration-WBY
+
+Example for clinial trial medication WBY
+
+
+https://jira.hl7.org/browse/FHIR-45333
+add to Real World Examples intro section
+Note the Patient resource was referenced as appropriate; however, in clinical research the data would go to the sponsor as a research subject identifier. Depending on the use case implementers will want to be aware of the ResearchSubject resource which points to the Patient resource.</div>
+		
   </p>
   <ul>
     <li>Initial version</li>
