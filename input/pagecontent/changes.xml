@@ -5,55 +5,52 @@
   <a name="1.0.1"> </a>
 	<p>
 		<b>v1.0.1</b>
+	</p>
 		<div>
+		<p>
 https://jira.hl7.org/browse/FHIR-45332
-
-AdverseEvents for Clinical Research Home Page - Adverse Event Clinical Research v1.0.0 (hl7.org)
-
-add Memorial Sloan Kettering to your list.
-Add a space after the period before The profile.
-The intent of this guide is to provide a baseline profile on the FHIR AdverseEvent Resource suitable for Clinical Research. The profile serves as foundational specification to meet general needs in communicating adverse events in clinical research. Key elements are highlighted with MS and required cardinality. Also, the implementation guide (IG) provides useful terminology bindings for the clinical research use case. And, there are examples to aid understanding. The IG was developed by subject matter experts and tested through connectathons. This version is R5, there is also an R4 backport for convenience to those systems that cannot operate on FHIR R5.
-
+<br></br>
+add Memorial Sloan Kettering to your list.<br></br>
+Add a space after the period before The profile.<br></br>
+The intent of this guide is to provide a baseline profile on the FHIR AdverseEvent Resource suitable for Clinical Research. The profile serves as foundational specification to meet general needs in communicating adverse events in clinical research. Key elements are highlighted with MS and required cardinality. Also, the implementation guide (IG) provides useful terminology bindings for the clinical research use case. And, there are examples to aid understanding. The IG was developed by subject matter experts and tested through connectathons. This version is R5, there is also an R4 backport for convenience to those systems that cannot operate on FHIR R5.<br></br>
+<br></br>
 Background and Workflow - Adverse Event Clinical Research v1.0.0 (hl7.org)
-
-
-Postmarketing Adverse Event Reporting instead of Post-market reporting
-Remove longitudinal in the sentence below:
+<br></br><br></br>
+Postmarketing Adverse Event Reporting instead of Post-market reporting<br></br>
+Remove longitudinal in the sentence below:<br></br>
 Example scenarios: Post-market reporting of adverse events using FHIR for longitudinal safety surveillance.
-
+<br></br>
 Real World examples - Adverse Event Clinical Research v1.0.0 (hl7.org)
-
-Correct the spelling of AdverseEvent:
+<br></br>
+Correct the spelling of AdverseEvent:<br></br>
 Introduction
-
+<br></br>
 The following use cases are exemplified with FHIR instances in this guide. Every effort has been made to be accurate, especially with regards to the AdverseEvent Clinical Research Profile instances, but these are intended as examples and may not include referenced data such as an Encounter. They are from real world examples and show how the AdverseEvent Clinical Research Profile is intended to be generally used. Keep in mind that it is intended that the profile in this guide be derived from to produce use case specific guidance. The examples are demonstrative of using FHIR in adverse event reporting but not prescriptive. As the use of adverse event reporting with FHIR matures, the examples could become outdated.
-
-Artifacts Summary - Adverse Event Clinical Research v1.0.0 (hl7.org)
-
+<br></br>
+<br></br>
 Check spelling of clinical and administration on this page
 medication-administration-kadcyla-reduced
-
+<br></br>
 Example reduced dose of clinical trial medication administration Kadcyla
-
+<br></br>
 study-medication-administration-ABC
-
+<br></br>
 Example for clinial trial medication ABC
-
+<br></br>
 study-medication-administration-MMD
-
+<br></br>
 Example for clinial trial medication MMD
-
+<br></br>
 study-medication-administration-WBY
-
+<br></br>
 Example for clinial trial medication WBY
-
-
+</p>
+<p>
 https://jira.hl7.org/browse/FHIR-45333
+<br></br>
 add to Real World Examples intro section
-Note the Patient resource was referenced as appropriate; however, in clinical research the data would go to the sponsor as a research subject identifier. Depending on the use case implementers will want to be aware of the ResearchSubject resource which points to the Patient resource.</div>
-		
+Note the Patient resource was referenced as appropriate; however, in clinical research the data would go to the sponsor as a research subject identifier. Depending on the use case implementers will want to be aware of the ResearchSubject resource which points to the Patient resource.
+
   </p>
-  <ul>
-    <li>Initial version</li>
-  </ul>
+  </div>
 </div>
